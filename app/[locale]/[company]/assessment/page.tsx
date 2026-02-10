@@ -69,7 +69,7 @@ export default function AssessmentPage() {
   };
 
   return (
-    <main className="min-h-screen bg-gradient-to-b from-winter-blue to-slate-900 flex items-center justify-center">
+    <main className="min-h-screen flex items-center justify-center">
       <div className="max-w-xl w-full mx-4">
         {/* Progress indicator */}
         <div className="mb-8">
@@ -105,9 +105,12 @@ export default function AssessmentPage() {
         {step > 1 && (
           <button
             onClick={handleBack}
-            className="mb-4 text-white/80 hover:text-white flex items-center gap-1 text-sm font-medium transition"
+            className="mb-4 px-4 py-2 bg-white/10 hover:bg-white/20 text-white rounded-lg flex items-center gap-2 text-sm font-semibold transition backdrop-blur-sm border border-white/20"
           >
-            <span>&#8592;</span> {tCommon("back")}
+            <svg xmlns="http://www.w3.org/2000/svg" className="h-4 w-4" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2}>
+              <path strokeLinecap="round" strokeLinejoin="round" d="M15 19l-7-7 7-7" />
+            </svg>
+            {tCommon("back")}
           </button>
         )}
 

@@ -14,7 +14,7 @@ export default function CompanyLanding() {
   const branding = getCompanyBranding(company);
 
   return (
-    <main className="min-h-screen bg-gradient-to-b from-polar-night via-polar-night-light to-midnight-blue">
+    <main className="min-h-screen">
       {/* Header */}
       <header className="py-4 px-6" style={{ backgroundColor: branding.color }}>
         <div className="max-w-4xl mx-auto flex items-center justify-between">

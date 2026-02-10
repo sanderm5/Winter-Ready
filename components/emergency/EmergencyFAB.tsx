@@ -177,12 +177,12 @@ export default function EmergencyFAB() {
               {/* Safety tip */}
               <div className="mt-6 p-4 bg-blue-500/10 border border-blue-500/30 rounded-xl">
                 <p className="text-sm text-blue-300 text-center">
-                  {locale === "no" && "Disse numrene fungerer selv uten mobildekning via nodnettet."}
-                  {locale === "en" && "These numbers work even without mobile coverage via emergency network."}
-                  {locale === "de" && "Diese Nummern funktionieren auch ohne Mobilfunkempfang uber das Notfallnetz."}
-                  {locale === "fr" && "Ces numeros fonctionnent meme sans couverture mobile via le reseau d'urgence."}
-                  {locale === "es" && "Estos numeros funcionan incluso sin cobertura movil a traves de la red de emergencia."}
-                  {locale === "zh" && "即使没有手机信号，这些号码也可以通过紧急网络拨打。"}
+                  {locale === "no" && "112 kan ringes fra alle mobilnett, også uten SIM-kort — men krever dekning fra minst én operatør."}
+                  {locale === "en" && "112 can be called from any mobile network, even without a SIM card — but requires coverage from at least one operator."}
+                  {locale === "de" && "112 kann von jedem Mobilfunknetz aus angerufen werden, auch ohne SIM-Karte — erfordert aber Empfang von mindestens einem Anbieter."}
+                  {locale === "fr" && "Le 112 peut être appelé depuis n'importe quel réseau mobile, même sans carte SIM — mais nécessite la couverture d'au moins un opérateur."}
+                  {locale === "es" && "El 112 se puede llamar desde cualquier red móvil, incluso sin tarjeta SIM — pero requiere cobertura de al menos un operador."}
+                  {locale === "zh" && "112可从任何移动网络拨打，即使没有SIM卡——但需要至少一个运营商的信号覆盖。"}
                 </p>
               </div>
             </motion.div>

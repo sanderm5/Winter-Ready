@@ -12,7 +12,6 @@ import { motion, AnimatePresence } from "framer-motion";
 import { fadeInUp, slideRight, scaleIn, staggerContainer, cardHover, cardTap } from "@/lib/motion-variants";
 import ModuleIcon from "@/components/ModuleIcon";
 import ResponsiveImage from "@/components/ResponsiveImage";
-import WinterBackground from "@/components/WinterBackground";
 import SafetySummaryDashboard from "@/components/SafetySummaryDashboard";
 
 interface CourseModule {
@@ -226,8 +225,7 @@ export default function CoursePage() {
   }[result.riskLevel];
 
   return (
-    <main className="min-h-screen bg-gradient-to-b from-polar-night via-polar-night-light to-arctic-blue relative">
-      <WinterBackground />
+    <main className="min-h-screen">
       {/* Header */}
       <header className="bg-winter-blue py-4 px-6 relative z-10">
         <div className="max-w-4xl mx-auto flex items-center justify-between">

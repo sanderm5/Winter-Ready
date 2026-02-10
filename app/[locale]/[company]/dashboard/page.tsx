@@ -138,7 +138,7 @@ export default function DashboardPage() {
   const style = safetyColorMap[overallSafety];
 
   return (
-    <main className="min-h-screen bg-gradient-to-b from-[#0b1120] via-polar-night to-arctic-blue/80">
+    <main className="min-h-screen">
       {/* Sticky header */}
       <header className="sticky top-0 z-50 bg-polar-night/70 backdrop-blur-xl border-b border-glacier/10">
         <div className="max-w-5xl mx-auto flex items-center justify-between px-6 py-3">
