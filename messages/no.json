@@ -1,0 +1,604 @@
+{
+  "common": {
+    "loading": "Laster...",
+    "continue": "Fortsett",
+    "next": "Neste",
+    "back": "Tilbake",
+    "finish": "Fullfør",
+    "selectLanguage": "Velg språk",
+    "poweredBy": "Drevet av WinterReady"
+  },
+  "home": {
+    "title": "WinterReady Norge",
+    "subtitle": "Forbered deg på trygg vinterkjøring i Norge",
+    "b2bBadge": "Arktisk vintersikkerhetsplattform",
+    "compliance": {
+      "title": "Sikkerhet først",
+      "description": "Omfattende vinteropplæring basert på reelle forhold"
+    },
+    "adaptive": {
+      "title": "Tilpasset opplæring",
+      "description": "Personaliserte kurs basert på ditt erfaringsnivå"
+    },
+    "realtime": {
+      "title": "Sanntidsdata",
+      "description": "Live vær- og veistatus fra offisielle norske kilder"
+    },
+    "demo": {
+      "title": "Prøv demoen",
+      "description": "Opplev vintersikkerhetskurset",
+      "button": "Start demo"
+    },
+    "footer": "WinterReady Norge - Holder vinterreisende trygge siden 2026"
+  },
+  "companyLanding": {
+    "tourismWelcomeTitle": "Velkommen til Arktisk Norge!",
+    "tourismWelcomeSubtitle": "Før eventyret starter, gjør deg klar for trygg vinterkjøring i Nord-Norge.",
+    "arcticConditions": {
+      "title": "Arktiske forhold",
+      "description": "Nord-Norge har ekstremt vær — mørketid, glatte veier og vilt på veien."
+    },
+    "safetyBriefing": {
+      "title": "Sikkerhetsbriefing",
+      "description": "En rask vurdering tilpasser sikkerhetskurset til ditt erfaringsnivå (2-3 minutter)."
+    },
+    "liveConditions": {
+      "title": "Live nordlys og forhold",
+      "description": "Sanntids nordlysprognose, vær, skredvarsel og veistatus."
+    },
+    "startBriefing": "Start sikkerhetsbriefing",
+    "timeTakes": "Dette tar bare 2-3 minutter"
+  },
+  "assessment": {
+    "step": "Steg",
+    "of": "av",
+    "questions": {
+      "winterExperience": {
+        "title": "Har du kjørt på snø eller is før?",
+        "subtitle": "Velg alternativet som best beskriver deg",
+        "options": {
+          "never": {
+            "label": "Aldri",
+            "description": "Dette blir min første gang"
+          },
+          "fewTimes": {
+            "label": "Noen ganger",
+            "description": "Jeg har noe erfaring"
+          },
+          "regularly": {
+            "label": "Regelmessig",
+            "description": "Jeg kjører ofte i vinterforhold"
+          }
+        }
+      },
+      "homeCountry": {
+        "title": "Hvor kommer du fra?",
+        "subtitle": "Dette hjelper oss å tilpasse informasjonen til din erfaring",
+        "placeholder": "Velg ditt land"
+      },
+      "destination": {
+        "title": "Hvor skal du kjøre?",
+        "subtitle": "Velg den typen vei du hovedsakelig skal kjøre på",
+        "options": {
+          "mountain": {
+            "label": "Fjellområder",
+            "description": "Fjellpass, høyfjellet, bratte bakker (f.eks. Hardangervidda, Trollstigen)"
+          },
+          "coast": {
+            "label": "Kystområder",
+            "description": "Kystveier med vind og sjøsprøyt (f.eks. Bergen, Stavanger, Atlanterhavsveien)"
+          },
+          "city": {
+            "label": "Kun byer",
+            "description": "Bykjøring med brøytede veier (f.eks. Oslo, Trondheim, Bergen sentrum)"
+          },
+          "mixed": {
+            "label": "Blandet / Usikker",
+            "description": "Flere typer veier og områder, eller usikker på ruten"
+          }
+        }
+      },
+      "tripDuration": {
+        "title": "Hvor lenge skal du kjøre?",
+        "subtitle": "Lengre turer betyr mer variasjon i veiforhold og vær",
+        "options": {
+          "dayTrip": {
+            "label": "Dagstur",
+            "description": "Bare noen timer"
+          },
+          "fewDays": {
+            "label": "Noen dager",
+            "description": "2-4 dager med kjøring"
+          },
+          "weekPlus": {
+            "label": "En uke eller mer",
+            "description": "Utvidet biltur"
+          }
+        }
+      }
+    },
+    "countries": {
+      "germany": "Tyskland",
+      "netherlands": "Nederland",
+      "united_kingdom": "Storbritannia",
+      "denmark": "Danmark",
+      "france": "Frankrike",
+      "spain": "Spania",
+      "italy": "Italia",
+      "belgium": "Belgia",
+      "poland": "Polen",
+      "czech_republic": "Tsjekkia",
+      "usa": "USA",
+      "china": "Kina",
+      "japan": "Japan",
+      "south_korea": "Sør-Korea",
+      "australia": "Australia",
+      "sweden": "Sverige",
+      "finland": "Finland",
+      "canada": "Canada",
+      "other": "Annet"
+    }
+  },
+  "course": {
+    "header": "Sikkerhetskurs for vinter",
+    "riskLevel": {
+      "low": "LAV RISIKO",
+      "medium": "MIDDELS RISIKO",
+      "high": "HØY RISIKO"
+    },
+    "loading": "Laster kurs...",
+    "keyPoints": "Hovedpunkter:",
+    "nextModule": "Neste modul",
+    "completeCourse": "Fullfør kurs",
+    "destinationSelect": {
+      "title": "Hvor i Norge skal du?",
+      "subtitle": "Velg destinasjon for tilpasset sikkerhetsinformasjon",
+      "descriptions": {
+        "oslo": "Hovedstaden, bykjøring",
+        "bergen": "Regnfull kyst, fjordveier",
+        "tromso": "Arktisk by, mørketidssone",
+        "trondheim": "Midt-Norge, kystklima",
+        "lofoten": "Øyveier, broer, naturskjønne ruter",
+        "nordkapp": "Ytterst i nord, utsatte veier",
+        "geiranger": "Fjordveier, bratte fjellpass",
+        "stavanger": "Sørkyst, mildere vintre"
+      }
+    },
+    "safetySummary": {
+      "title": "Din sikkerhetsoppsummering",
+      "subtitle": "Live forhold for {destination}",
+      "loading": "Laster live-forhold for din destinasjon...",
+      "overallSafety": "Samlet sikkerhetsvurdering",
+      "overallSafe": "Forholdene er generelt trygge. Standard vinterforholdsregler gjelder.",
+      "overallCaution": "Noen forhold krever ekstra forsiktighet. Se advarslene nedenfor.",
+      "overallWarning": "Flere risikofaktorer er aktive. Vurder å justere planene dine.",
+      "weather": "Nåværende vær",
+      "aurora": "Nordlysprognose",
+      "avalanche": "Skredvarsling",
+      "ocean": "Havforhold",
+      "roads": "Veistatus",
+      "noAvalanche": "Ingen aktive skredvarsler for dette området.",
+      "oceanSafe": "Trygt for båtturer",
+      "oceanUnsafe": "Urolig sjø — båtturer kan bli kansellert",
+      "waveHeight": "Bølgehøyde",
+      "waterTemp": "Vanntemperatur",
+      "keyTakeaways": "Viktigste fra kurset ditt",
+      "personalizedTips": "Tips for turen din",
+      "dataDisclaimer": "Data fra Yr.no, NOAA, NVE Varsom og MET Norge. Sjekk alltid offisielle kilder før reise.",
+      "proceedToCertificate": "Hent sertifikatet ditt",
+      "temperature": "Temperatur",
+      "wind": "Vind",
+      "precipitation": "Nedbør",
+      "kpIndex": "KP-indeks",
+      "probability": "Sannsynlighet",
+      "bestTime": "Beste tid",
+      "dangerLevel": "Farenivå"
+    },
+    "completion": {
+      "title": "Kurs fullført!",
+      "subtitle": "Du er nå forberedt på vinterkjøring i Norge. Kjør trygt og nyt turen!",
+      "certificate": "Fullføringsbevis",
+      "courseName": "WinterReady sikkerhetskurs",
+      "viewDashboard": "Se veistatus",
+      "namePlaceholder": "Skriv inn navnet ditt for sertifikatet",
+      "modules": "Fullførte moduler",
+      "riskLevel": "Risikonivå",
+      "date": "Dato",
+      "downloadCertificate": "Last ned sertifikat (PDF)",
+      "generating": "Genererer..."
+    }
+  },
+  "modules": {
+    "winter-basics": {
+      "title": "Grunnleggende vinterkjøring",
+      "content": [
+        {
+          "heading": "Reduser hastigheten",
+          "text": "I vinterforhold kan stopplengden være opptil 10 ganger lengre enn på tørr vei. Kjør alltid saktere enn du ville gjort om sommeren.",
+          "tips": [
+            "Reduser hastigheten med minst 20-30% i snø",
+            "Reduser hastigheten med 50% eller mer på is",
+            "Fartsgrenser er maksimum, ikke mål"
+          ]
+        },
+        {
+          "heading": "Øk avstanden",
+          "text": "Hold minst 4-6 sekunders avstand til bilen foran deg. Dette gir deg tid til å reagere og stoppe trygt.",
+          "tips": [
+            "Bruk '4-sekundersregelen' - tell sekunder etter at bilen foran passerer et landemerke",
+            "Doble denne avstanden i tung snø eller is"
+          ]
+        },
+        {
+          "heading": "Myke bevegelser",
+          "text": "Unngå plutselige bevegelser med rattet, gasspedalen eller bremsene. Myke, gradvise bevegelser hjelper å opprettholde veigrep.",
+          "tips": [
+            "Akselerér forsiktig fra stopp",
+            "Brems gradvis, aldri bråbrems",
+            "Styr jevnt uten rykkete bevegelser"
+          ]
+        }
+      ]
+    },
+    "braking-techniques": {
+      "title": "Bremsing på is og snø",
+      "content": [
+        {
+          "heading": "ABS-bremsing",
+          "text": "Moderne biler har ABS (blokkeringsfrie bremser). Ved bremsing på glatte overflater, trykk bremsen fast og hold den - la ABS gjøre jobben. Du kan føle pulsering i pedalen; dette er normalt.",
+          "tips": [
+            "Trykk og hold bremsen fast",
+            "Ikke pump bremsene med ABS",
+            "Fortsett å styre mens du bremser"
+          ]
+        },
+        {
+          "heading": "Motorbrems",
+          "text": "Bruk motorbrems ved å gire ned til lavere gir (eller bruk 'B'-modus i automater). Dette bremser bilen uten å bruke bremsene og reduserer risikoen for hjullåsing.",
+          "tips": [
+            "Gir ned gradvis i bakker",
+            "Bruk motorbrems før svinger"
+          ]
+        }
+      ]
+    },
+    "black-ice": {
+      "title": "Underkjølt regn og is",
+      "content": [
+        {
+          "heading": "Hva er underkjølt regn?",
+          "text": "Underkjølt regn skaper et tynt, nesten usynlig lag med is på veien. Det kalles 'sort is' fordi du kan se den mørke veioverflaten gjennom det. Det er ekstremt glatt og overrasker ofte sjåfører.",
+          "tips": [
+            "Vanligst tidlig morgen og kveld",
+            "Dannes på broer, overganger og skyggefulle områder først",
+            "Se etter blanke flekker på veien"
+          ]
+        },
+        {
+          "heading": "Hvis du treffer is",
+          "text": "Hold deg rolig. Ikke brems eller styr brått. Ta foten av gasspedalen og la bilen sakne naturlig. Hold rattet rett til du gjenvinner veigrepet.",
+          "tips": [
+            "Ikke få panikk - hold deg rolig",
+            "Slipp gasspedalen forsiktig",
+            "Hold rattet rett",
+            "Ikke brems med mindre det er absolutt nødvendig"
+          ]
+        }
+      ]
+    },
+    "mountain-driving": {
+      "title": "Fjell- og fjordkjøring",
+      "content": [
+        {
+          "heading": "Bratte bakker og pass",
+          "text": "Norske fjellveier kan ha bratte stigninger. Bruk lavt gir når du kjører nedover for å kontrollere hastigheten. Kjør aldri i fri.",
+          "tips": [
+            "Bruk lavt gir (1, 2 eller L) i bratte nedoverbakker",
+            "Ikke 'ri' på bremsene - de kan overopphetes",
+            "Trekk til side ved utpekte rasteplasser om nødvendig"
+          ]
+        },
+        {
+          "heading": "Enkeltfeltveier",
+          "text": "Mange fjellveier er enkeltfelt med møteplasser. Bilen som kjører oppover har generelt vikeplikt. Trekk inn på møteplasser for å la andre passere.",
+          "tips": [
+            "Se fremover etter møteplasser",
+            "Rygg til en møteplass om nødvendig",
+            "Blink med lysene for å signalisere at du slipper noen forbi"
+          ]
+        },
+        {
+          "heading": "Kolonnekjøring",
+          "text": "I dårlig vær kan veier bare være åpne for kolonnekjøring - du følger en brøytebil i en gruppe. Sjekk veistatus før du kjører.",
+          "tips": [
+            "Sjekk vegvesen.no eller 175-appen for veistatus",
+            "Vent på kolonnens møtepunkt",
+            "Aldri prøv å kjøre forbi kolonnen"
+          ]
+        }
+      ]
+    },
+    "norwegian-rules": {
+      "title": "Norske trafikkregler",
+      "content": [
+        {
+          "heading": "Promillegrense",
+          "text": "Norge har en av de strengeste promillegrensene i Europa. Grensen er 0,02% - i praksis nulltoleranse. Straffen inkluderer høye bøter, inndragning av førerkort og til og med fengsel.",
+          "tips": [
+            "0,02% grense - selv én drink kan sette deg over",
+            "Hvis du drikker, ikke kjør i det hele tatt",
+            "Straffene er strenge: bøter, fengsel, tap av førerkort"
+          ]
+        },
+        {
+          "heading": "Lys alltid på",
+          "text": "Du må kjøre med lys på til enhver tid i Norge, dag og natt, hele året.",
+          "tips": [
+            "Bruk nærlys",
+            "Sjekk at lysene fungerer før turen"
+          ]
+        },
+        {
+          "heading": "Fartsgrenser",
+          "text": "Fartsgrenser i Norge er generelt lavere enn i andre europeiske land. Vanlige grenser: 50 km/t i tettsteder, 80 km/t på landeveier, 90-110 km/t på motorveier.",
+          "tips": [
+            "Bøter er basert på inntekt og kan være svært høye",
+            "Fotobokser er vanlige",
+            "Grenser er maksimum - reduser i dårlig vær"
+          ]
+        }
+      ]
+    },
+    "emergency-procedures": {
+      "title": "Nødprosedyrer",
+      "content": [
+        {
+          "heading": "Nødnumre",
+          "text": "I nødstilfeller, ring disse numrene umiddelbart:",
+          "tips": [
+            "112 - Politi",
+            "113 - Ambulanse",
+            "110 - Brann",
+            "Disse numrene fungerer fra alle telefoner"
+          ]
+        },
+        {
+          "heading": "Hvis du sitter fast",
+          "text": "Hvis bilen setter seg fast i snøen eller du sklir av veien, hold deg rolig og vurder situasjonen.",
+          "tips": [
+            "Slå på varsellysene",
+            "Bli i bilen hvis det er kaldt ute",
+            "Ring etter hjelp: veihjelp eller 112",
+            "Ha nødutstyr: varme klær, teppe, vann, snacks"
+          ]
+        },
+        {
+          "heading": "Viking Veihjelp",
+          "text": "De fleste leiebiler i Norge inkluderer Viking veihjelp. Sjekk leieavtalen for telefonnummeret. De kan hjelpe med motorstopp, punkteringer og å komme løs.",
+          "tips": [
+            "Ha Viking-nummeret lagret i telefonen",
+            "Typisk nummer: 06000 eller sjekk leiepapirene"
+          ]
+        }
+      ]
+    },
+    "polar-darkness": {
+      "title": "Kjøring i mørketid",
+      "content": [
+        {
+          "heading": "Mørketiden (Polar Night)",
+          "text": "I Nord-Norge over polarsirkelen går ikke sola opp i flere uker om vinteren. I Tromsø varer mørketiden fra slutten av november til midten av januar. Selv utenom denne perioden er dagslyset svært kort.",
+          "tips": [
+            "Tromsø har ingen soloppgang fra 21. nov til 21. jan",
+            "Det 'blå lyset' i polar skumring kan være villedende svakt",
+            "Din oppfatning av avstand og hastighet endres i konstant mørke"
+          ]
+        },
+        {
+          "heading": "Lysstrategi",
+          "text": "I totalt mørke er frontlysene din livline. Bruk nærlys i tettbygde strøk og fjernlys på åpne veier — men vær klar til å bytte raskt.",
+          "tips": [
+            "Bruk alltid nærlys i tettsteder og ved møtende trafikk",
+            "Bytt til fjernlys på åpne veier uten møtende biler",
+            "Hold frontlys og frontrute rent — salt og skitt reduserer sikten raskt",
+            "Bruk tåkelys kun i tåke eller kraftig snøfall"
+          ]
+        },
+        {
+          "heading": "Tretthet og årvåkenhet",
+          "text": "Kjøring i kontinuerlig mørke er mentalt utmattende. Kroppens døgnrytme forstyrres, og døsighet er en alvorlig risiko.",
+          "tips": [
+            "Ta pauser hver 1-2 time — stopp, strekk deg, få frisk luft",
+            "Ikke kjør hvis du er trøtt — finn et trygt sted å hvile",
+            "Hold bilen litt kjølig for å holde deg våken",
+            "Unngå tunge måltider før kjøring"
+          ]
+        }
+      ]
+    },
+    "wildlife-roads": {
+      "title": "Vilt på arktiske veier",
+      "content": [
+        {
+          "heading": "Rein — Den arktiske veifaren",
+          "text": "Rein vandrer fritt over veier i Nord-Norge. De er halvtamme og tilhører samiske reindriftseiere, og har ingen frykt for biler. Ser du én, forvent flere.",
+          "tips": [
+            "Rein vandrer ofte i flokk — ser du én krysse, saktne ned og vent",
+            "Vanligst i grålysning, skumring og under polar skumring",
+            "Saktne ned ved varselskilt (gul trekant med rein)",
+            "De kan fryse i frontlyset — tut forsiktig og vent"
+          ]
+        },
+        {
+          "heading": "Elg — Stor og farlig",
+          "text": "Elg er det største dyret i Skandinavia, og en kollisjon kan være dødelig. En voksen elg veier 400-500 kg og er høyere enn en bil.",
+          "tips": [
+            "Elg er mest aktiv i grålysning og skumring",
+            "Se etter bevegelse i grøftene og skogkanten langs veien",
+            "Hvis kollisjon er uunngåelig, brems hardt men ikke sveng inn i motgående trafikk",
+            "Meld alle viltkollisjoner til politiet: 112"
+          ]
+        },
+        {
+          "heading": "Hva gjøre etter en viltkollisjon",
+          "text": "Hvis du treffer et dyr, stopp trygt, slå på varsellysene og ring politiet på 02800 (ikke nødstilfelle) eller 112 hvis noen er skadet.",
+          "tips": [
+            "Stopp og sikre området med varsellys og varseltrekant",
+            "Ring politiet på 02800 eller 112 ved skader",
+            "Noter nøyaktig posisjon (GPS-koordinater eller veiskilt)",
+            "Gå aldri nær en skadet elg eller rein"
+          ]
+        }
+      ]
+    },
+    "arctic-weather-driving": {
+      "title": "Kjøring i arktisk vær",
+      "content": [
+        {
+          "heading": "Ekstrem kulde (-20°C og lavere)",
+          "text": "Temperaturer i Nord-Norge kan synke til -20°C eller lavere. Ekstrem kulde påvirker bilen, dekkene og kroppen din. Dieselbiler kan slite med å starte, batterier tappes raskere, og dekktrykket synker.",
+          "tips": [
+            "Hold alltid drivstofftanken minst halvfull",
+            "Parker med fronten bort fra vinden for å beskytte motoren",
+            "Ha med ekstra varme klær, et teppe og en termos",
+            "Sjekk at leiebilen har motorvarmer hvis du parkerer over natten"
+          ]
+        },
+        {
+          "heading": "Hvitfarge og snøstorm",
+          "text": "Arktiske snøstormer kan redusere sikten til nesten null på sekunder. Fokksnø og sterk vind skaper 'hvitfarge'-forhold der du ikke kan se veien.",
+          "tips": [
+            "Hvis sikten synker plutselig, saktne ned gradvis — ikke bråbrems",
+            "Slå på tåkelys og varsellys",
+            "Følg brøytestikkene (snøstikker med refleks)",
+            "Hvis du ikke kan se noe, kjør trygt av veien og vent"
+          ]
+        },
+        {
+          "heading": "Sterk sidevind",
+          "text": "Utsatte kyst- og fjellveier i Nord-Norge rammes av kraftig arktisk vind. Broer, fjordoverganger og høyfjellsplatåer er spesielt farlige.",
+          "tips": [
+            "Reduser hastigheten på utsatte strekninger — spesielt broer og nes",
+            "Hold rattet godt med begge hender",
+            "Vær forberedt på kraftige vindkast ved utgang av tunneler",
+            "Sjekk yr.no for vindvarsel før kjøring på utsatte ruter"
+          ]
+        }
+      ]
+    }
+  },
+  "dashboard": {
+    "header": "Veistatus",
+    "customer": "Kunde",
+    "courseCompleted": "Kurs fullført",
+    "selectDestination": "Velg destinasjon",
+    "loading": "Laster forhold...",
+    "weather": {
+      "title": "Vær",
+      "wind": "Vind",
+      "precipitation": "Nedbør"
+    },
+    "safetyTips": {
+      "title": "Sikkerhetstips",
+      "highRisk": {
+        "title": "HØY RISIKO",
+        "description": "Vurder å utsette turen eller bruke alternativ transport."
+      },
+      "mediumRisk": {
+        "title": "MIDDELS RISIKO",
+        "description": "Kjør med ekstra forsiktighet. Reduser hastigheten og øk avstanden."
+      },
+      "quickReminders": {
+        "title": "Raske påminnelser",
+        "tips": [
+          "Ha lys på til enhver tid",
+          "Hold 4+ sekunders avstand",
+          "Sjekk veiforhold før fjellpass",
+          "Nød: 112 (Politi), 113 (Ambulanse)"
+        ]
+      }
+    },
+    "roadConditions": {
+      "title": "Fjellpass og viktige ruter",
+      "statuses": {
+        "open": "ÅPEN",
+        "closed": "STENGT",
+        "convoy": "KOLONNE",
+        "warning": "ADVARSEL"
+      },
+      "dataSource": "Data fra Statens vegvesen. Sist oppdatert:"
+    },
+    "moreInfo": "Trenger du mer informasjon?",
+    "links": {
+      "vegvesen": "Vegvesen trafikkinformasjon",
+      "yr": "Yr.no værmelding",
+      "varsom": "Varsom.no skredvarsel"
+    },
+    "tourism": {
+      "header": "Arktiske veiforhold",
+      "subtitle": "Nord-Norge",
+      "heroTitle": "Tromsø — Live forhold",
+      "heroSubtitle": "Sanntids vær, nordlysprognose og veistatus for trygg kjøring i Nord-Norge",
+      "avalancheWarning": "Skredvarsel",
+      "noAvalanche": "Ingen aktive skredvarsler.",
+      "fullForecast": "Full prognose på varsom.no",
+      "roadsTitle": "Veier rundt Tromsø"
+    },
+    "liveDashboard": "Sikkerhetsoversikt",
+    "heroSubtitle": "Sanntids sikkerhetsforhold — vær, veier, skred, nordlys og hav",
+    "refresh": "Oppdater",
+    "safety": {
+      "safe": {
+        "heading": "Trygge forhold",
+        "label": "Forholdene er generelt trygge for reise. Vær oppmerksom og følg lokale råd."
+      },
+      "caution": {
+        "heading": "Vis forsiktighet",
+        "label": "Noen risikoer registrert. Sjekk detaljene nedenfor og planlegg ruten nøye."
+      },
+      "warning": {
+        "heading": "Advarsel — Høy risiko",
+        "label": "Betydelige farer oppdaget. Unngå unødvendig reise og sjekk alle forhold nedenfor."
+      }
+    },
+    "avalanche": {
+      "title": "Skredvarsel",
+      "level": "Nivå",
+      "fullForecast": "Full prognose på varsom.no",
+      "noWarnings": "Ingen aktive varsler",
+      "noWarningsDesc": "Ingen skredvarsler for dette området. Sjekk alltid forholdene før du drar til fjells."
+    },
+    "ocean": {
+      "title": "Hav og kyst",
+      "safe": "Trygt for kystaktiviteter",
+      "caution": "Forsiktighet — høye bølger",
+      "waveHeight": "Bølgehøyde",
+      "waterTemp": "Vanntemp.",
+      "current": "Strøm",
+      "unavailable": "Havdata utilgjengelig for denne lokasjonen."
+    },
+    "emergency": {
+      "title": "Nødnumre",
+      "emergency": "Nødsentralen",
+      "emergencyDesc": "Politi, brann, ambulanse",
+      "roadside": "Veihjelp",
+      "roadsideDesc": "Viking / Falck",
+      "roadConditions": "Veiforhold",
+      "roadConditionsDesc": "Vegtrafikksentralen",
+      "avalanche": "Skredvarsel",
+      "avalancheDesc": "NVE / Varsom"
+    },
+    "roadsPrefix": "Veier",
+    "disclaimer": "All informasjon er kun veiledende. Følg alltid lokale myndigheters råd."
+  },
+  "destinations": {
+    "oslo": "Oslo",
+    "bergen": "Bergen",
+    "tromso": "Tromsø",
+    "trondheim": "Trondheim",
+    "lofoten": "Lofoten",
+    "nordkapp": "Nordkapp",
+    "geiranger": "Geiranger",
+    "stavanger": "Stavanger"
+  }
+}

@@ -1,0 +1,604 @@
+{
+  "common": {
+    "loading": "加载中...",
+    "continue": "继续",
+    "next": "下一步",
+    "back": "返回",
+    "finish": "完成",
+    "selectLanguage": "选择语言",
+    "poweredBy": "由 WinterReady 提供支持"
+  },
+  "home": {
+    "title": "WinterReady 挪威",
+    "subtitle": "为在挪威安全冬季驾驶做好准备",
+    "b2bBadge": "北极冬季安全平台",
+    "compliance": {
+      "title": "安全第一",
+      "description": "基于真实条件的全面冬季安全培训"
+    },
+    "adaptive": {
+      "title": "自适应培训",
+      "description": "根据您的经验水平定制个性化课程"
+    },
+    "realtime": {
+      "title": "实时数据",
+      "description": "来自挪威官方来源的实时天气和路况信息"
+    },
+    "demo": {
+      "title": "试用演示",
+      "description": "体验冬季安全课程",
+      "button": "开始演示"
+    },
+    "footer": "WinterReady 挪威 - 自2026年起保障冬季旅行者安全"
+  },
+  "companyLanding": {
+    "tourismWelcomeTitle": "欢迎来到北极挪威！",
+    "tourismWelcomeSubtitle": "在您的冒险开始之前，为在北挪威安全冬季驾驶做好准备。",
+    "arcticConditions": {
+      "title": "北极条件",
+      "description": "挪威北部天气极端——极夜、冰冻道路以及道路上的野生动物。"
+    },
+    "safetyBriefing": {
+      "title": "安全简报",
+      "description": "快速评估将根据您的经验水平定制安全课程（2-3分钟）。"
+    },
+    "liveConditions": {
+      "title": "实时极光与路况",
+      "description": "实时极光预报、天气、雪崩警告和道路状况。"
+    },
+    "startBriefing": "开始安全简报",
+    "timeTakes": "只需2-3分钟"
+  },
+  "assessment": {
+    "step": "步骤",
+    "of": "共",
+    "questions": {
+      "winterExperience": {
+        "title": "您以前在雪地或冰面上开过车吗？",
+        "subtitle": "选择最能描述您情况的选项",
+        "options": {
+          "never": {
+            "label": "从未",
+            "description": "这将是我的第一次"
+          },
+          "fewTimes": {
+            "label": "几次",
+            "description": "我有一些经验"
+          },
+          "regularly": {
+            "label": "经常",
+            "description": "我经常在冬季条件下驾驶"
+          }
+        }
+      },
+      "homeCountry": {
+        "title": "您来自哪里？",
+        "subtitle": "这有助于我们根据您的经验调整信息",
+        "placeholder": "选择您的国家"
+      },
+      "destination": {
+        "title": "您将在哪里驾驶？",
+        "subtitle": "选择您主要驾驶的道路类型",
+        "options": {
+          "mountain": {
+            "label": "山区",
+            "description": "山口、高原公路、陡坡（如Hardangervidda、Trollstigen）"
+          },
+          "coast": {
+            "label": "沿海地区",
+            "description": "有风和海浪飞溅的沿海公路（如卑尔根、斯塔万格、大西洋之路）"
+          },
+          "city": {
+            "label": "仅城市",
+            "description": "在清扫过的道路上的城市驾驶（如奥斯陆、特隆赫姆、卑尔根市中心）"
+          },
+          "mixed": {
+            "label": "混合/不确定",
+            "description": "多种道路类型和地区，或不确定路线"
+          }
+        }
+      },
+      "tripDuration": {
+        "title": "您将驾驶多长时间？",
+        "subtitle": "更长的行程意味着道路和天气条件的更多变化",
+        "options": {
+          "dayTrip": {
+            "label": "一日游",
+            "description": "只有几个小时"
+          },
+          "fewDays": {
+            "label": "几天",
+            "description": "2-4天驾驶"
+          },
+          "weekPlus": {
+            "label": "一周或更长",
+            "description": "长途自驾游"
+          }
+        }
+      }
+    },
+    "countries": {
+      "germany": "德国",
+      "netherlands": "荷兰",
+      "united_kingdom": "英国",
+      "denmark": "丹麦",
+      "france": "法国",
+      "spain": "西班牙",
+      "italy": "意大利",
+      "belgium": "比利时",
+      "poland": "波兰",
+      "czech_republic": "捷克共和国",
+      "usa": "美国",
+      "china": "中国",
+      "japan": "日本",
+      "south_korea": "韩国",
+      "australia": "澳大利亚",
+      "sweden": "瑞典",
+      "finland": "芬兰",
+      "canada": "加拿大",
+      "other": "其他"
+    }
+  },
+  "course": {
+    "header": "冬季安全课程",
+    "riskLevel": {
+      "low": "低风险",
+      "medium": "中等风险",
+      "high": "高风险"
+    },
+    "loading": "加载课程中...",
+    "keyPoints": "要点：",
+    "nextModule": "下一模块",
+    "completeCourse": "完成课程",
+    "destinationSelect": {
+      "title": "您要去挪威的哪里？",
+      "subtitle": "选择您的目的地以获取针对性的安全信息",
+      "descriptions": {
+        "oslo": "首都，城市驾驶",
+        "bergen": "多雨海岸，峡湾公路",
+        "tromso": "北极城市，极夜区域",
+        "trondheim": "挪威中部，沿海气候",
+        "lofoten": "岛屿公路、桥梁、风景路线",
+        "nordkapp": "极北地区，裸露道路",
+        "geiranger": "峡湾公路，陡峭山口",
+        "stavanger": "南部海岸，较温和冬季"
+      }
+    },
+    "safetySummary": {
+      "title": "您的安全摘要",
+      "subtitle": "{destination}的实时状况",
+      "loading": "正在加载您目的地的实时状况...",
+      "overallSafety": "整体安全评估",
+      "overallSafe": "条件总体安全。适用标准冬季预防措施。",
+      "overallCaution": "部分条件需要额外注意。请查看下方警告。",
+      "overallWarning": "多个风险因素处于活跃状态。请考虑调整您的计划。",
+      "weather": "当前天气",
+      "aurora": "极光预报",
+      "avalanche": "雪崩警告",
+      "ocean": "海况",
+      "roads": "道路状况",
+      "noAvalanche": "该区域目前没有雪崩警告。",
+      "oceanSafe": "适合乘船游览",
+      "oceanUnsafe": "海况恶劣——船游可能取消",
+      "waveHeight": "浪高",
+      "waterTemp": "水温",
+      "keyTakeaways": "课程要点回顾",
+      "personalizedTips": "旅行提示",
+      "dataDisclaimer": "数据来自 Yr.no、NOAA、NVE Varsom 和挪威气象局。旅行前请务必查看官方信息源。",
+      "proceedToCertificate": "获取您的证书",
+      "temperature": "温度",
+      "wind": "风力",
+      "precipitation": "降水",
+      "kpIndex": "KP 指数",
+      "probability": "概率",
+      "bestTime": "最佳时间",
+      "dangerLevel": "危险等级"
+    },
+    "completion": {
+      "title": "课程完成！",
+      "subtitle": "您现在已为在挪威冬季驾驶做好准备。安全驾驶，享受旅途！",
+      "certificate": "完成证书",
+      "courseName": "WinterReady 安全课程",
+      "viewDashboard": "查看路况",
+      "namePlaceholder": "输入您的姓名以获取证书",
+      "modules": "已完成模块",
+      "riskLevel": "风险等级",
+      "date": "日期",
+      "downloadCertificate": "下载证书 (PDF)",
+      "generating": "生成中..."
+    }
+  },
+  "modules": {
+    "winter-basics": {
+      "title": "冬季驾驶基础",
+      "content": [
+        {
+          "heading": "降低车速",
+          "text": "在冬季条件下，您的制动距离可能比干燥路面长10倍。始终比夏季驾驶更慢。",
+          "tips": [
+            "在雪地中至少降低20-30%的速度",
+            "在冰面上降低50%或更多的速度",
+            "速度限制是最高值，不是目标"
+          ]
+        },
+        {
+          "heading": "增加跟车距离",
+          "text": "与前车保持至少4-6秒的距离。这给您反应和安全停车的时间。",
+          "tips": [
+            "使用4秒规则 - 在前车经过参照物后开始计数",
+            "在大雪或冰面上将此距离加倍"
+          ]
+        },
+        {
+          "heading": "平稳操作",
+          "text": "避免方向盘、油门或刹车的突然动作。平稳、渐进的操作有助于保持抓地力。",
+          "tips": [
+            "起步时轻柔加速",
+            "逐渐制动，切勿急刹车",
+            "平稳转向，避免突然动作"
+          ]
+        }
+      ]
+    },
+    "braking-techniques": {
+      "title": "冰雪路面制动",
+      "content": [
+        {
+          "heading": "ABS制动",
+          "text": "现代汽车配有ABS（防抱死制动系统）。在湿滑路面制动时，用力踩下刹车并保持 - 让ABS发挥作用。您可能会感到踏板脉动；这是正常的。",
+          "tips": [
+            "用力踩住刹车并保持",
+            "有ABS时不要点刹",
+            "制动时继续控制方向"
+          ]
+        },
+        {
+          "heading": "发动机制动",
+          "text": "通过降档使用发动机制动（或自动挡使用B模式）。这可以在不使用刹车的情况下减速，降低车轮锁死的风险。",
+          "tips": [
+            "下坡时逐渐降档",
+            "在弯道前使用发动机制动"
+          ]
+        }
+      ]
+    },
+    "black-ice": {
+      "title": "黑冰意识",
+      "content": [
+        {
+          "heading": "什么是黑冰？",
+          "text": "黑冰是路面上一层薄薄的、几乎看不见的冰层。之所以叫黑冰，是因为您可以透过它看到深色的路面。它极其滑，经常让驾驶员措手不及。",
+          "tips": [
+            "最常见于清晨和傍晚",
+            "首先在桥梁、立交桥和阴凉处形成",
+            "注意路面上的光亮区域"
+          ]
+        },
+        {
+          "heading": "遇到黑冰时",
+          "text": "保持冷静。不要突然刹车或转向。松开油门让车辆自然减速。保持方向盘稳定直到恢复抓地力。",
+          "tips": [
+            "不要惊慌 - 保持冷静",
+            "轻轻松开油门",
+            "保持方向盘平稳",
+            "除非绝对必要否则不要刹车"
+          ]
+        }
+      ]
+    },
+    "mountain-driving": {
+      "title": "山地和峡湾驾驶",
+      "content": [
+        {
+          "heading": "陡坡和山口",
+          "text": "挪威山路可能有陡峭的坡度。下坡时使用低档位控制速度。切勿空档滑行。",
+          "tips": [
+            "在陡峭下坡时使用低档位（1、2或L）",
+            "不要持续踩刹车 - 它们可能过热",
+            "必要时在指定休息区停车"
+          ]
+        },
+        {
+          "heading": "单车道道路",
+          "text": "许多山路是单车道带会车点。上坡车辆通常有优先权。在会车点让其他车辆通过。",
+          "tips": [
+            "提前寻找会车点",
+            "必要时倒车到会车点",
+            "闪灯示意让对方通过"
+          ]
+        },
+        {
+          "heading": "车队驾驶",
+          "text": "恶劣天气时，道路可能仅开放车队通行 - 您跟随铲雪车队行驶。驾驶前检查道路状况。",
+          "tips": [
+            "查看vegvesen.no或175应用了解道路状况",
+            "在车队集合点等待",
+            "切勿试图超越车队"
+          ]
+        }
+      ]
+    },
+    "norwegian-rules": {
+      "title": "挪威交通规则",
+      "content": [
+        {
+          "heading": "血液酒精浓度限制",
+          "text": "挪威是欧洲酒驾法律最严格的国家之一。法定限制为0.02% - 实际上是零容忍。处罚包括高额罚款、吊销驾照甚至监禁。",
+          "tips": [
+            "0.02%限制 - 即使一杯酒也可能超标",
+            "如果喝酒，就完全不要开车",
+            "处罚严厉：罚款、监禁、吊销驾照"
+          ]
+        },
+        {
+          "heading": "始终开灯",
+          "text": "在挪威，您必须全天候开启车灯，无论白天黑夜，全年如此。",
+          "tips": [
+            "使用近光灯",
+            "出发前检查车灯是否正常工作"
+          ]
+        },
+        {
+          "heading": "速度限制",
+          "text": "挪威的速度限制通常低于其他欧洲国家。常见限制：城镇50公里/小时，农村道路80公里/小时，高速公路90-110公里/小时。",
+          "tips": [
+            "罚款基于收入，可能非常高",
+            "测速摄像头很常见",
+            "限速是最高值 - 恶劣天气时降低速度"
+          ]
+        }
+      ]
+    },
+    "emergency-procedures": {
+      "title": "紧急程序",
+      "content": [
+        {
+          "heading": "紧急电话",
+          "text": "紧急情况下，立即拨打以下电话：",
+          "tips": [
+            "112 - 警察",
+            "113 - 急救",
+            "110 - 消防",
+            "这些号码可从任何电话拨打"
+          ]
+        },
+        {
+          "heading": "如果被困",
+          "text": "如果您的车陷入雪中或滑出道路，保持冷静并评估情况。",
+          "tips": [
+            "打开双闪警示灯",
+            "如果外面很冷就待在车里",
+            "呼叫救援：道路救援或112",
+            "准备应急包：保暖衣物、毯子、水、零食"
+          ]
+        },
+        {
+          "heading": "Viking道路救援",
+          "text": "挪威大多数租赁车辆都包含Viking道路救援服务。查看您的租赁协议了解电话号码。他们可以帮助处理故障、爆胎和脱困。",
+          "tips": [
+            "将Viking号码保存在手机中",
+            "常用号码：06000或查看租赁文件"
+          ]
+        }
+      ]
+    },
+    "polar-darkness": {
+      "title": "极夜中驾驶",
+      "content": [
+        {
+          "heading": "极夜（Mørketid）",
+          "text": "在挪威北部北极圈以上地区，冬季太阳连续数周不升起。在特罗姆瑟，极夜从11月底持续到1月中旬。即使在此期间之外，白昼时间也非常短。",
+          "tips": [
+            "特罗姆瑟从11月21日到1月21日没有日出",
+            "极地黄昏的'蓝光'可能具有欺骗性地昏暗",
+            "在持续黑暗中，您对距离和速度的感知会发生变化"
+          ]
+        },
+        {
+          "heading": "车灯策略",
+          "text": "在完全黑暗中，车灯就是您的生命线。在市区使用近光灯，在开阔道路上使用远光灯——但要随时准备快速切换。",
+          "tips": [
+            "在城镇和遇到对向车辆时始终使用近光灯",
+            "在没有对向车辆的开阔道路上切换为远光灯",
+            "保持车灯和挡风玻璃清洁——盐和污垢会迅速降低能见度",
+            "仅在雾天或大雪时使用雾灯"
+          ]
+        },
+        {
+          "heading": "疲劳与警觉",
+          "text": "在持续黑暗中驾驶会导致精神疲惫。您的昼夜节律被打乱，嗜睡是一个严重的风险。",
+          "tips": [
+            "每1-2小时休息一次——停车、伸展、呼吸新鲜空气",
+            "如果感到困倦就不要开车——找个安全的地方休息",
+            "保持车内微凉以保持清醒",
+            "驾驶前避免吃得过饱"
+          ]
+        }
+      ]
+    },
+    "wildlife-roads": {
+      "title": "北极道路上的野生动物",
+      "content": [
+        {
+          "heading": "驯鹿——北极公路的危险",
+          "text": "驯鹿在挪威北部的道路上自由漫步。它们是萨米牧民半驯化的动物，不怕汽车。如果您看到一只，请预期会有更多。",
+          "tips": [
+            "驯鹿通常成群行动——如果一只穿越道路，减速等待",
+            "最常出现在黎明、黄昏和极地暮光时分",
+            "在警告标志附近减速（带驯鹿图案的黄色三角形）",
+            "它们可能在车灯前僵住——轻按喇叭并等待"
+          ]
+        },
+        {
+          "heading": "驼鹿——体大而危险",
+          "text": "驼鹿是斯堪的纳维亚最大的动物，碰撞可能致命。一头成年驼鹿重400-500公斤，比汽车还高。",
+          "tips": [
+            "驼鹿在黎明和黄昏最为活跃",
+            "注意道路旁边的沟渠和森林边缘",
+            "如果碰撞不可避免，猛踩刹车但不要转向对向车道",
+            "向警方报告任何野生动物碰撞事故：112"
+          ]
+        },
+        {
+          "heading": "野生动物碰撞后该怎么做",
+          "text": "如果您撞到动物，安全停车，打开双闪警示灯，拨打02800（非紧急）或112（如有人受伤）报警。",
+          "tips": [
+            "停车并用双闪警示灯和警告三角牌确保区域安全",
+            "拨打02800或112（如有伤者）报警",
+            "记录准确位置（GPS坐标或路标）",
+            "切勿接近受伤的驼鹿或驯鹿"
+          ]
+        }
+      ]
+    },
+    "arctic-weather-driving": {
+      "title": "北极天气中驾驶",
+      "content": [
+        {
+          "heading": "极端寒冷（-20°C及以下）",
+          "text": "挪威北部的气温可能降至-20°C或更低。极端寒冷会影响您的汽车、轮胎和身体。柴油车可能难以启动，电池消耗更快，轮胎气压会下降。",
+          "tips": [
+            "始终保持油箱至少半满",
+            "将车头朝背风方向停放以保护发动机",
+            "携带额外的保暖衣物、毯子和保温瓶",
+            "检查租赁车辆是否配有发动机加热器"
+          ]
+        },
+        {
+          "heading": "白化天气与暴风雪",
+          "text": "北极暴风雪可在数秒内将能见度降至几乎为零。飘雪和强风会造成'白化'条件，让您无法看到道路。",
+          "tips": [
+            "如果能见度突然下降，逐渐减速——不要急刹车",
+            "打开雾灯和双闪警示灯",
+            "沿着道路标记行驶（带反光片的雪地标杆）",
+            "如果完全看不见，安全驶离道路并等待"
+          ]
+        },
+        {
+          "heading": "强侧风",
+          "text": "挪威北部暴露的沿海和山区道路会受到强烈北极风的袭击。桥梁、峡湾横渡和高原地带尤其危险。",
+          "tips": [
+            "在暴露路段减速——尤其是桥梁和海岬",
+            "双手紧握方向盘",
+            "驶出隧道时要准备应对突然的阵风",
+            "驾驶暴露路线前在yr.no查看风力预报"
+          ]
+        }
+      ]
+    }
+  },
+  "dashboard": {
+    "header": "路况仪表板",
+    "customer": "客户",
+    "courseCompleted": "课程已完成",
+    "selectDestination": "选择您的目的地",
+    "loading": "加载路况中...",
+    "weather": {
+      "title": "天气",
+      "wind": "风速",
+      "precipitation": "降水"
+    },
+    "safetyTips": {
+      "title": "安全提示",
+      "highRisk": {
+        "title": "高风险条件",
+        "description": "考虑推迟行程或使用替代交通方式。"
+      },
+      "mediumRisk": {
+        "title": "中等风险",
+        "description": "请格外小心驾驶。降低速度并增加跟车距离。"
+      },
+      "quickReminders": {
+        "title": "快速提醒",
+        "tips": [
+          "始终保持车灯开启",
+          "保持4秒以上的跟车距离",
+          "通过山口前检查路况",
+          "紧急情况：112（警察）、113（急救）"
+        ]
+      }
+    },
+    "roadConditions": {
+      "title": "山口和主要路线",
+      "statuses": {
+        "open": "开放",
+        "closed": "关闭",
+        "convoy": "车队",
+        "warning": "警告"
+      },
+      "dataSource": "数据来自挪威公路局。最后更新："
+    },
+    "moreInfo": "需要更多信息？",
+    "links": {
+      "vegvesen": "公路局交通信息",
+      "yr": "Yr.no天气",
+      "varsom": "Varsom.no 雪崩"
+    },
+    "tourism": {
+      "header": "北极道路状况",
+      "subtitle": "挪威北部",
+      "heroTitle": "特罗姆瑟——实时状况",
+      "heroSubtitle": "实时天气、极光预报和道路状况，助您在挪威北部安全驾驶",
+      "avalancheWarning": "雪崩警告",
+      "noAvalanche": "目前没有雪崩警告。",
+      "fullForecast": "在varsom.no查看完整预报",
+      "roadsTitle": "特罗姆瑟周边道路"
+    },
+    "liveDashboard": "安全实时面板",
+    "heroSubtitle": "实时安全状况 — 天气、道路、雪崩、极光和海洋",
+    "refresh": "刷新",
+    "safety": {
+      "safe": {
+        "heading": "安全条件",
+        "label": "目前条件总体安全，适合出行。请保持警觉，遵循当地建议。"
+      },
+      "caution": {
+        "heading": "请注意安全",
+        "label": "检测到一些风险。请查看以下详情，谨慎规划您的路线。"
+      },
+      "warning": {
+        "heading": "警告 — 高风险",
+        "label": "检测到重大危险。避免不必要的出行，请查看以下所有状况。"
+      }
+    },
+    "avalanche": {
+      "title": "雪崩警告",
+      "level": "等级",
+      "fullForecast": "在varsom.no查看完整预报",
+      "noWarnings": "无活跃警告",
+      "noWarningsDesc": "该地区无雪崩警告。进入山区前请务必检查条件。"
+    },
+    "ocean": {
+      "title": "海洋与海岸",
+      "safe": "沿海活动安全",
+      "caution": "注意 — 海况恶劣",
+      "waveHeight": "浪高",
+      "waterTemp": "水温",
+      "current": "洋流",
+      "unavailable": "该地点无海洋数据。"
+    },
+    "emergency": {
+      "title": "紧急电话",
+      "emergency": "紧急情况",
+      "emergencyDesc": "警察、消防、急救",
+      "roadside": "道路救援",
+      "roadsideDesc": "Viking / Falck",
+      "roadConditions": "路况",
+      "roadConditionsDesc": "交通管理中心",
+      "avalanche": "雪崩警告",
+      "avalancheDesc": "NVE / Varsom"
+    },
+    "roadsPrefix": "道路",
+    "disclaimer": "所有数据仅供参考。请始终遵循当地政府的建议。"
+  },
+  "destinations": {
+    "oslo": "奥斯陆",
+    "bergen": "卑尔根",
+    "tromso": "特罗姆瑟",
+    "trondheim": "特隆赫姆",
+    "lofoten": "罗弗敦",
+    "nordkapp": "北角",
+    "geiranger": "盖朗厄尔",
+    "stavanger": "斯塔万格"
+  }
+}

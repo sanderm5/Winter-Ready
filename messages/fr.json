@@ -1,0 +1,604 @@
+{
+  "common": {
+    "loading": "Chargement...",
+    "continue": "Continuer",
+    "next": "Suivant",
+    "back": "Retour",
+    "finish": "Terminer",
+    "selectLanguage": "Choisir la langue",
+    "poweredBy": "Propulsé par WinterReady"
+  },
+  "home": {
+    "title": "WinterReady Norvège",
+    "subtitle": "Préparez-vous à une conduite hivernale sécurisée en Norvège",
+    "b2bBadge": "Plateforme de sécurité hivernale arctique",
+    "compliance": {
+      "title": "La sécurité avant tout",
+      "description": "Formation complète à la sécurité hivernale basée sur les conditions réelles"
+    },
+    "adaptive": {
+      "title": "Formation adaptée",
+      "description": "Cours personnalisés basés sur votre niveau d'expérience"
+    },
+    "realtime": {
+      "title": "Données en temps réel",
+      "description": "Météo et conditions routières en direct depuis les sources officielles norvégiennes"
+    },
+    "demo": {
+      "title": "Essayer la démo",
+      "description": "Découvrez le cours de sécurité hivernale",
+      "button": "Démarrer la démo"
+    },
+    "footer": "WinterReady Norvège - Protégeant les voyageurs hivernaux depuis 2026"
+  },
+  "companyLanding": {
+    "tourismWelcomeTitle": "Bienvenue en Norvège arctique !",
+    "tourismWelcomeSubtitle": "Avant votre aventure, préparez-vous à une conduite hivernale sécurisée dans le nord de la Norvège.",
+    "arcticConditions": {
+      "title": "Conditions arctiques",
+      "description": "Le nord de la Norvège connaît des conditions extrêmes — nuit polaire, routes verglacées et faune sur la route."
+    },
+    "safetyBriefing": {
+      "title": "Briefing de sécurité",
+      "description": "Une évaluation rapide adapte votre cours de sécurité à votre niveau d'expérience (2-3 minutes)."
+    },
+    "liveConditions": {
+      "title": "Aurores boréales et conditions en direct",
+      "description": "Prévisions d'aurores en temps réel, météo, alertes avalanches et état des routes."
+    },
+    "startBriefing": "Commencer votre briefing de sécurité",
+    "timeTakes": "Cela ne prendra que 2-3 minutes"
+  },
+  "assessment": {
+    "step": "Étape",
+    "of": "sur",
+    "questions": {
+      "winterExperience": {
+        "title": "Avez-vous déjà conduit sur neige ou verglas ?",
+        "subtitle": "Sélectionnez l'option qui vous décrit le mieux",
+        "options": {
+          "never": {
+            "label": "Jamais",
+            "description": "Ce sera ma première fois"
+          },
+          "fewTimes": {
+            "label": "Quelques fois",
+            "description": "J'ai une certaine expérience"
+          },
+          "regularly": {
+            "label": "Régulièrement",
+            "description": "Je conduis souvent en conditions hivernales"
+          }
+        }
+      },
+      "homeCountry": {
+        "title": "D'où venez-vous ?",
+        "subtitle": "Cela nous aide à adapter les informations à votre expérience",
+        "placeholder": "Sélectionnez votre pays"
+      },
+      "destination": {
+        "title": "Où allez-vous conduire ?",
+        "subtitle": "Sélectionnez le type de routes sur lesquelles vous conduirez principalement",
+        "options": {
+          "mountain": {
+            "label": "Zones montagneuses",
+            "description": "Cols de montagne, routes d'altitude, fortes pentes (ex: Hardangervidda, Trollstigen)"
+          },
+          "coast": {
+            "label": "Zones côtières",
+            "description": "Routes côtières avec vent et embruns (ex: Bergen, Stavanger, Route de l'Atlantique)"
+          },
+          "city": {
+            "label": "Villes uniquement",
+            "description": "Conduite urbaine sur routes déblayées (ex: Oslo, Trondheim, centre de Bergen)"
+          },
+          "mixed": {
+            "label": "Mixte / Incertain",
+            "description": "Plusieurs types de routes et régions, ou itinéraire incertain"
+          }
+        }
+      },
+      "tripDuration": {
+        "title": "Combien de temps allez-vous conduire ?",
+        "subtitle": "Les trajets plus longs impliquent plus de variation des conditions routières et météorologiques",
+        "options": {
+          "dayTrip": {
+            "label": "Excursion d'une journée",
+            "description": "Quelques heures seulement"
+          },
+          "fewDays": {
+            "label": "Quelques jours",
+            "description": "2-4 jours de conduite"
+          },
+          "weekPlus": {
+            "label": "Une semaine ou plus",
+            "description": "Road trip prolongé"
+          }
+        }
+      }
+    },
+    "countries": {
+      "germany": "Allemagne",
+      "netherlands": "Pays-Bas",
+      "united_kingdom": "Royaume-Uni",
+      "denmark": "Danemark",
+      "france": "France",
+      "spain": "Espagne",
+      "italy": "Italie",
+      "belgium": "Belgique",
+      "poland": "Pologne",
+      "czech_republic": "République tchèque",
+      "usa": "États-Unis",
+      "china": "Chine",
+      "japan": "Japon",
+      "south_korea": "Corée du Sud",
+      "australia": "Australie",
+      "sweden": "Suède",
+      "finland": "Finlande",
+      "canada": "Canada",
+      "other": "Autre"
+    }
+  },
+  "course": {
+    "header": "Cours de sécurité hivernale",
+    "riskLevel": {
+      "low": "RISQUE FAIBLE",
+      "medium": "RISQUE MOYEN",
+      "high": "RISQUE ÉLEVÉ"
+    },
+    "loading": "Chargement du cours...",
+    "keyPoints": "Points clés :",
+    "nextModule": "Module suivant",
+    "completeCourse": "Terminer le cours",
+    "destinationSelect": {
+      "title": "Où allez-vous en Norvège ?",
+      "subtitle": "Sélectionnez votre destination pour des informations de sécurité adaptées",
+      "descriptions": {
+        "oslo": "Capitale, conduite urbaine",
+        "bergen": "Côte pluvieuse, routes de fjord",
+        "tromso": "Ville arctique, zone de nuit polaire",
+        "trondheim": "Norvège centrale, climat côtier",
+        "lofoten": "Routes insulaires, ponts, itinéraires panoramiques",
+        "nordkapp": "Extrême nord, routes exposées",
+        "geiranger": "Routes de fjord, cols de montagne escarpés",
+        "stavanger": "Côte sud, hivers plus doux"
+      }
+    },
+    "safetySummary": {
+      "title": "Votre résumé de sécurité",
+      "subtitle": "Conditions en direct pour {destination}",
+      "loading": "Chargement des conditions en direct pour votre destination...",
+      "overallSafety": "Évaluation globale de la sécurité",
+      "overallSafe": "Les conditions sont généralement sûres. Les précautions hivernales standard s'appliquent.",
+      "overallCaution": "Certaines conditions nécessitent une prudence accrue. Consultez les avertissements ci-dessous.",
+      "overallWarning": "Plusieurs facteurs de risque sont actifs. Envisagez d'ajuster vos plans.",
+      "weather": "Météo actuelle",
+      "aurora": "Prévisions d'aurores boréales",
+      "avalanche": "Alertes avalanches",
+      "ocean": "Conditions maritimes",
+      "roads": "État des routes",
+      "noAvalanche": "Aucune alerte avalanche en cours pour cette zone.",
+      "oceanSafe": "Sûr pour les excursions en bateau",
+      "oceanUnsafe": "Mer agitée — les excursions en bateau peuvent être annulées",
+      "waveHeight": "Hauteur des vagues",
+      "waterTemp": "Température de l'eau",
+      "keyTakeaways": "Points clés de votre cours",
+      "personalizedTips": "Conseils pour votre voyage",
+      "dataDisclaimer": "Données de Yr.no, NOAA, NVE Varsom et MET Norvège. Vérifiez toujours les sources officielles avant de voyager.",
+      "proceedToCertificate": "Obtenir votre certificat",
+      "temperature": "Température",
+      "wind": "Vent",
+      "precipitation": "Précipitations",
+      "kpIndex": "Indice KP",
+      "probability": "Probabilité",
+      "bestTime": "Meilleur moment",
+      "dangerLevel": "Niveau de danger"
+    },
+    "completion": {
+      "title": "Cours terminé !",
+      "subtitle": "Vous êtes maintenant préparé à la conduite hivernale en Norvège. Conduisez prudemment et profitez de votre voyage !",
+      "certificate": "Certificat d'achèvement",
+      "courseName": "Cours de sécurité WinterReady",
+      "viewDashboard": "Voir les conditions routières",
+      "namePlaceholder": "Entrez votre nom pour le certificat",
+      "modules": "Modules terminés",
+      "riskLevel": "Niveau de risque",
+      "date": "Date",
+      "downloadCertificate": "Télécharger le certificat (PDF)",
+      "generating": "Génération en cours..."
+    }
+  },
+  "modules": {
+    "winter-basics": {
+      "title": "Bases de la conduite hivernale",
+      "content": [
+        {
+          "heading": "Réduisez votre vitesse",
+          "text": "En conditions hivernales, votre distance de freinage peut être jusqu'à 10 fois plus longue que sur route sèche. Conduisez toujours plus lentement qu'en été.",
+          "tips": [
+            "Réduisez la vitesse d'au moins 20-30% dans la neige",
+            "Réduisez la vitesse de 50% ou plus sur verglas",
+            "Les limites de vitesse sont des maximums, pas des objectifs"
+          ]
+        },
+        {
+          "heading": "Augmentez la distance de sécurité",
+          "text": "Gardez au moins 4-6 secondes de distance avec le véhicule devant vous. Cela vous donne le temps de réagir et de vous arrêter en toute sécurité.",
+          "tips": [
+            "Utilisez la 'règle des 4 secondes' - comptez les secondes après un point de repère",
+            "Doublez cette distance en cas de forte neige ou verglas"
+          ]
+        },
+        {
+          "heading": "Mouvements doux",
+          "text": "Évitez les mouvements brusques du volant, de l'accélérateur ou des freins. Des manœuvres douces et progressives aident à maintenir l'adhérence.",
+          "tips": [
+            "Accélérez doucement au démarrage",
+            "Freinez progressivement, jamais brusquement",
+            "Tournez le volant en douceur sans à-coups"
+          ]
+        }
+      ]
+    },
+    "braking-techniques": {
+      "title": "Freinage sur verglas et neige",
+      "content": [
+        {
+          "heading": "Freinage ABS",
+          "text": "Les voitures modernes ont l'ABS (système antiblocage). Lors du freinage sur surfaces glissantes, appuyez fermement sur la pédale et maintenez - laissez l'ABS faire son travail. Vous pouvez sentir des pulsations dans la pédale ; c'est normal.",
+          "tips": [
+            "Appuyez et maintenez le frein fermement",
+            "Ne pompez pas les freins avec l'ABS",
+            "Continuez à diriger en freinant"
+          ]
+        },
+        {
+          "heading": "Frein moteur",
+          "text": "Utilisez le frein moteur en passant à un rapport inférieur (ou mode 'B' sur automatique). Cela ralentit la voiture sans utiliser les freins et réduit le risque de blocage des roues.",
+          "tips": [
+            "Rétrogradez progressivement dans les descentes",
+            "Utilisez le frein moteur avant les virages"
+          ]
+        }
+      ]
+    },
+    "black-ice": {
+      "title": "Sensibilisation au verglas noir",
+      "content": [
+        {
+          "heading": "Qu'est-ce que le verglas noir ?",
+          "text": "Le verglas noir est une fine couche de glace presque invisible sur la route. On l'appelle 'noir' car vous pouvez voir la surface sombre de la route à travers. Il est extrêmement glissant et surprend souvent les conducteurs.",
+          "tips": [
+            "Plus fréquent tôt le matin et le soir",
+            "Se forme d'abord sur les ponts, viaducs et zones ombragées",
+            "Repérez les zones brillantes sur la route"
+          ]
+        },
+        {
+          "heading": "Si vous rencontrez du verglas",
+          "text": "Restez calme. Ne freinez pas et ne tournez pas brusquement. Levez le pied de l'accélérateur et laissez la voiture ralentir naturellement. Gardez le volant droit jusqu'à retrouver l'adhérence.",
+          "tips": [
+            "Pas de panique - restez calme",
+            "Relâchez doucement l'accélérateur",
+            "Gardez le volant droit",
+            "Ne freinez qu'en cas d'absolue nécessité"
+          ]
+        }
+      ]
+    },
+    "mountain-driving": {
+      "title": "Conduite en montagne et fjords",
+      "content": [
+        {
+          "heading": "Pentes raides et cols",
+          "text": "Les routes de montagne norvégiennes peuvent avoir des pentes raides. Utilisez un rapport bas en descente pour contrôler la vitesse. Ne roulez jamais au point mort.",
+          "tips": [
+            "Utilisez un rapport bas (1, 2 ou L) dans les descentes raides",
+            "Ne restez pas sur les freins - ils peuvent surchauffer",
+            "Arrêtez-vous aux aires de repos si nécessaire"
+          ]
+        },
+        {
+          "heading": "Routes à voie unique",
+          "text": "Beaucoup de routes de montagne sont à voie unique avec des places de croisement. Le véhicule montant a généralement la priorité. Rangez-vous dans les places de croisement pour laisser passer les autres.",
+          "tips": [
+            "Repérez les places de croisement à l'avance",
+            "Reculez jusqu'à une place de croisement si nécessaire",
+            "Faites un appel de phares pour signaler que vous laissez passer"
+          ]
+        },
+        {
+          "heading": "Conduite en convoi",
+          "text": "Par mauvais temps, les routes peuvent n'être ouvertes qu'en convoi - vous suivez un chasse-neige en groupe. Vérifiez l'état des routes avant de partir.",
+          "tips": [
+            "Consultez vegvesen.no ou l'application 175 pour l'état des routes",
+            "Attendez au point de rassemblement du convoi",
+            "N'essayez jamais de dépasser le convoi"
+          ]
+        }
+      ]
+    },
+    "norwegian-rules": {
+      "title": "Règles de circulation norvégiennes",
+      "content": [
+        {
+          "heading": "Limite d'alcoolémie",
+          "text": "La Norvège a l'une des lois les plus strictes d'Europe sur l'alcool au volant. La limite légale est 0,02% - tolérance zéro en pratique. Les sanctions incluent de lourdes amendes, la suspension du permis et même l'emprisonnement.",
+          "tips": [
+            "Limite de 0,02% - même un verre peut vous faire dépasser",
+            "Si vous buvez, ne conduisez pas du tout",
+            "Les sanctions sont sévères : amendes, prison, perte du permis"
+          ]
+        },
+        {
+          "heading": "Phares toujours allumés",
+          "text": "Vous devez rouler avec les phares allumés en permanence en Norvège, jour et nuit, toute l'année.",
+          "tips": [
+            "Utilisez les feux de croisement",
+            "Vérifiez que les phares fonctionnent avant votre voyage"
+          ]
+        },
+        {
+          "heading": "Limites de vitesse",
+          "text": "Les limites de vitesse en Norvège sont généralement plus basses que dans les autres pays européens. Limites courantes : 50 km/h en ville, 80 km/h sur routes rurales, 90-110 km/h sur autoroutes.",
+          "tips": [
+            "Les amendes sont basées sur le revenu et peuvent être très élevées",
+            "Les radars sont fréquents",
+            "Les limites sont des maximums - réduisez par mauvais temps"
+          ]
+        }
+      ]
+    },
+    "emergency-procedures": {
+      "title": "Procédures d'urgence",
+      "content": [
+        {
+          "heading": "Numéros d'urgence",
+          "text": "En cas d'urgence, appelez immédiatement ces numéros :",
+          "tips": [
+            "112 - Police",
+            "113 - Ambulance",
+            "110 - Pompiers",
+            "Ces numéros fonctionnent depuis n'importe quel téléphone"
+          ]
+        },
+        {
+          "heading": "Si vous êtes bloqué",
+          "text": "Si votre voiture est bloquée dans la neige ou que vous sortez de la route, restez calme et évaluez la situation.",
+          "tips": [
+            "Activez les feux de détresse",
+            "Restez dans la voiture s'il fait froid dehors",
+            "Appelez à l'aide : assistance routière ou 112",
+            "Kit d'urgence : vêtements chauds, couverture, eau, snacks"
+          ]
+        },
+        {
+          "heading": "Assistance routière Viking",
+          "text": "La plupart des voitures de location en Norvège incluent l'assistance routière Viking. Consultez votre contrat de location pour le numéro de téléphone. Ils peuvent aider en cas de panne, crevaison ou pour vous dégager.",
+          "tips": [
+            "Gardez le numéro Viking enregistré dans votre téléphone",
+            "Numéro typique : 06000 ou vérifiez les papiers de location"
+          ]
+        }
+      ]
+    },
+    "polar-darkness": {
+      "title": "Conduire dans la nuit polaire",
+      "content": [
+        {
+          "heading": "La nuit polaire (Mørketid)",
+          "text": "Dans le nord de la Norvège, au-dessus du cercle polaire, le soleil ne se lève pas pendant des semaines en hiver. À Tromsø, la nuit polaire dure de fin novembre à mi-janvier. Même en dehors de cette période, les heures de lumière sont très courtes.",
+          "tips": [
+            "Tromsø n'a pas de lever de soleil du 21 nov. au 21 jan.",
+            "La 'lumière bleue' du crépuscule polaire peut être trompeusement faible",
+            "Votre perception de la distance et de la vitesse change dans l'obscurité permanente"
+          ]
+        },
+        {
+          "heading": "Stratégie d'éclairage",
+          "text": "Dans l'obscurité totale, vos phares sont votre bouée de sauvetage. Utilisez les feux de croisement en agglomération et les feux de route sur les routes ouvertes — mais soyez prêt à changer rapidement.",
+          "tips": [
+            "Utilisez toujours les feux de croisement en ville et face au trafic venant en sens inverse",
+            "Passez en feux de route sur les routes ouvertes sans véhicules en face",
+            "Gardez les phares et le pare-brise propres — le sel et la saleté réduisent la visibilité rapidement",
+            "N'utilisez les antibrouillards que par brouillard ou forte chute de neige"
+          ]
+        },
+        {
+          "heading": "Fatigue et vigilance",
+          "text": "Conduire dans l'obscurité permanente est mentalement épuisant. Votre rythme circadien est perturbé, et la somnolence est un risque sérieux.",
+          "tips": [
+            "Faites des pauses toutes les 1-2 heures — arrêtez-vous, étirez-vous, prenez l'air frais",
+            "Ne conduisez pas si vous êtes somnolent — trouvez un endroit sûr pour vous reposer",
+            "Gardez la voiture légèrement fraîche pour rester alerte",
+            "Évitez les repas lourds avant de conduire"
+          ]
+        }
+      ]
+    },
+    "wildlife-roads": {
+      "title": "Faune sur les routes arctiques",
+      "content": [
+        {
+          "heading": "Rennes — Le danger routier arctique",
+          "text": "Les rennes errent librement sur les routes du nord de la Norvège. Ils sont semi-domestiqués par les éleveurs samis et n'ont pas peur des voitures. Si vous en voyez un, attendez-vous à en voir d'autres.",
+          "tips": [
+            "Les rennes voyagent souvent en troupeau — si l'un traverse, ralentissez et attendez",
+            "Plus fréquents à l'aube, au crépuscule et pendant le crépuscule polaire",
+            "Réduisez la vitesse près des panneaux d'avertissement (triangle jaune avec un renne)",
+            "Ils peuvent se figer dans les phares — klaxonnez doucement et attendez"
+          ]
+        },
+        {
+          "heading": "Élans — Grands et dangereux",
+          "text": "Les élans sont les plus grands animaux de Scandinavie et une collision peut être mortelle. Un élan adulte pèse 400-500 kg et est plus grand qu'une voiture.",
+          "tips": [
+            "Les élans sont plus actifs à l'aube et au crépuscule",
+            "Surveillez les fossés et les lisières de forêt le long de la route",
+            "Si une collision est inévitable, freinez fort mais ne déviez pas dans le trafic en sens inverse",
+            "Signalez toute collision avec la faune à la police : 112"
+          ]
+        },
+        {
+          "heading": "Que faire après une collision avec un animal",
+          "text": "Si vous heurtez un animal, arrêtez-vous en sécurité, activez les feux de détresse et appelez la police au 02800 (non-urgence) ou 112 en cas de blessures.",
+          "tips": [
+            "Arrêtez-vous et sécurisez la zone avec les feux de détresse et le triangle de signalisation",
+            "Appelez la police au 02800 ou 112 en cas de blessures",
+            "Notez l'emplacement exact (coordonnées GPS ou bornes routières)",
+            "N'approchez jamais un élan ou un renne blessé"
+          ]
+        }
+      ]
+    },
+    "arctic-weather-driving": {
+      "title": "Conduire par temps arctique",
+      "content": [
+        {
+          "heading": "Froid extrême (-20°C et moins)",
+          "text": "Les températures dans le nord de la Norvège peuvent descendre à -20°C ou moins. Le froid extrême affecte votre voiture, vos pneus et votre corps. Les voitures diesel peuvent avoir du mal à démarrer, les batteries se déchargent plus vite et la pression des pneus baisse.",
+          "tips": [
+            "Gardez toujours le réservoir au moins à moitié plein",
+            "Garez-vous face opposée au vent pour protéger le moteur",
+            "Emportez des vêtements chauds supplémentaires, une couverture et un thermos",
+            "Vérifiez que la voiture de location a un réchauffeur de moteur"
+          ]
+        },
+        {
+          "heading": "Whiteout et blizzard",
+          "text": "Les blizzards arctiques peuvent réduire la visibilité à presque zéro en quelques secondes. La neige soufflée et les vents forts créent des conditions de 'whiteout' où vous ne pouvez plus voir la route.",
+          "tips": [
+            "Si la visibilité chute soudainement, ralentissez progressivement — ne freinez pas brusquement",
+            "Allumez les antibrouillards et les feux de détresse",
+            "Suivez les balises routières (piquets de neige avec réflecteurs)",
+            "Si vous ne voyez plus rien, rangez-vous en sécurité et attendez"
+          ]
+        },
+        {
+          "heading": "Vents latéraux forts",
+          "text": "Les routes côtières et de montagne exposées du nord de la Norvège sont balayées par de puissants vents arctiques. Les ponts, les traversées de fjords et les hauts plateaux sont particulièrement dangereux.",
+          "tips": [
+            "Réduisez la vitesse sur les sections exposées — surtout les ponts et promontoires",
+            "Tenez le volant fermement à deux mains",
+            "Soyez prêt aux rafales soudaines en sortant des tunnels",
+            "Consultez yr.no pour les prévisions de vent avant de prendre des routes exposées"
+          ]
+        }
+      ]
+    }
+  },
+  "dashboard": {
+    "header": "Conditions routières",
+    "customer": "Client",
+    "courseCompleted": "Cours terminé",
+    "selectDestination": "Sélectionnez votre destination",
+    "loading": "Chargement des conditions...",
+    "weather": {
+      "title": "Météo",
+      "wind": "Vent",
+      "precipitation": "Précipitations"
+    },
+    "safetyTips": {
+      "title": "Conseils de sécurité",
+      "highRisk": {
+        "title": "RISQUE ÉLEVÉ",
+        "description": "Envisagez de reporter votre voyage ou d'utiliser un transport alternatif."
+      },
+      "mediumRisk": {
+        "title": "RISQUE MODÉRÉ",
+        "description": "Conduisez avec une prudence accrue. Réduisez la vitesse et augmentez les distances."
+      },
+      "quickReminders": {
+        "title": "Rappels rapides",
+        "tips": [
+          "Gardez les phares allumés en permanence",
+          "Maintenez 4+ secondes de distance",
+          "Vérifiez les conditions avant les cols",
+          "Urgence : 112 (Police), 113 (Ambulance)"
+        ]
+      }
+    },
+    "roadConditions": {
+      "title": "Cols de montagne et routes principales",
+      "statuses": {
+        "open": "OUVERT",
+        "closed": "FERMÉ",
+        "convoy": "CONVOI",
+        "warning": "ATTENTION"
+      },
+      "dataSource": "Données de Statens vegvesen. Dernière mise à jour :"
+    },
+    "moreInfo": "Besoin de plus d'informations ?",
+    "links": {
+      "vegvesen": "Info trafic Vegvesen",
+      "yr": "Météo Yr.no",
+      "varsom": "Varsom.no Avalanches"
+    },
+    "tourism": {
+      "header": "Conditions routières arctiques",
+      "subtitle": "Nord de la Norvège",
+      "heroTitle": "Tromsø — Conditions en direct",
+      "heroSubtitle": "Météo en temps réel, prévisions d'aurores boréales et état des routes pour une conduite sûre dans le nord de la Norvège",
+      "avalancheWarning": "Alerte avalanche",
+      "noAvalanche": "Aucune alerte avalanche en cours.",
+      "fullForecast": "Prévisions complètes sur varsom.no",
+      "roadsTitle": "Routes autour de Tromsø"
+    },
+    "liveDashboard": "Tableau de sécurité",
+    "heroSubtitle": "Conditions de sécurité en temps réel — météo, routes, avalanches, aurores et océan",
+    "refresh": "Actualiser",
+    "safety": {
+      "safe": {
+        "heading": "Conditions sûres",
+        "label": "Les conditions sont globalement sûres pour voyager. Restez vigilant et suivez les conseils locaux."
+      },
+      "caution": {
+        "heading": "Prudence recommandée",
+        "label": "Des risques ont été détectés. Consultez les détails ci-dessous et planifiez votre itinéraire avec soin."
+      },
+      "warning": {
+        "heading": "Attention — Risque élevé",
+        "label": "Dangers importants détectés. Évitez les déplacements non essentiels et vérifiez toutes les conditions ci-dessous."
+      }
+    },
+    "avalanche": {
+      "title": "Alerte avalanche",
+      "level": "Niveau",
+      "fullForecast": "Prévisions complètes sur varsom.no",
+      "noWarnings": "Aucune alerte active",
+      "noWarningsDesc": "Aucune alerte avalanche pour cette zone. Vérifiez toujours les conditions avant de vous aventurer en montagne."
+    },
+    "ocean": {
+      "title": "Océan et côtes",
+      "safe": "Conditions côtières sûres",
+      "caution": "Prudence — mer agitée",
+      "waveHeight": "Hauteur des vagues",
+      "waterTemp": "Temp. eau",
+      "current": "Courant",
+      "unavailable": "Données océaniques indisponibles pour cet emplacement."
+    },
+    "emergency": {
+      "title": "Numéros d'urgence",
+      "emergency": "Urgence",
+      "emergencyDesc": "Police, pompiers, ambulance",
+      "roadside": "Assistance routière",
+      "roadsideDesc": "Viking / Falck",
+      "roadConditions": "Conditions routières",
+      "roadConditionsDesc": "Vegtrafikksentralen",
+      "avalanche": "Alerte avalanche",
+      "avalancheDesc": "NVE / Varsom"
+    },
+    "roadsPrefix": "Routes",
+    "disclaimer": "Toutes les données sont fournies à titre informatif. Suivez toujours les conseils des autorités locales."
+  },
+  "destinations": {
+    "oslo": "Oslo",
+    "bergen": "Bergen",
+    "tromso": "Tromsø",
+    "trondheim": "Trondheim",
+    "lofoten": "Lofoten",
+    "nordkapp": "Nordkapp",
+    "geiranger": "Geiranger",
+    "stavanger": "Stavanger"
+  }
+}

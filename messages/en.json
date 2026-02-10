@@ -1,0 +1,604 @@
+{
+  "common": {
+    "loading": "Loading...",
+    "continue": "Continue",
+    "next": "Next",
+    "back": "Back",
+    "finish": "Finish",
+    "selectLanguage": "Select language",
+    "poweredBy": "Powered by WinterReady"
+  },
+  "home": {
+    "title": "WinterReady Norway",
+    "subtitle": "Prepare for safe winter driving in Norway",
+    "b2bBadge": "Arctic Winter Safety Platform",
+    "compliance": {
+      "title": "Safety First",
+      "description": "Comprehensive winter safety training based on real conditions"
+    },
+    "adaptive": {
+      "title": "Adaptive Training",
+      "description": "Personalized courses based on your experience level"
+    },
+    "realtime": {
+      "title": "Real-time Data",
+      "description": "Live weather and road conditions from official Norwegian sources"
+    },
+    "demo": {
+      "title": "Try the Demo",
+      "description": "Experience the winter safety course",
+      "button": "Start Demo"
+    },
+    "footer": "WinterReady Norway - Keeping winter travelers safe since 2026"
+  },
+  "companyLanding": {
+    "tourismWelcomeTitle": "Welcome to Arctic Norway!",
+    "tourismWelcomeSubtitle": "Before your adventure, get prepared for safe winter driving in Northern Norway.",
+    "arcticConditions": {
+      "title": "Arctic Conditions",
+      "description": "Northern Norway has extreme weather — polar darkness, icy roads, and wildlife on the road."
+    },
+    "safetyBriefing": {
+      "title": "Safety Briefing",
+      "description": "A quick assessment tailors your safety course to your experience level (2-3 minutes)."
+    },
+    "liveConditions": {
+      "title": "Live Aurora & Conditions",
+      "description": "Real-time aurora forecast, weather, avalanche warnings, and road status."
+    },
+    "startBriefing": "Start Your Safety Briefing",
+    "timeTakes": "This will only take 2-3 minutes"
+  },
+  "assessment": {
+    "step": "Step",
+    "of": "of",
+    "questions": {
+      "winterExperience": {
+        "title": "Have you driven on snow or ice before?",
+        "subtitle": "Select the option that best describes you",
+        "options": {
+          "never": {
+            "label": "Never",
+            "description": "This will be my first time"
+          },
+          "fewTimes": {
+            "label": "A few times",
+            "description": "I have some experience"
+          },
+          "regularly": {
+            "label": "Regularly",
+            "description": "I drive in winter conditions often"
+          }
+        }
+      },
+      "homeCountry": {
+        "title": "Where are you from?",
+        "subtitle": "This helps us tailor the information to your experience",
+        "placeholder": "Select your country"
+      },
+      "destination": {
+        "title": "Where will you be driving?",
+        "subtitle": "Select the type of roads you will mainly be driving on",
+        "options": {
+          "mountain": {
+            "label": "Mountain areas",
+            "description": "Mountain passes, highland roads, steep gradients (e.g. Hardangervidda, Trollstigen)"
+          },
+          "coast": {
+            "label": "Coastal areas",
+            "description": "Coastal roads with wind and sea spray (e.g. Bergen, Stavanger, Atlantic Road)"
+          },
+          "city": {
+            "label": "Cities only",
+            "description": "Urban driving on plowed roads (e.g. Oslo, Trondheim, Bergen city)"
+          },
+          "mixed": {
+            "label": "Mixed / Unsure",
+            "description": "Multiple road types and regions, or unsure of your route"
+          }
+        }
+      },
+      "tripDuration": {
+        "title": "How long will you be driving?",
+        "subtitle": "Longer trips mean more variation in road and weather conditions",
+        "options": {
+          "dayTrip": {
+            "label": "Day trip",
+            "description": "Just a few hours"
+          },
+          "fewDays": {
+            "label": "A few days",
+            "description": "2-4 days of driving"
+          },
+          "weekPlus": {
+            "label": "A week or more",
+            "description": "Extended road trip"
+          }
+        }
+      }
+    },
+    "countries": {
+      "germany": "Germany",
+      "netherlands": "Netherlands",
+      "united_kingdom": "United Kingdom",
+      "denmark": "Denmark",
+      "france": "France",
+      "spain": "Spain",
+      "italy": "Italy",
+      "belgium": "Belgium",
+      "poland": "Poland",
+      "czech_republic": "Czech Republic",
+      "usa": "United States",
+      "china": "China",
+      "japan": "Japan",
+      "south_korea": "South Korea",
+      "australia": "Australia",
+      "sweden": "Sweden",
+      "finland": "Finland",
+      "canada": "Canada",
+      "other": "Other"
+    }
+  },
+  "course": {
+    "header": "Winter Safety Course",
+    "riskLevel": {
+      "low": "LOW RISK",
+      "medium": "MEDIUM RISK",
+      "high": "HIGH RISK"
+    },
+    "loading": "Loading course...",
+    "keyPoints": "Key Points:",
+    "nextModule": "Next Module",
+    "completeCourse": "Complete Course",
+    "destinationSelect": {
+      "title": "Where in Norway are you heading?",
+      "subtitle": "Select your destination for location-specific safety information",
+      "descriptions": {
+        "oslo": "Capital city, urban driving",
+        "bergen": "Rainy coast, fjord roads",
+        "tromso": "Arctic city, polar darkness zone",
+        "trondheim": "Central Norway, coastal climate",
+        "lofoten": "Island roads, bridges, scenic routes",
+        "nordkapp": "Extreme north, exposed roads",
+        "geiranger": "Fjord roads, steep mountain passes",
+        "stavanger": "Southern coast, milder winters"
+      }
+    },
+    "safetySummary": {
+      "title": "Your Safety Summary",
+      "subtitle": "Live conditions for {destination}",
+      "loading": "Loading live conditions for your destination...",
+      "overallSafety": "Overall Safety Assessment",
+      "overallSafe": "Conditions are generally safe. Standard winter precautions apply.",
+      "overallCaution": "Some conditions require extra caution. Review the warnings below.",
+      "overallWarning": "Multiple risk factors are active. Consider adjusting your plans.",
+      "weather": "Current Weather",
+      "aurora": "Aurora Forecast",
+      "avalanche": "Avalanche Warnings",
+      "ocean": "Sea Conditions",
+      "roads": "Road Conditions",
+      "noAvalanche": "No current avalanche warnings for this area.",
+      "oceanSafe": "Safe for boat tours",
+      "oceanUnsafe": "Rough seas — boat tours may be cancelled",
+      "waveHeight": "Wave Height",
+      "waterTemp": "Water Temperature",
+      "keyTakeaways": "Key Takeaways From Your Course",
+      "personalizedTips": "Tips For Your Trip",
+      "dataDisclaimer": "Data from Yr.no, NOAA, NVE Varsom, and MET Norway. Always check official sources before traveling.",
+      "proceedToCertificate": "Get Your Certificate",
+      "temperature": "Temperature",
+      "wind": "Wind",
+      "precipitation": "Precipitation",
+      "kpIndex": "KP Index",
+      "probability": "Probability",
+      "bestTime": "Best Time",
+      "dangerLevel": "Danger Level"
+    },
+    "completion": {
+      "title": "Course Completed!",
+      "subtitle": "You're now prepared for winter driving in Norway. Stay safe and enjoy your trip!",
+      "certificate": "Certificate of Completion",
+      "courseName": "WinterReady Safety Course",
+      "viewDashboard": "View Road Conditions Dashboard",
+      "namePlaceholder": "Enter your name for the certificate",
+      "modules": "Modules completed",
+      "riskLevel": "Risk level",
+      "date": "Date",
+      "downloadCertificate": "Download Certificate (PDF)",
+      "generating": "Generating..."
+    }
+  },
+  "modules": {
+    "winter-basics": {
+      "title": "Winter Driving Basics",
+      "content": [
+        {
+          "heading": "Reduce Your Speed",
+          "text": "In winter conditions, your stopping distance can be up to 10 times longer than on dry roads. Always drive slower than you would in summer.",
+          "tips": [
+            "Reduce speed by at least 20-30% in snow",
+            "Reduce speed by 50% or more on ice",
+            "Speed limits are maximums, not targets"
+          ]
+        },
+        {
+          "heading": "Increase Following Distance",
+          "text": "Keep at least 4-6 seconds of distance to the car in front of you. This gives you time to react and stop safely.",
+          "tips": [
+            "Use the '4 second rule' - count seconds after the car ahead passes a landmark",
+            "Double this distance in heavy snow or ice"
+          ]
+        },
+        {
+          "heading": "Smooth Movements",
+          "text": "Avoid sudden movements of the steering wheel, accelerator, or brakes. Smooth, gradual inputs help maintain traction.",
+          "tips": [
+            "Accelerate gently from stops",
+            "Brake gradually, never slam the brakes",
+            "Steer smoothly without jerky movements"
+          ]
+        }
+      ]
+    },
+    "braking-techniques": {
+      "title": "Braking on Ice & Snow",
+      "content": [
+        {
+          "heading": "ABS Braking",
+          "text": "Modern cars have ABS (Anti-lock Braking System). When braking on slippery surfaces, press the brake firmly and hold it - let the ABS do its job. You may feel pulsing in the pedal; this is normal.",
+          "tips": [
+            "Press and hold the brake firmly",
+            "Don't pump the brakes with ABS",
+            "Keep steering while braking"
+          ]
+        },
+        {
+          "heading": "Engine Braking",
+          "text": "Use engine braking by shifting to a lower gear (or using 'B' mode in automatics). This slows the car without using the brakes and reduces the risk of wheel lock.",
+          "tips": [
+            "Downshift gradually on hills",
+            "Use engine braking before curves"
+          ]
+        }
+      ]
+    },
+    "black-ice": {
+      "title": "Black Ice Awareness",
+      "content": [
+        {
+          "heading": "What is Black Ice?",
+          "text": "Black ice is a thin, nearly invisible layer of ice on the road. It's called 'black' because you can see the dark road surface through it. It's extremely slippery and often catches drivers by surprise.",
+          "tips": [
+            "Most common in early morning and evening",
+            "Forms on bridges, overpasses, and shaded areas first",
+            "Watch for glossy patches on the road"
+          ]
+        },
+        {
+          "heading": "If You Hit Black Ice",
+          "text": "Stay calm. Don't brake or steer suddenly. Take your foot off the accelerator and let the car slow naturally. Keep the steering wheel straight until you regain traction.",
+          "tips": [
+            "Don't panic - stay calm",
+            "Ease off the accelerator",
+            "Keep the wheel straight",
+            "Don't brake unless absolutely necessary"
+          ]
+        }
+      ]
+    },
+    "mountain-driving": {
+      "title": "Mountain & Fjord Driving",
+      "content": [
+        {
+          "heading": "Steep Hills & Passes",
+          "text": "Norwegian mountain roads can have steep gradients. Use low gear when going downhill to control speed. Never coast in neutral.",
+          "tips": [
+            "Use low gear (1, 2, or L) on steep descents",
+            "Don't ride the brakes - they can overheat",
+            "Pull over at designated rest areas if needed"
+          ]
+        },
+        {
+          "heading": "Single Lane Roads",
+          "text": "Many mountain roads are single-lane with passing places. The car going uphill generally has right of way. Pull into passing places to let others pass.",
+          "tips": [
+            "Look ahead for passing places",
+            "Reverse to a passing place if needed",
+            "Flash lights to signal you're letting someone pass"
+          ]
+        },
+        {
+          "heading": "Kolonnekjoring (Convoy Driving)",
+          "text": "In severe weather, roads may only be open for convoy driving - you follow a snowplow in a group. Check road status before driving.",
+          "tips": [
+            "Check vegvesen.no or the 175 app for road status",
+            "Wait at the convoy meeting point",
+            "Never try to overtake the convoy"
+          ]
+        }
+      ]
+    },
+    "norwegian-rules": {
+      "title": "Norwegian Traffic Rules",
+      "content": [
+        {
+          "heading": "Blood Alcohol Limit",
+          "text": "Norway has one of the strictest drink-driving laws in Europe. The legal limit is 0.02% BAC - effectively zero tolerance. Penalties include heavy fines, license suspension, and even imprisonment.",
+          "tips": [
+            "0.02% limit - even one drink can put you over",
+            "If you drink, don't drive at all",
+            "Penalties are severe: fines, jail, license loss"
+          ]
+        },
+        {
+          "heading": "Headlights Always On",
+          "text": "You must drive with headlights on at all times in Norway, day and night, all year round.",
+          "tips": [
+            "Use dipped/low beam headlights",
+            "Check lights are working before your trip"
+          ]
+        },
+        {
+          "heading": "Speed Limits",
+          "text": "Speed limits in Norway are generally lower than other European countries. Common limits: 50 km/h in towns, 80 km/h on rural roads, 90-110 km/h on highways.",
+          "tips": [
+            "Fines are based on income and can be very high",
+            "Speed cameras are common",
+            "Limits are maximums - reduce in bad weather"
+          ]
+        }
+      ]
+    },
+    "emergency-procedures": {
+      "title": "Emergency Procedures",
+      "content": [
+        {
+          "heading": "Emergency Numbers",
+          "text": "In case of emergency, call these numbers immediately:",
+          "tips": [
+            "112 - Police",
+            "113 - Ambulance",
+            "110 - Fire",
+            "These numbers work from any phone"
+          ]
+        },
+        {
+          "heading": "If You Get Stuck",
+          "text": "If your car gets stuck in snow or you slide off the road, stay calm and assess the situation.",
+          "tips": [
+            "Turn on hazard lights",
+            "Stay in the car if it's cold outside",
+            "Call for help: roadside assistance or 112",
+            "Keep emergency kit: warm clothes, blanket, water, snacks"
+          ]
+        },
+        {
+          "heading": "Viking Roadside Assistance",
+          "text": "Most rental cars in Norway include Viking roadside assistance. Check your rental agreement for the phone number. They can help with breakdowns, flat tires, and getting unstuck.",
+          "tips": [
+            "Keep the Viking number saved in your phone",
+            "Typical number: 06000 or check rental papers"
+          ]
+        }
+      ]
+    },
+    "polar-darkness": {
+      "title": "Driving in Polar Darkness",
+      "content": [
+        {
+          "heading": "The Polar Night (Mørketid)",
+          "text": "In Northern Norway above the Arctic Circle, the sun doesn't rise for weeks during winter. In Tromsø, polar night lasts from late November to mid-January. Even outside this period, daylight hours are very short.",
+          "tips": [
+            "Tromsø has no sunrise from Nov 21 to Jan 21",
+            "The 'blue light' of polar twilight can be deceptively dim",
+            "Your perception of distance and speed changes in constant darkness"
+          ]
+        },
+        {
+          "heading": "Headlight Strategy",
+          "text": "In total darkness, your headlights are your lifeline. Use low beams in built-up areas and high beams on open roads — but be ready to switch quickly.",
+          "tips": [
+            "Always use low beam in towns and when meeting traffic",
+            "Switch to high beam on open roads with no oncoming cars",
+            "Keep headlights and windscreen clean — salt and grime reduce visibility fast",
+            "Use fog lights only in fog or heavy snowfall"
+          ]
+        },
+        {
+          "heading": "Fatigue & Alertness",
+          "text": "Driving in continuous darkness is mentally exhausting. Your body's circadian rhythm is disrupted, and drowsiness is a serious risk.",
+          "tips": [
+            "Take breaks every 1-2 hours — stop, stretch, get fresh air",
+            "Don't drive if you feel drowsy — find a safe place to rest",
+            "Keep the car slightly cool to stay alert",
+            "Avoid heavy meals before driving"
+          ]
+        }
+      ]
+    },
+    "wildlife-roads": {
+      "title": "Wildlife on Arctic Roads",
+      "content": [
+        {
+          "heading": "Reindeer — The Arctic Highway Hazard",
+          "text": "Reindeer roam freely across roads in Northern Norway. They are semi-domesticated by Sámi herders and have no fear of cars. If you see one, expect more to follow.",
+          "tips": [
+            "Reindeer often travel in herds — if one crosses, slow down and wait",
+            "Most common at dawn, dusk, and during polar twilight",
+            "Reduce speed near warning signs (yellow triangle with reindeer)",
+            "They may freeze in headlights — honk gently and wait"
+          ]
+        },
+        {
+          "heading": "Moose — Large and Dangerous",
+          "text": "Moose (elg) are the largest animals in Scandinavia and a collision can be fatal. An adult moose weighs 400-500 kg and stands taller than a car.",
+          "tips": [
+            "Moose are most active at dawn and dusk",
+            "Watch the ditches and forest edges alongside the road",
+            "If a collision is unavoidable, brake hard but don't swerve into oncoming traffic",
+            "Report any wildlife collision to police: 112"
+          ]
+        },
+        {
+          "heading": "What To Do After a Wildlife Collision",
+          "text": "If you hit an animal, stop safely, turn on hazard lights, and call the police at 02800 (non-emergency) or 112 if anyone is injured.",
+          "tips": [
+            "Stop and secure the area with hazard lights and warning triangle",
+            "Call police at 02800 or 112 for injuries",
+            "Note the exact location (GPS coordinates or road markers)",
+            "Never approach an injured moose or reindeer"
+          ]
+        }
+      ]
+    },
+    "arctic-weather-driving": {
+      "title": "Driving in Arctic Weather",
+      "content": [
+        {
+          "heading": "Extreme Cold (-20°C and Below)",
+          "text": "Temperatures in Northern Norway can drop to -20°C or lower. Extreme cold affects your car, your tires, and your body. Diesel cars can struggle to start, batteries drain faster, and tire pressure drops.",
+          "tips": [
+            "Always keep the fuel tank at least half full",
+            "Park facing away from the wind to protect the engine",
+            "Carry extra warm clothing, a blanket, and a thermos",
+            "Check that the rental car has an engine block heater"
+          ]
+        },
+        {
+          "heading": "Whiteout & Blizzard Conditions",
+          "text": "Arctic blizzards can reduce visibility to near zero in seconds. Drifting snow and strong winds create 'whiteout' conditions where you cannot see the road.",
+          "tips": [
+            "If visibility drops suddenly, slow down gradually — don't brake hard",
+            "Turn on fog lights and hazard lights",
+            "Follow the road markers (snow poles with reflectors)",
+            "If you can't see at all, pull off the road safely and wait it out"
+          ]
+        },
+        {
+          "heading": "Strong Crosswinds",
+          "text": "Exposed coastal and mountain roads in Northern Norway are hit by powerful Arctic winds. Bridges, fjord crossings, and high plateaus are especially dangerous.",
+          "tips": [
+            "Reduce speed on exposed sections — especially bridges and headlands",
+            "Grip the steering wheel firmly with both hands",
+            "Be prepared for sudden gusts when exiting tunnels",
+            "Check yr.no for wind forecasts before driving exposed routes"
+          ]
+        }
+      ]
+    }
+  },
+  "dashboard": {
+    "header": "Road Conditions Dashboard",
+    "customer": "Customer",
+    "courseCompleted": "Course completed",
+    "selectDestination": "Select your destination",
+    "loading": "Loading conditions...",
+    "weather": {
+      "title": "Weather",
+      "wind": "Wind",
+      "precipitation": "Precipitation"
+    },
+    "safetyTips": {
+      "title": "Safety Tips",
+      "highRisk": {
+        "title": "HIGH RISK CONDITIONS",
+        "description": "Consider postponing your trip or using alternative transport."
+      },
+      "mediumRisk": {
+        "title": "MODERATE RISK",
+        "description": "Drive with extra caution. Reduce speed and increase following distance."
+      },
+      "quickReminders": {
+        "title": "Quick Reminders",
+        "tips": [
+          "Keep headlights on at all times",
+          "Maintain 4+ seconds following distance",
+          "Check road conditions before mountain passes",
+          "Emergency: 112 (Police), 113 (Ambulance)"
+        ]
+      }
+    },
+    "roadConditions": {
+      "title": "Mountain Passes & Key Routes",
+      "statuses": {
+        "open": "OPEN",
+        "closed": "CLOSED",
+        "convoy": "CONVOY",
+        "warning": "WARNING"
+      },
+      "dataSource": "Data from Statens vegvesen. Last updated:"
+    },
+    "moreInfo": "Need more information?",
+    "links": {
+      "vegvesen": "Vegvesen Traffic Info",
+      "yr": "Yr.no Weather",
+      "varsom": "Varsom.no Avalanche"
+    },
+    "tourism": {
+      "header": "Arctic Road Conditions",
+      "subtitle": "Northern Norway",
+      "heroTitle": "Tromsø — Live Conditions",
+      "heroSubtitle": "Real-time weather, aurora forecast, and road status for safe driving in Northern Norway",
+      "avalancheWarning": "Avalanche Warning",
+      "noAvalanche": "No current avalanche warnings.",
+      "fullForecast": "Full forecast on varsom.no",
+      "roadsTitle": "Roads Around Tromsø"
+    },
+    "liveDashboard": "Live Safety Dashboard",
+    "heroSubtitle": "Real-time safety conditions — weather, roads, avalanche, aurora & ocean",
+    "refresh": "Refresh",
+    "safety": {
+      "safe": {
+        "heading": "Safe Conditions",
+        "label": "Conditions are generally safe for travel. Stay alert and follow local advice."
+      },
+      "caution": {
+        "heading": "Exercise Caution",
+        "label": "Some risks detected. Check details below and plan your route carefully."
+      },
+      "warning": {
+        "heading": "Warning — High Risk",
+        "label": "Significant hazards detected. Avoid unnecessary travel and check all conditions below."
+      }
+    },
+    "avalanche": {
+      "title": "Avalanche Warning",
+      "level": "Level",
+      "fullForecast": "Full forecast on varsom.no",
+      "noWarnings": "No Active Warnings",
+      "noWarningsDesc": "No avalanche warnings issued for this area. Always check conditions before heading into mountain terrain."
+    },
+    "ocean": {
+      "title": "Ocean & Coastal",
+      "safe": "Safe for coastal activities",
+      "caution": "Caution — rough seas",
+      "waveHeight": "Wave Height",
+      "waterTemp": "Water Temp",
+      "current": "Current",
+      "unavailable": "Ocean data unavailable for this location."
+    },
+    "emergency": {
+      "title": "Emergency Numbers",
+      "emergency": "Emergency",
+      "emergencyDesc": "Police, Fire, Ambulance",
+      "roadside": "Roadside Assistance",
+      "roadsideDesc": "Viking / Falck",
+      "roadConditions": "Road Conditions",
+      "roadConditionsDesc": "Vegtrafikksentralen",
+      "avalanche": "Avalanche Warning",
+      "avalancheDesc": "NVE / Varsom"
+    },
+    "roadsPrefix": "Roads",
+    "disclaimer": "All data provided for informational purposes. Always follow local authorities' advice."
+  },
+  "destinations": {
+    "oslo": "Oslo",
+    "bergen": "Bergen",
+    "tromso": "Tromsø",
+    "trondheim": "Trondheim",
+    "lofoten": "Lofoten",
+    "nordkapp": "Nordkapp",
+    "geiranger": "Geiranger",
+    "stavanger": "Stavanger"
+  }
+}

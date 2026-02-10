@@ -1,0 +1,604 @@
+{
+  "common": {
+    "loading": "Laden...",
+    "continue": "Weiter",
+    "next": "Nächste",
+    "back": "Zurück",
+    "finish": "Fertig",
+    "selectLanguage": "Sprache wählen",
+    "poweredBy": "Bereitgestellt von WinterReady"
+  },
+  "home": {
+    "title": "WinterReady Norwegen",
+    "subtitle": "Bereiten Sie sich auf sicheres Winterfahren in Norwegen vor",
+    "b2bBadge": "Arktische Wintersicherheitsplattform",
+    "compliance": {
+      "title": "Sicherheit zuerst",
+      "description": "Umfassendes Wintersicherheitstraining basierend auf realen Bedingungen"
+    },
+    "adaptive": {
+      "title": "Adaptives Training",
+      "description": "Personalisierte Kurse basierend auf Ihrem Erfahrungsniveau"
+    },
+    "realtime": {
+      "title": "Echtzeit-Daten",
+      "description": "Live-Wetter und Straßenzustand aus offiziellen norwegischen Quellen"
+    },
+    "demo": {
+      "title": "Demo testen",
+      "description": "Erleben Sie den Wintersicherheitskurs",
+      "button": "Demo starten"
+    },
+    "footer": "WinterReady Norwegen - Hält Winterreisende seit 2026 sicher"
+  },
+  "companyLanding": {
+    "tourismWelcomeTitle": "Willkommen im arktischen Norwegen!",
+    "tourismWelcomeSubtitle": "Bevor Ihr Abenteuer beginnt, bereiten Sie sich auf sicheres Winterfahren in Nordnorwegen vor.",
+    "arcticConditions": {
+      "title": "Arktische Bedingungen",
+      "description": "Nordnorwegen hat extremes Wetter — Polarnacht, vereiste Straßen und Wildtiere auf der Fahrbahn."
+    },
+    "safetyBriefing": {
+      "title": "Sicherheitsbriefing",
+      "description": "Eine kurze Bewertung passt Ihren Sicherheitskurs an Ihr Erfahrungsniveau an (2-3 Minuten)."
+    },
+    "liveConditions": {
+      "title": "Live Nordlicht & Bedingungen",
+      "description": "Echtzeit-Nordlichtprognose, Wetter, Lawinenwarnungen und Straßenstatus."
+    },
+    "startBriefing": "Sicherheitsbriefing starten",
+    "timeTakes": "Dies dauert nur 2-3 Minuten"
+  },
+  "assessment": {
+    "step": "Schritt",
+    "of": "von",
+    "questions": {
+      "winterExperience": {
+        "title": "Sind Sie schon auf Schnee oder Eis gefahren?",
+        "subtitle": "Wählen Sie die Option, die Sie am besten beschreibt",
+        "options": {
+          "never": {
+            "label": "Nie",
+            "description": "Das wird mein erstes Mal"
+          },
+          "fewTimes": {
+            "label": "Ein paar Mal",
+            "description": "Ich habe etwas Erfahrung"
+          },
+          "regularly": {
+            "label": "Regelmäßig",
+            "description": "Ich fahre oft im Winter"
+          }
+        }
+      },
+      "homeCountry": {
+        "title": "Woher kommen Sie?",
+        "subtitle": "Dies hilft uns, die Informationen an Ihre Erfahrung anzupassen",
+        "placeholder": "Wählen Sie Ihr Land"
+      },
+      "destination": {
+        "title": "Wo werden Sie fahren?",
+        "subtitle": "Wählen Sie die Art der Straßen, auf denen Sie hauptsächlich fahren werden",
+        "options": {
+          "mountain": {
+            "label": "Berggebiete",
+            "description": "Bergpässe, Hochlandstraßen, steile Steigungen (z.B. Hardangervidda, Trollstigen)"
+          },
+          "coast": {
+            "label": "Küstengebiete",
+            "description": "Küstenstraßen mit Wind und Gischt (z.B. Bergen, Stavanger, Atlantikstraße)"
+          },
+          "city": {
+            "label": "Nur Städte",
+            "description": "Stadtfahrten auf geräumten Straßen (z.B. Oslo, Trondheim, Bergen Zentrum)"
+          },
+          "mixed": {
+            "label": "Gemischt / Unsicher",
+            "description": "Mehrere Straßentypen und Regionen, oder unsicher über Ihre Route"
+          }
+        }
+      },
+      "tripDuration": {
+        "title": "Wie lange werden Sie fahren?",
+        "subtitle": "Längere Fahrten bedeuten mehr Variation bei Straßen- und Wetterbedingungen",
+        "options": {
+          "dayTrip": {
+            "label": "Tagesausflug",
+            "description": "Nur ein paar Stunden"
+          },
+          "fewDays": {
+            "label": "Ein paar Tage",
+            "description": "2-4 Tage Fahrt"
+          },
+          "weekPlus": {
+            "label": "Eine Woche oder mehr",
+            "description": "Ausgedehnte Autoreise"
+          }
+        }
+      }
+    },
+    "countries": {
+      "germany": "Deutschland",
+      "netherlands": "Niederlande",
+      "united_kingdom": "Großbritannien",
+      "denmark": "Dänemark",
+      "france": "Frankreich",
+      "spain": "Spanien",
+      "italy": "Italien",
+      "belgium": "Belgien",
+      "poland": "Polen",
+      "czech_republic": "Tschechien",
+      "usa": "Vereinigte Staaten",
+      "china": "China",
+      "japan": "Japan",
+      "south_korea": "Südkorea",
+      "australia": "Australien",
+      "sweden": "Schweden",
+      "finland": "Finnland",
+      "canada": "Kanada",
+      "other": "Andere"
+    }
+  },
+  "course": {
+    "header": "Winter-Sicherheitskurs",
+    "riskLevel": {
+      "low": "NIEDRIGES RISIKO",
+      "medium": "MITTLERES RISIKO",
+      "high": "HOHES RISIKO"
+    },
+    "loading": "Kurs laden...",
+    "keyPoints": "Wichtige Punkte:",
+    "nextModule": "Nächstes Modul",
+    "completeCourse": "Kurs abschließen",
+    "destinationSelect": {
+      "title": "Wohin in Norwegen reisen Sie?",
+      "subtitle": "Wählen Sie Ihr Reiseziel für standortspezifische Sicherheitsinformationen",
+      "descriptions": {
+        "oslo": "Hauptstadt, Stadtverkehr",
+        "bergen": "Regenreiche Küste, Fjordstraßen",
+        "tromso": "Arktische Stadt, Polarnachtzone",
+        "trondheim": "Mittelnorwegen, Küstenklima",
+        "lofoten": "Inselstraßen, Brücken, Panoramarouten",
+        "nordkapp": "Äußerster Norden, exponierte Straßen",
+        "geiranger": "Fjordstraßen, steile Bergpässe",
+        "stavanger": "Südküste, mildere Winter"
+      }
+    },
+    "safetySummary": {
+      "title": "Ihre Sicherheitsübersicht",
+      "subtitle": "Live-Bedingungen für {destination}",
+      "loading": "Lade Live-Bedingungen für Ihr Reiseziel...",
+      "overallSafety": "Gesamtsicherheitsbewertung",
+      "overallSafe": "Die Bedingungen sind generell sicher. Standard-Wintervorsichtsmaßnahmen gelten.",
+      "overallCaution": "Einige Bedingungen erfordern besondere Vorsicht. Beachten Sie die Warnungen unten.",
+      "overallWarning": "Mehrere Risikofaktoren sind aktiv. Erwägen Sie, Ihre Pläne anzupassen.",
+      "weather": "Aktuelles Wetter",
+      "aurora": "Nordlichtprognose",
+      "avalanche": "Lawinenwarnungen",
+      "ocean": "Seebedingungen",
+      "roads": "Straßenstatus",
+      "noAvalanche": "Keine aktuellen Lawinenwarnungen für dieses Gebiet.",
+      "oceanSafe": "Sicher für Bootstouren",
+      "oceanUnsafe": "Raue See — Bootstouren können ausfallen",
+      "waveHeight": "Wellenhöhe",
+      "waterTemp": "Wassertemperatur",
+      "keyTakeaways": "Wichtigste Erkenntnisse aus Ihrem Kurs",
+      "personalizedTips": "Tipps für Ihre Reise",
+      "dataDisclaimer": "Daten von Yr.no, NOAA, NVE Varsom und MET Norwegen. Prüfen Sie immer offizielle Quellen vor der Reise.",
+      "proceedToCertificate": "Zertifikat erhalten",
+      "temperature": "Temperatur",
+      "wind": "Wind",
+      "precipitation": "Niederschlag",
+      "kpIndex": "KP-Index",
+      "probability": "Wahrscheinlichkeit",
+      "bestTime": "Beste Zeit",
+      "dangerLevel": "Gefahrenstufe"
+    },
+    "completion": {
+      "title": "Kurs abgeschlossen!",
+      "subtitle": "Sie sind jetzt auf das Winterfahren in Norwegen vorbereitet. Fahren Sie sicher und genießen Sie Ihre Reise!",
+      "certificate": "Abschlusszertifikat",
+      "courseName": "WinterReady Sicherheitskurs",
+      "viewDashboard": "Straßenzustand ansehen",
+      "namePlaceholder": "Geben Sie Ihren Namen für das Zertifikat ein",
+      "modules": "Abgeschlossene Module",
+      "riskLevel": "Risikoniveau",
+      "date": "Datum",
+      "downloadCertificate": "Zertifikat herunterladen (PDF)",
+      "generating": "Wird erstellt..."
+    }
+  },
+  "modules": {
+    "winter-basics": {
+      "title": "Grundlagen des Winterfahrens",
+      "content": [
+        {
+          "heading": "Reduzieren Sie Ihre Geschwindigkeit",
+          "text": "Bei Winterbedingungen kann Ihr Bremsweg bis zu 10 mal länger sein als auf trockener Straße. Fahren Sie immer langsamer als im Sommer.",
+          "tips": [
+            "Reduzieren Sie die Geschwindigkeit bei Schnee um mindestens 20-30%",
+            "Reduzieren Sie die Geschwindigkeit auf Eis um 50% oder mehr",
+            "Geschwindigkeitsbegrenzungen sind Höchstwerte, keine Ziele"
+          ]
+        },
+        {
+          "heading": "Sicherheitsabstand erhöhen",
+          "text": "Halten Sie mindestens 4-6 Sekunden Abstand zum vorausfahrenden Fahrzeug. Dies gibt Ihnen Zeit zu reagieren und sicher anzuhalten.",
+          "tips": [
+            "Verwenden Sie die '4-Sekunden-Regel' - zählen Sie nach einem Orientierungspunkt",
+            "Verdoppeln Sie diesen Abstand bei starkem Schnee oder Eis"
+          ]
+        },
+        {
+          "heading": "Sanfte Bewegungen",
+          "text": "Vermeiden Sie abrupte Bewegungen des Lenkrads, Gaspedals oder der Bremsen. Sanfte, allmähliche Eingaben helfen, die Traktion zu erhalten.",
+          "tips": [
+            "Beschleunigen Sie sanft vom Stand",
+            "Bremsen Sie allmählich, niemals abrupt",
+            "Lenken Sie sanft ohne ruckartige Bewegungen"
+          ]
+        }
+      ]
+    },
+    "braking-techniques": {
+      "title": "Bremsen auf Eis und Schnee",
+      "content": [
+        {
+          "heading": "ABS-Bremsen",
+          "text": "Moderne Autos haben ABS (Antiblockiersystem). Beim Bremsen auf rutschigen Oberflächen drücken Sie das Bremspedal fest und halten es - lassen Sie das ABS arbeiten. Sie können ein Pulsieren im Pedal spüren; das ist normal.",
+          "tips": [
+            "Drücken und halten Sie die Bremse fest",
+            "Pumpen Sie nicht die Bremsen mit ABS",
+            "Lenken Sie weiter beim Bremsen"
+          ]
+        },
+        {
+          "heading": "Motorbremse",
+          "text": "Verwenden Sie die Motorbremse, indem Sie in einen niedrigeren Gang schalten (oder 'B'-Modus bei Automatik). Dies verlangsamt das Auto ohne Bremsen und reduziert das Risiko von Radblockierung.",
+          "tips": [
+            "Schalten Sie bergab allmählich herunter",
+            "Verwenden Sie Motorbremse vor Kurven"
+          ]
+        }
+      ]
+    },
+    "black-ice": {
+      "title": "Schwarzeis-Bewusstsein",
+      "content": [
+        {
+          "heading": "Was ist Schwarzeis?",
+          "text": "Schwarzeis ist eine dünne, fast unsichtbare Eisschicht auf der Straße. Es wird 'schwarz' genannt, weil Sie die dunkle Straßenoberfläche durchsehen können. Es ist extrem rutschig und überrascht oft Fahrer.",
+          "tips": [
+            "Am häufigsten am frühen Morgen und Abend",
+            "Bildet sich zuerst auf Brücken, Überführungen und schattigen Bereichen",
+            "Achten Sie auf glänzende Stellen auf der Straße"
+          ]
+        },
+        {
+          "heading": "Wenn Sie auf Schwarzeis geraten",
+          "text": "Bleiben Sie ruhig. Bremsen oder lenken Sie nicht plötzlich. Nehmen Sie den Fuß vom Gas und lassen Sie das Auto natürlich abbremsen. Halten Sie das Lenkrad gerade, bis Sie wieder Traktion haben.",
+          "tips": [
+            "Keine Panik - bleiben Sie ruhig",
+            "Gehen Sie sanft vom Gas",
+            "Halten Sie das Lenkrad gerade",
+            "Bremsen Sie nur, wenn absolut notwendig"
+          ]
+        }
+      ]
+    },
+    "mountain-driving": {
+      "title": "Berg- und Fjordfahren",
+      "content": [
+        {
+          "heading": "Steile Hänge und Pässe",
+          "text": "Norwegische Bergstraßen können steile Steigungen haben. Verwenden Sie bergab einen niedrigen Gang zur Geschwindigkeitskontrolle. Fahren Sie niemals im Leerlauf.",
+          "tips": [
+            "Verwenden Sie niedrigen Gang (1, 2 oder L) bei steilen Abfahrten",
+            "Bremsen Sie nicht dauerhaft - sie können überhitzen",
+            "Halten Sie bei ausgewiesenen Rastplätzen wenn nötig"
+          ]
+        },
+        {
+          "heading": "Einspurige Straßen",
+          "text": "Viele Bergstraßen sind einspurig mit Ausweichstellen. Das bergauf fahrende Auto hat generell Vorfahrt. Fahren Sie in Ausweichstellen, um andere passieren zu lassen.",
+          "tips": [
+            "Schauen Sie voraus nach Ausweichstellen",
+            "Fahren Sie wenn nötig zu einer Ausweichstelle zurück",
+            "Blinken Sie, um zu signalisieren, dass Sie jemanden passieren lassen"
+          ]
+        },
+        {
+          "heading": "Kolonnenfahren",
+          "text": "Bei schwerem Wetter können Straßen nur für Kolonnenfahrt geöffnet sein - Sie folgen einem Schneepflug in einer Gruppe. Überprüfen Sie den Straßenzustand vor der Fahrt.",
+          "tips": [
+            "Überprüfen Sie vegvesen.no oder die 175-App für Straßenzustand",
+            "Warten Sie am Kolonnen-Treffpunkt",
+            "Versuchen Sie nie, die Kolonne zu überholen"
+          ]
+        }
+      ]
+    },
+    "norwegian-rules": {
+      "title": "Norwegische Verkehrsregeln",
+      "content": [
+        {
+          "heading": "Blutalkoholgrenze",
+          "text": "Norwegen hat eines der strengsten Alkoholgesetze in Europa. Die Grenze liegt bei 0,02% BAC - praktisch Nulltoleranz. Strafen umfassen hohe Bußgelder, Führerscheinentzug und sogar Gefängnis.",
+          "tips": [
+            "0,02% Grenze - selbst ein Drink kann Sie darüber bringen",
+            "Wenn Sie trinken, fahren Sie überhaupt nicht",
+            "Strafen sind streng: Bußgelder, Gefängnis, Führerscheinverlust"
+          ]
+        },
+        {
+          "heading": "Licht immer an",
+          "text": "Sie müssen in Norwegen zu jeder Zeit mit Licht fahren, Tag und Nacht, das ganze Jahr über.",
+          "tips": [
+            "Verwenden Sie Abblendlicht",
+            "Überprüfen Sie vor der Fahrt, ob die Lichter funktionieren"
+          ]
+        },
+        {
+          "heading": "Geschwindigkeitsbegrenzungen",
+          "text": "Geschwindigkeitsbegrenzungen in Norwegen sind generell niedriger als in anderen europäischen Ländern. Übliche Limits: 50 km/h in Städten, 80 km/h auf Landstraßen, 90-110 km/h auf Autobahnen.",
+          "tips": [
+            "Bußgelder basieren auf dem Einkommen und können sehr hoch sein",
+            "Blitzer sind üblich",
+            "Limits sind Höchstwerte - bei schlechtem Wetter reduzieren"
+          ]
+        }
+      ]
+    },
+    "emergency-procedures": {
+      "title": "Notfallverfahren",
+      "content": [
+        {
+          "heading": "Notfallnummern",
+          "text": "Im Notfall rufen Sie sofort diese Nummern an:",
+          "tips": [
+            "112 - Polizei",
+            "113 - Krankenwagen",
+            "110 - Feuerwehr",
+            "Diese Nummern funktionieren von jedem Telefon"
+          ]
+        },
+        {
+          "heading": "Wenn Sie stecken bleiben",
+          "text": "Wenn Ihr Auto im Schnee steckt oder Sie von der Straße rutschen, bleiben Sie ruhig und beurteilen Sie die Situation.",
+          "tips": [
+            "Schalten Sie die Warnblinkanlage ein",
+            "Bleiben Sie im Auto, wenn es draußen kalt ist",
+            "Rufen Sie Hilfe: Pannenhilfe oder 112",
+            "Notfallset: warme Kleidung, Decke, Wasser, Snacks"
+          ]
+        },
+        {
+          "heading": "Viking Pannenhilfe",
+          "text": "Die meisten Mietwagen in Norwegen beinhalten Viking Pannenhilfe. Überprüfen Sie Ihren Mietvertrag für die Telefonnummer. Sie können bei Pannen, platten Reifen und Freikommen helfen.",
+          "tips": [
+            "Speichern Sie die Viking-Nummer in Ihrem Telefon",
+            "Typische Nummer: 06000 oder Mietpapiere prüfen"
+          ]
+        }
+      ]
+    },
+    "polar-darkness": {
+      "title": "Fahren in der Polarnacht",
+      "content": [
+        {
+          "heading": "Die Polarnacht (Mørketid)",
+          "text": "In Nordnorwegen oberhalb des Polarkreises geht die Sonne wochenlang im Winter nicht auf. In Tromsø dauert die Polarnacht von Ende November bis Mitte Januar. Auch außerhalb dieser Zeit sind die Tageslichtstunden sehr kurz.",
+          "tips": [
+            "Tromsø hat keinen Sonnenaufgang vom 21. Nov. bis 21. Jan.",
+            "Das 'Blaulicht' der polaren Dämmerung kann trügerisch schwach sein",
+            "Ihre Wahrnehmung von Entfernung und Geschwindigkeit ändert sich in ständiger Dunkelheit"
+          ]
+        },
+        {
+          "heading": "Scheinwerferstrategie",
+          "text": "In völliger Dunkelheit sind Ihre Scheinwerfer Ihre Lebensader. Verwenden Sie Abblendlicht in Ortschaften und Fernlicht auf offenen Straßen — aber seien Sie bereit, schnell umzuschalten.",
+          "tips": [
+            "Verwenden Sie immer Abblendlicht in Ortschaften und bei Gegenverkehr",
+            "Schalten Sie auf Fernlicht auf offenen Straßen ohne Gegenverkehr",
+            "Halten Sie Scheinwerfer und Windschutzscheibe sauber — Salz und Schmutz reduzieren die Sicht schnell",
+            "Verwenden Sie Nebelscheinwerfer nur bei Nebel oder starkem Schneefall"
+          ]
+        },
+        {
+          "heading": "Müdigkeit und Aufmerksamkeit",
+          "text": "Fahren in ständiger Dunkelheit ist mental erschöpfend. Ihr Biorhythmus wird gestört, und Schläfrigkeit ist ein ernstes Risiko.",
+          "tips": [
+            "Machen Sie alle 1-2 Stunden Pausen — anhalten, strecken, frische Luft schnappen",
+            "Fahren Sie nicht, wenn Sie müde sind — suchen Sie einen sicheren Rastplatz",
+            "Halten Sie das Auto leicht kühl, um wach zu bleiben",
+            "Vermeiden Sie schwere Mahlzeiten vor dem Fahren"
+          ]
+        }
+      ]
+    },
+    "wildlife-roads": {
+      "title": "Wildtiere auf arktischen Straßen",
+      "content": [
+        {
+          "heading": "Rentiere — Die arktische Straßengefahr",
+          "text": "Rentiere wandern frei über Straßen in Nordnorwegen. Sie sind halbdomestiziert von samischen Hirten und haben keine Angst vor Autos. Wenn Sie eines sehen, rechnen Sie mit weiteren.",
+          "tips": [
+            "Rentiere reisen oft in Herden — wenn eines die Straße kreuzt, bremsen Sie ab und warten",
+            "Am häufigsten in der Morgen- und Abenddämmerung und während der polaren Dämmerung",
+            "Reduzieren Sie die Geschwindigkeit bei Warnschildern (gelbes Dreieck mit Rentier)",
+            "Sie können im Scheinwerferlicht erstarren — hupen Sie sanft und warten Sie"
+          ]
+        },
+        {
+          "heading": "Elche — Groß und gefährlich",
+          "text": "Elche sind die größten Tiere Skandinaviens, und ein Zusammenstoß kann tödlich sein. Ein ausgewachsener Elch wiegt 400-500 kg und ist größer als ein Auto.",
+          "tips": [
+            "Elche sind morgens und abends am aktivsten",
+            "Beobachten Sie die Gräben und Waldränder entlang der Straße",
+            "Wenn ein Zusammenstoß unvermeidlich ist, bremsen Sie stark, aber weichen Sie nicht in den Gegenverkehr aus",
+            "Melden Sie jeden Wildunfall der Polizei: 112"
+          ]
+        },
+        {
+          "heading": "Was nach einem Wildunfall zu tun ist",
+          "text": "Wenn Sie ein Tier anfahren, halten Sie sicher an, schalten Sie die Warnblinkanlage ein und rufen Sie die Polizei unter 02800 (kein Notfall) oder 112 bei Verletzungen an.",
+          "tips": [
+            "Anhalten und den Bereich mit Warnblinkanlage und Warndreieck sichern",
+            "Polizei unter 02800 oder 112 bei Verletzungen anrufen",
+            "Notieren Sie den genauen Standort (GPS-Koordinaten oder Straßenmarkierungen)",
+            "Nähern Sie sich niemals einem verletzten Elch oder Rentier"
+          ]
+        }
+      ]
+    },
+    "arctic-weather-driving": {
+      "title": "Fahren bei arktischem Wetter",
+      "content": [
+        {
+          "heading": "Extreme Kälte (-20°C und darunter)",
+          "text": "Temperaturen in Nordnorwegen können auf -20°C oder tiefer fallen. Extreme Kälte beeinträchtigt Ihr Auto, Ihre Reifen und Ihren Körper. Dieselautos können Startprobleme haben, Batterien entladen sich schneller, und der Reifendruck sinkt.",
+          "tips": [
+            "Halten Sie den Tank immer mindestens halb voll",
+            "Parken Sie mit der Front vom Wind abgewandt, um den Motor zu schützen",
+            "Nehmen Sie zusätzliche warme Kleidung, eine Decke und eine Thermoskanne mit",
+            "Prüfen Sie, ob der Mietwagen eine Motorvorwärmung hat"
+          ]
+        },
+        {
+          "heading": "Whiteout und Schneesturm",
+          "text": "Arktische Schneestürme können die Sicht innerhalb von Sekunden auf nahezu Null reduzieren. Verwehungen und starker Wind erzeugen 'Whiteout'-Bedingungen, bei denen Sie die Straße nicht mehr sehen können.",
+          "tips": [
+            "Wenn die Sicht plötzlich nachlässt, langsam abbremsen — nicht hart bremsen",
+            "Nebelscheinwerfer und Warnblinkanlage einschalten",
+            "Den Straßenmarkierungen folgen (Schneestangen mit Reflektoren)",
+            "Wenn Sie nichts mehr sehen, sicher von der Straße abfahren und abwarten"
+          ]
+        },
+        {
+          "heading": "Starker Seitenwind",
+          "text": "Exponierte Küsten- und Bergstraßen in Nordnorwegen werden von starkem arktischem Wind getroffen. Brücken, Fjordüberquerungen und Hochebenen sind besonders gefährlich.",
+          "tips": [
+            "Geschwindigkeit auf exponierten Abschnitten reduzieren — besonders auf Brücken und Kaps",
+            "Das Lenkrad fest mit beiden Händen halten",
+            "Auf plötzliche Böen beim Verlassen von Tunneln vorbereitet sein",
+            "Windvorhersagen auf yr.no vor der Fahrt auf exponierten Strecken prüfen"
+          ]
+        }
+      ]
+    }
+  },
+  "dashboard": {
+    "header": "Straßenzustand",
+    "customer": "Kunde",
+    "courseCompleted": "Kurs abgeschlossen",
+    "selectDestination": "Wählen Sie Ihr Reiseziel",
+    "loading": "Bedingungen laden...",
+    "weather": {
+      "title": "Wetter",
+      "wind": "Wind",
+      "precipitation": "Niederschlag"
+    },
+    "safetyTips": {
+      "title": "Sicherheitstipps",
+      "highRisk": {
+        "title": "HOHES RISIKO",
+        "description": "Erwägen Sie, Ihre Reise zu verschieben oder alternative Transportmittel zu nutzen."
+      },
+      "mediumRisk": {
+        "title": "MÄSSIGES RISIKO",
+        "description": "Fahren Sie besonders vorsichtig. Reduzieren Sie Geschwindigkeit und erhöhen Sie den Abstand."
+      },
+      "quickReminders": {
+        "title": "Schnelle Erinnerungen",
+        "tips": [
+          "Licht immer eingeschaltet",
+          "4+ Sekunden Sicherheitsabstand halten",
+          "Straßenzustand vor Bergpässen prüfen",
+          "Notfall: 112 (Polizei), 113 (Krankenwagen)"
+        ]
+      }
+    },
+    "roadConditions": {
+      "title": "Bergpässe und wichtige Routen",
+      "statuses": {
+        "open": "OFFEN",
+        "closed": "GESCHLOSSEN",
+        "convoy": "KOLONNE",
+        "warning": "WARNUNG"
+      },
+      "dataSource": "Daten von Statens vegvesen. Zuletzt aktualisiert:"
+    },
+    "moreInfo": "Benötigen Sie weitere Informationen?",
+    "links": {
+      "vegvesen": "Vegvesen Verkehrsinfo",
+      "yr": "Yr.no Wetter",
+      "varsom": "Varsom.no Lawinen"
+    },
+    "tourism": {
+      "header": "Arktische Straßenverhältnisse",
+      "subtitle": "Nordnorwegen",
+      "heroTitle": "Tromsø — Live-Bedingungen",
+      "heroSubtitle": "Echtzeit-Wetter, Nordlichtprognose und Straßenstatus für sicheres Fahren in Nordnorwegen",
+      "avalancheWarning": "Lawinenwarnung",
+      "noAvalanche": "Keine aktuellen Lawinenwarnungen.",
+      "fullForecast": "Vollständige Vorhersage auf varsom.no",
+      "roadsTitle": "Straßen rund um Tromsø"
+    },
+    "liveDashboard": "Sicherheitsübersicht",
+    "heroSubtitle": "Echtzeit-Sicherheitsbedingungen — Wetter, Straßen, Lawinen, Nordlicht & Meer",
+    "refresh": "Aktualisieren",
+    "safety": {
+      "safe": {
+        "heading": "Sichere Bedingungen",
+        "label": "Die Bedingungen sind allgemein sicher für Reisen. Bleiben Sie aufmerksam und folgen Sie lokalen Hinweisen."
+      },
+      "caution": {
+        "heading": "Vorsicht geboten",
+        "label": "Einige Risiken erkannt. Prüfen Sie die Details unten und planen Sie Ihre Route sorgfältig."
+      },
+      "warning": {
+        "heading": "Warnung — Hohes Risiko",
+        "label": "Erhebliche Gefahren erkannt. Vermeiden Sie unnötige Reisen und prüfen Sie alle Bedingungen unten."
+      }
+    },
+    "avalanche": {
+      "title": "Lawinenwarnung",
+      "level": "Stufe",
+      "fullForecast": "Vollständige Vorhersage auf varsom.no",
+      "noWarnings": "Keine aktiven Warnungen",
+      "noWarningsDesc": "Keine Lawinenwarnungen für dieses Gebiet. Prüfen Sie immer die Bedingungen, bevor Sie ins Gebirge gehen."
+    },
+    "ocean": {
+      "title": "Meer & Küste",
+      "safe": "Sicher für Küstenaktivitäten",
+      "caution": "Vorsicht — raue See",
+      "waveHeight": "Wellenhöhe",
+      "waterTemp": "Wassertemp.",
+      "current": "Strömung",
+      "unavailable": "Ozeandaten für diesen Standort nicht verfügbar."
+    },
+    "emergency": {
+      "title": "Notrufnummern",
+      "emergency": "Notfall",
+      "emergencyDesc": "Polizei, Feuerwehr, Rettungsdienst",
+      "roadside": "Pannenhilfe",
+      "roadsideDesc": "Viking / Falck",
+      "roadConditions": "Straßenzustand",
+      "roadConditionsDesc": "Vegtrafikksentralen",
+      "avalanche": "Lawinenwarnung",
+      "avalancheDesc": "NVE / Varsom"
+    },
+    "roadsPrefix": "Straßen",
+    "disclaimer": "Alle Daten dienen nur zu Informationszwecken. Folgen Sie immer den Anweisungen der lokalen Behörden."
+  },
+  "destinations": {
+    "oslo": "Oslo",
+    "bergen": "Bergen",
+    "tromso": "Tromsø",
+    "trondheim": "Trondheim",
+    "lofoten": "Lofoten",
+    "nordkapp": "Nordkapp",
+    "geiranger": "Geiranger",
+    "stavanger": "Stavanger"
+  }
+}
