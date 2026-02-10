@@ -38,6 +38,21 @@ export const slideRight: Variants = {
   },
 };
 
+// Slide from left — for backward navigation (previous step)
+export const slideLeft: Variants = {
+  hidden: { opacity: 0, x: -24 },
+  visible: {
+    opacity: 1,
+    x: 0,
+    transition: { duration: 0.3, ease: "easeOut" },
+  },
+  exit: {
+    opacity: 0,
+    x: 24,
+    transition: { duration: 0.2, ease: "easeIn" },
+  },
+};
+
 // Stagger container — wraps children that each use fadeInUp
 export const staggerContainer: Variants = {
   hidden: {},

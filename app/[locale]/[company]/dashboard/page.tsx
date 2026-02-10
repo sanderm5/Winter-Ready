@@ -481,7 +481,7 @@ export default function DashboardPage() {
                     </div>
                     <div className="flex-1 min-w-0">
                       <div className="font-semibold text-frost text-sm">{road.route}</div>
-                      <div className="text-sm text-glacier/60 truncate">{road.message}</div>
+                      <div className="text-sm text-glacier/60 truncate">{t(`roads.${road.messageKey}`)}</div>
                     </div>
                     <div className={`px-3 py-1 rounded-full text-xs font-semibold text-white ${getStatusColor(road.status)} flex-shrink-0`}>
                       {t(`roadConditions.statuses.${road.status}`)}

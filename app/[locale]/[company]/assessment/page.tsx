@@ -4,7 +4,7 @@ import { useState } from "react";
 import { useParams, useRouter } from "next/navigation";
 import { useTranslations, useLocale } from "next-intl";
 import { motion, AnimatePresence } from "framer-motion";
-import { slideRight } from "@/lib/motion-variants";
+import { slideRight, slideLeft } from "@/lib/motion-variants";
 import { AssessmentAnswers, evaluateAssessment } from "@/lib/assessment-logic";
 import ImageOptionCard from "@/components/ImageOptionCard";
 
@@ -17,9 +17,11 @@ export default function AssessmentPage() {
   const company = params.company as string;
 
   const t = useTranslations("assessment");
+  const tCommon = useTranslations("common");
 
   const [step, setStep] = useState<Step>(1);
   const [answers, setAnswers] = useState<Partial<AssessmentAnswers>>({});
+  const [direction, setDirection] = useState<"forward" | "back">("forward");
 
   const countryKeys = [
     "germany",
@@ -43,9 +45,17 @@ export default function AssessmentPage() {
     "other",
   ];
 
+  const handleBack = () => {
+    if (step > 1) {
+      setDirection("back");
+      setStep((step - 1) as Step);
+    }
+  };
+
   const handleAnswer = (key: keyof AssessmentAnswers, value: string) => {
     setAnswers((prev) => ({ ...prev, [key]: value }));
     if (step < 4) {
+      setDirection("forward");
       setStep((step + 1) as Step);
     } else {
       const finalAnswers = { ...answers, [key]: value } as AssessmentAnswers;
@@ -91,12 +101,22 @@ export default function AssessmentPage() {
           </div>
         </div>
 
+        {/* Back button */}
+        {step > 1 && (
+          <button
+            onClick={handleBack}
+            className="mb-4 text-white/80 hover:text-white flex items-center gap-1 text-sm font-medium transition"
+          >
+            <span>&#8592;</span> {tCommon("back")}
+          </button>
+        )}
+
         {/* Question cards */}
         <div className="bg-white rounded-2xl shadow-xl p-8">
           <AnimatePresence mode="wait">
             <motion.div
               key={step}
-              variants={slideRight}
+              variants={direction === "forward" ? slideRight : slideLeft}
               initial="hidden"
               animate="visible"
               exit="exit"
@@ -129,6 +149,7 @@ export default function AssessmentPage() {
                     },
                   ]}
                   onSelect={(value) => handleAnswer("winterExperience", value)}
+                  selectedValue={answers.winterExperience}
                 />
               )}
 
@@ -143,7 +164,7 @@ export default function AssessmentPage() {
                   <select
                     className="w-full p-4 border-2 border-gray-200 rounded-xl text-lg focus:border-winter-blue focus:outline-none"
                     onChange={(e) => handleAnswer("homeCountry", e.target.value)}
-                    defaultValue=""
+                    value={answers.homeCountry || ""}
                   >
                     <option value="" disabled>
                       {t("questions.homeCountry.placeholder")}
@@ -177,6 +198,7 @@ export default function AssessmentPage() {
                         label={t(`questions.destination.options.${opt.value}.label`)}
                         description={t(`questions.destination.options.${opt.value}.description`)}
                         imageSrc={opt.image}
+                        selected={answers.destination === opt.value}
                         onClick={() => handleAnswer("destination", opt.value)}
                       />
                     ))}
@@ -212,6 +234,7 @@ export default function AssessmentPage() {
                     },
                   ]}
                   onSelect={(value) => handleAnswer("tripDuration", value)}
+                  selectedValue={answers.tripDuration}
                 />
               )}
             </motion.div>
@@ -227,11 +250,13 @@ function QuestionCard({
   subtitle,
   options,
   onSelect,
+  selectedValue,
 }: {
   question: string;
   subtitle: string;
   options: { value: string; label: string; description: string }[];
   onSelect: (value: string) => void;
+  selectedValue?: string;
 }) {
   return (
     <div>
@@ -242,7 +267,11 @@ function QuestionCard({
           <button
             key={option.value}
             onClick={() => onSelect(option.value)}
-            className="w-full text-left p-4 border-2 border-gray-200 rounded-xl hover:border-winter-blue hover:bg-ice-blue/30 transition group"
+            className={`w-full text-left p-4 border-2 rounded-xl hover:border-winter-blue hover:bg-ice-blue/30 transition group ${
+              selectedValue === option.value
+                ? "border-winter-blue bg-ice-blue/20"
+                : "border-gray-200"
+            }`}
           >
             <span className="font-semibold text-gray-900 group-hover:text-winter-blue">
               {option.label}

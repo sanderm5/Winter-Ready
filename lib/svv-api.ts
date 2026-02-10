@@ -2,7 +2,7 @@ export interface RoadCondition {
   id: string;
   route: string;
   status: "open" | "closed" | "convoy" | "warning";
-  message: string;
+  messageKey: string;
   updated: string;
 }
 
@@ -13,186 +13,42 @@ export interface RoadData {
 
 // National mountain passes and routes
 const nationalRoadConditions: RoadCondition[] = [
-  {
-    id: "1",
-    route: "E6 Saltfjellet",
-    status: "open",
-    message: "Road open. Winter conditions, drive carefully.",
-    updated: new Date().toISOString(),
-  },
-  {
-    id: "2",
-    route: "E10 Bjørnfjell",
-    status: "convoy",
-    message: "Kolonnekjøring (convoy driving) due to heavy snowfall. Waiting time approx. 1-2 hours.",
-    updated: new Date().toISOString(),
-  },
-  {
-    id: "3",
-    route: "Rv7 Hardangervidda",
-    status: "warning",
-    message: "Slippery conditions. Reduced visibility due to drifting snow.",
-    updated: new Date().toISOString(),
-  },
-  {
-    id: "4",
-    route: "E134 Haukelifjell",
-    status: "open",
-    message: "Road open. Some ice patches, drive with caution.",
-    updated: new Date().toISOString(),
-  },
-  {
-    id: "5",
-    route: "Rv63 Trollstigen",
-    status: "closed",
-    message: "Closed for winter season (November - May).",
-    updated: new Date().toISOString(),
-  },
-  {
-    id: "6",
-    route: "E69 Nordkapp",
-    status: "warning",
-    message: "Strong winds expected. Check before traveling.",
-    updated: new Date().toISOString(),
-  },
-  {
-    id: "7",
-    route: "Rv55 Sognefjellet",
-    status: "closed",
-    message: "Closed for winter season.",
-    updated: new Date().toISOString(),
-  },
-  {
-    id: "8",
-    route: "E16 Filefjell",
-    status: "open",
-    message: "Road open. Good winter maintenance.",
-    updated: new Date().toISOString(),
-  },
+  { id: "1", route: "E6 Saltfjellet", status: "open", messageKey: "national.1", updated: "" },
+  { id: "2", route: "E10 Bjørnfjell", status: "convoy", messageKey: "national.2", updated: "" },
+  { id: "3", route: "Rv7 Hardangervidda", status: "warning", messageKey: "national.3", updated: "" },
+  { id: "4", route: "E134 Haukelifjell", status: "open", messageKey: "national.4", updated: "" },
+  { id: "5", route: "Rv63 Trollstigen", status: "closed", messageKey: "national.5", updated: "" },
+  { id: "6", route: "E69 Nordkapp", status: "warning", messageKey: "national.6", updated: "" },
+  { id: "7", route: "Rv55 Sognefjellet", status: "closed", messageKey: "national.7", updated: "" },
+  { id: "8", route: "E16 Filefjell", status: "open", messageKey: "national.8", updated: "" },
 ];
 
 // Tromsø-area routes tourists actually use
 const tromsoRoadConditions: RoadCondition[] = [
-  {
-    id: "t1",
-    route: "E6 Nordkjosbotn – Tromsø",
-    status: "open",
-    message: "Good conditions. Some icy patches in tunnels.",
-    updated: new Date().toISOString(),
-  },
-  {
-    id: "t2",
-    route: "E8 Tromsø – Tromsøya Bridge",
-    status: "open",
-    message: "Road open. Reduced visibility in snow showers.",
-    updated: new Date().toISOString(),
-  },
-  {
-    id: "t3",
-    route: "Rv862 Tromsø – Sommarøy",
-    status: "warning",
-    message: "Popular aurora viewing route. Icy patches after dark, no street lights.",
-    updated: new Date().toISOString(),
-  },
-  {
-    id: "t4",
-    route: "E6 Tromsø – Skibotn (Lyngen)",
-    status: "warning",
-    message: "Avalanche warning on exposed sections. Check varsom.no before travel.",
-    updated: new Date().toISOString(),
-  },
-  {
-    id: "t5",
-    route: "Rv91 Breivikeidet – Svendsby Ferry",
-    status: "open",
-    message: "Road open. Ferry runs hourly. Check timetable.",
-    updated: new Date().toISOString(),
-  },
-  {
-    id: "t6",
-    route: "Kvaløya Coastal Road",
-    status: "open",
-    message: "Narrow road, caution with oncoming traffic. Popular for northern lights.",
-    updated: new Date().toISOString(),
-  },
+  { id: "t1", route: "E6 Nordkjosbotn – Tromsø", status: "open", messageKey: "tromso.1", updated: "" },
+  { id: "t2", route: "E8 Tromsø – Tromsøya Bridge", status: "open", messageKey: "tromso.2", updated: "" },
+  { id: "t3", route: "Rv862 Tromsø – Sommarøy", status: "warning", messageKey: "tromso.3", updated: "" },
+  { id: "t4", route: "E6 Tromsø – Skibotn (Lyngen)", status: "warning", messageKey: "tromso.4", updated: "" },
+  { id: "t5", route: "Rv91 Breivikeidet – Svendsby Ferry", status: "open", messageKey: "tromso.5", updated: "" },
+  { id: "t6", route: "Kvaløya Coastal Road", status: "open", messageKey: "tromso.6", updated: "" },
 ];
 
 // Lofoten-area routes
 const lofotenRoadConditions: RoadCondition[] = [
-  {
-    id: "l1",
-    route: "E10 Svolvær – Å i Lofoten",
-    status: "open",
-    message: "Open. Narrow sections with passing places. Icy patches.",
-    updated: new Date().toISOString(),
-  },
-  {
-    id: "l2",
-    route: "E10 Lofoten Mainland Bridge",
-    status: "warning",
-    message: "Strong crosswinds expected. Reduce speed on bridges.",
-    updated: new Date().toISOString(),
-  },
-  {
-    id: "l3",
-    route: "Fv815 Henningsvær Road",
-    status: "open",
-    message: "Narrow coastal road. Caution in darkness.",
-    updated: new Date().toISOString(),
-  },
-  {
-    id: "l4",
-    route: "Fv816 Reine – Hamnøy",
-    status: "open",
-    message: "Scenic route. Slippery near sea spray zones.",
-    updated: new Date().toISOString(),
-  },
-  {
-    id: "l5",
-    route: "E10 Gimsøystraumen Bridge",
-    status: "warning",
-    message: "Bridge exposed to strong gusts. May close in extreme weather.",
-    updated: new Date().toISOString(),
-  },
+  { id: "l1", route: "E10 Svolvær – Å i Lofoten", status: "open", messageKey: "lofoten.1", updated: "" },
+  { id: "l2", route: "E10 Lofoten Mainland Bridge", status: "warning", messageKey: "lofoten.2", updated: "" },
+  { id: "l3", route: "Fv815 Henningsvær Road", status: "open", messageKey: "lofoten.3", updated: "" },
+  { id: "l4", route: "Fv816 Reine – Hamnøy", status: "open", messageKey: "lofoten.4", updated: "" },
+  { id: "l5", route: "E10 Gimsøystraumen Bridge", status: "warning", messageKey: "lofoten.5", updated: "" },
 ];
 
 // Nordkapp-area routes
 const nordkappRoadConditions: RoadCondition[] = [
-  {
-    id: "n1",
-    route: "E6 Alta – Skaidi",
-    status: "open",
-    message: "Good conditions. Long exposed stretches.",
-    updated: new Date().toISOString(),
-  },
-  {
-    id: "n2",
-    route: "E69 Skaidi – Nordkapp",
-    status: "warning",
-    message: "Strong winds expected. Check before traveling. May close without notice.",
-    updated: new Date().toISOString(),
-  },
-  {
-    id: "n3",
-    route: "E6 Lakselv – Tana Bru",
-    status: "open",
-    message: "Open. Watch for reindeer herds.",
-    updated: new Date().toISOString(),
-  },
-  {
-    id: "n4",
-    route: "Nordkapptunnelen",
-    status: "open",
-    message: "Tunnel open. 6.9 km with 9% gradient.",
-    updated: new Date().toISOString(),
-  },
-  {
-    id: "n5",
-    route: "E6 Olderfjord – Russenes",
-    status: "open",
-    message: "Winter conditions. Exposed to wind and drifting snow.",
-    updated: new Date().toISOString(),
-  },
+  { id: "n1", route: "E6 Alta – Skaidi", status: "open", messageKey: "nordkapp.1", updated: "" },
+  { id: "n2", route: "E69 Skaidi – Nordkapp", status: "warning", messageKey: "nordkapp.2", updated: "" },
+  { id: "n3", route: "E6 Lakselv – Tana Bru", status: "open", messageKey: "nordkapp.3", updated: "" },
+  { id: "n4", route: "Nordkapptunnelen", status: "open", messageKey: "nordkapp.4", updated: "" },
+  { id: "n5", route: "E6 Olderfjord – Russenes", status: "open", messageKey: "nordkapp.5", updated: "" },
 ];
 
 export type RoadRegion = "tromso" | "lofoten" | "nordkapp" | "national";
@@ -251,22 +107,6 @@ export function getStatusColor(status: RoadCondition["status"]): string {
       return "bg-yellow-500";
     default:
       return "bg-gray-500";
-  }
-}
-
-// Helper to get status text
-export function getStatusText(status: RoadCondition["status"]): string {
-  switch (status) {
-    case "open":
-      return "OPEN";
-    case "closed":
-      return "CLOSED";
-    case "convoy":
-      return "CONVOY";
-    case "warning":
-      return "WARNING";
-    default:
-      return "UNKNOWN";
   }
 }
 

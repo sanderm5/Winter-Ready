@@ -607,6 +607,40 @@
       "avalanche": "Alerte avalanche",
       "avalancheDesc": "NVE / Varsom"
     },
+    "roads": {
+      "national": {
+        "1": "Route ouverte. Conditions hivernales, conduisez prudemment.",
+        "2": "Conduite en convoi en raison de fortes chutes de neige. Temps d'attente env. 1-2 heures.",
+        "3": "Chaussée glissante. Visibilité réduite par la neige soufflée.",
+        "4": "Route ouverte. Quelques plaques de verglas, soyez prudent.",
+        "5": "Fermée pour la saison hivernale (novembre - mai).",
+        "6": "Vents forts attendus. Vérifiez avant de voyager.",
+        "7": "Fermée pour la saison hivernale.",
+        "8": "Route ouverte. Bon entretien hivernal."
+      },
+      "tromso": {
+        "1": "Bonnes conditions. Quelques plaques de verglas dans les tunnels.",
+        "2": "Route ouverte. Visibilité réduite pendant les averses de neige.",
+        "3": "Itinéraire populaire pour les aurores boréales. Verglas après la tombée de la nuit, pas d'éclairage public.",
+        "4": "Alerte avalanche sur les sections exposées. Consultez varsom.no avant le voyage.",
+        "5": "Route ouverte. Ferry toutes les heures. Vérifiez les horaires.",
+        "6": "Route étroite, prudence avec le trafic en sens inverse. Populaire pour les aurores boréales."
+      },
+      "lofoten": {
+        "1": "Ouverte. Sections étroites avec aires de croisement. Verglas.",
+        "2": "Forts vents latéraux attendus. Réduisez la vitesse sur les ponts.",
+        "3": "Route côtière étroite. Prudence dans l'obscurité.",
+        "4": "Route panoramique. Glissant près des zones d'embruns.",
+        "5": "Pont exposé à de fortes rafales. Peut fermer par temps extrême."
+      },
+      "nordkapp": {
+        "1": "Bonnes conditions. Longs tronçons exposés.",
+        "2": "Vents forts attendus. Vérifiez avant de voyager. Peut fermer sans préavis.",
+        "3": "Ouverte. Attention aux troupeaux de rennes.",
+        "4": "Tunnel ouvert. 6,9 km avec 9 % de pente.",
+        "5": "Conditions hivernales. Exposée au vent et à la neige soufflée."
+      }
+    },
     "roadsPrefix": "Routes",
     "disclaimer": "Toutes les données sont fournies à titre informatif. Suivez toujours les conseils des autorités locales."
   },

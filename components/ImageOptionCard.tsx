@@ -7,6 +7,7 @@ interface ImageOptionCardProps {
   label: string;
   description: string;
   imageSrc?: string;
+  selected?: boolean;
   onClick: () => void;
 }
 
@@ -14,6 +15,7 @@ export default function ImageOptionCard({
   label,
   description,
   imageSrc,
+  selected,
   onClick,
 }: ImageOptionCardProps) {
   const [imageError, setImageError] = useState(false);
@@ -21,7 +23,9 @@ export default function ImageOptionCard({
   return (
     <button
       onClick={onClick}
-      className="w-full text-left rounded-xl overflow-hidden border-2 border-gray-200 hover:border-winter-blue hover:shadow-lg transition group"
+      className={`w-full text-left rounded-xl overflow-hidden border-2 hover:border-winter-blue hover:shadow-lg transition group ${
+        selected ? "border-winter-blue bg-ice-blue/20" : "border-gray-200"
+      }`}
     >
       {imageSrc && !imageError && (
         <div className="relative h-32 w-full bg-gray-100">

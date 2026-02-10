@@ -184,7 +184,7 @@ export default function SafetySummaryDashboard({
                 </div>
                 <div className="flex-1 min-w-0">
                   <div className="font-semibold text-frost text-sm">{road.route}</div>
-                  <div className="text-xs text-glacier/70 truncate">{road.message}</div>
+                  <div className="text-xs text-glacier/70 truncate">{tDash(`roads.${road.messageKey}`)}</div>
                 </div>
                 <div className={`px-2 py-0.5 rounded-full text-xs font-semibold text-white ${getStatusColor(road.status)} flex-shrink-0`}>
                   {tDash(`roadConditions.statuses.${road.status}`)}

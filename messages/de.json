@@ -607,6 +607,40 @@
       "avalanche": "Lawinenwarnung",
       "avalancheDesc": "NVE / Varsom"
     },
+    "roads": {
+      "national": {
+        "1": "Straße geöffnet. Winterverhältnisse, fahren Sie vorsichtig.",
+        "2": "Kolonnenfahrt wegen starkem Schneefall. Wartezeit ca. 1-2 Stunden.",
+        "3": "Rutschige Verhältnisse. Eingeschränkte Sicht durch Schneeverwehungen.",
+        "4": "Straße geöffnet. Vereinzelt Eisglätte, fahren Sie vorsichtig.",
+        "5": "Wintersperre (November - Mai).",
+        "6": "Starker Wind erwartet. Vor Reiseantritt prüfen.",
+        "7": "Wintersperre.",
+        "8": "Straße geöffnet. Guter Winterdienst."
+      },
+      "tromso": {
+        "1": "Gute Verhältnisse. Vereinzelt Eisglätte in Tunneln.",
+        "2": "Straße geöffnet. Eingeschränkte Sicht bei Schneeschauern.",
+        "3": "Beliebte Nordlicht-Route. Eisglätte nach Einbruch der Dunkelheit, keine Straßenbeleuchtung.",
+        "4": "Lawinenwarnung auf exponierten Abschnitten. Vor Reise varsom.no prüfen.",
+        "5": "Straße geöffnet. Fähre fährt stündlich. Fahrplan prüfen.",
+        "6": "Enge Straße, Vorsicht bei Gegenverkehr. Beliebt für Nordlichter."
+      },
+      "lofoten": {
+        "1": "Geöffnet. Enge Abschnitte mit Ausweichstellen. Eisglätte.",
+        "2": "Starker Seitenwind erwartet. Geschwindigkeit auf Brücken reduzieren.",
+        "3": "Enge Küstenstraße. Vorsicht bei Dunkelheit.",
+        "4": "Panoramaroute. Rutschig in Gischt-Zonen.",
+        "5": "Brücke starken Windböen ausgesetzt. Kann bei Extremwetter gesperrt werden."
+      },
+      "nordkapp": {
+        "1": "Gute Verhältnisse. Lange exponierte Strecken.",
+        "2": "Starker Wind erwartet. Vor Reise prüfen. Kann ohne Vorwarnung gesperrt werden.",
+        "3": "Geöffnet. Auf Rentierherden achten.",
+        "4": "Tunnel geöffnet. 6,9 km mit 9 % Gefälle.",
+        "5": "Winterverhältnisse. Wind und Schneeverwehungen ausgesetzt."
+      }
+    },
     "roadsPrefix": "Straßen",
     "disclaimer": "Alle Daten dienen nur zu Informationszwecken. Folgen Sie immer den Anweisungen der lokalen Behörden."
   },

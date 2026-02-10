@@ -276,7 +276,7 @@
         },
         {
           "heading": "Hvis du treffer is",
-          "text": "Hold deg rolig. Ikke brems eller styr brått. Ta foten av gasspedalen og la bilen sakne naturlig. Hold rattet rett til du gjenvinner veigrepet.",
+          "text": "Hold deg rolig. Ikke brems eller styr brått. Ta foten av gasspedalen og la bilen saktne naturlig. Hold rattet rett til du gjenvinner veigrepet.",
           "tips": [
             "Ikke få panikk - hold deg rolig",
             "Slipp gasspedalen forsiktig",
@@ -435,12 +435,12 @@
           "tips": [
             "Elg er mest aktiv i grålysning og skumring",
             "Se etter bevegelse i grøftene og skogkanten langs veien",
-            "Hvis kollisjon er uunngåelig, brems hardt men ikke sveng inn i motgående trafikk",
+            "Hvis kollisjon er uunngåelig, brems hardt men ikke sving inn i motgående trafikk",
             "Meld alle viltkollisjoner til politiet: 112"
           ]
         },
         {
-          "heading": "Hva gjøre etter en viltkollisjon",
+          "heading": "Hva gjør du etter en viltkollisjon",
           "text": "Hvis du treffer et dyr, stopp trygt, slå på varsellysene og ring politiet på 02800 (ikke nødstilfelle) eller 112 hvis noen er skadet.",
           "tips": [
             "Stopp og sikre området med varsellys og varseltrekant",
@@ -606,6 +606,40 @@
       "roadConditionsDesc": "Vegtrafikksentralen",
       "avalanche": "Skredvarsel",
       "avalancheDesc": "NVE / Varsom"
+    },
+    "roads": {
+      "national": {
+        "1": "Veien er åpen. Vinterforhold, kjør forsiktig.",
+        "2": "Kolonnekjøring grunnet kraftig snøfall. Ventetid ca. 1-2 timer.",
+        "3": "Glatte forhold. Redusert sikt pga. snøfokk.",
+        "4": "Veien er åpen. Noen issvuller, kjør forsiktig.",
+        "5": "Stengt for vintersesongen (november - mai).",
+        "6": "Kraftig vind ventet. Sjekk før du reiser.",
+        "7": "Stengt for vintersesongen.",
+        "8": "Veien er åpen. God vintervedlikehold."
+      },
+      "tromso": {
+        "1": "Gode forhold. Noen issvuller i tunneler.",
+        "2": "Veien er åpen. Redusert sikt i snøbyger.",
+        "3": "Populær nordlysrute. Issvuller etter mørkets frembrudd, ingen gatelys.",
+        "4": "Skredvarsel på utsatte strekninger. Sjekk varsom.no før reise.",
+        "5": "Veien er åpen. Ferge går hver time. Sjekk rutetabell.",
+        "6": "Smal vei, forsiktighet med møtende trafikk. Populær for nordlys."
+      },
+      "lofoten": {
+        "1": "Åpen. Smale partier med møteplasser. Issvuller.",
+        "2": "Kraftig sidevind ventet. Reduser farten på broer.",
+        "3": "Smal kystvei. Forsiktighet i mørket.",
+        "4": "Naturskjønn rute. Glatt nær sjøsprøytsoner.",
+        "5": "Bro utsatt for kraftige vindkast. Kan stenges i ekstremvær."
+      },
+      "nordkapp": {
+        "1": "Gode forhold. Lange utsatte strekninger.",
+        "2": "Kraftig vind ventet. Sjekk før du reiser. Kan stenges uten varsel.",
+        "3": "Åpen. Se opp for reinsdyrflokker.",
+        "4": "Tunnel åpen. 6,9 km med 9 % stigning.",
+        "5": "Vinterforhold. Utsatt for vind og snøfokk."
+      }
     },
     "roadsPrefix": "Veier",
     "disclaimer": "All informasjon er kun veiledende. Følg alltid lokale myndigheters råd."

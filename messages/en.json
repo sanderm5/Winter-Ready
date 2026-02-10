@@ -607,6 +607,40 @@
       "avalanche": "Avalanche Warning",
       "avalancheDesc": "NVE / Varsom"
     },
+    "roads": {
+      "national": {
+        "1": "Road open. Winter conditions, drive carefully.",
+        "2": "Convoy driving due to heavy snowfall. Waiting time approx. 1-2 hours.",
+        "3": "Slippery conditions. Reduced visibility due to drifting snow.",
+        "4": "Road open. Some ice patches, drive with caution.",
+        "5": "Closed for winter season (November - May).",
+        "6": "Strong winds expected. Check before traveling.",
+        "7": "Closed for winter season.",
+        "8": "Road open. Good winter maintenance."
+      },
+      "tromso": {
+        "1": "Good conditions. Some icy patches in tunnels.",
+        "2": "Road open. Reduced visibility in snow showers.",
+        "3": "Popular aurora viewing route. Icy patches after dark, no street lights.",
+        "4": "Avalanche warning on exposed sections. Check varsom.no before travel.",
+        "5": "Road open. Ferry runs hourly. Check timetable.",
+        "6": "Narrow road, caution with oncoming traffic. Popular for northern lights."
+      },
+      "lofoten": {
+        "1": "Open. Narrow sections with passing places. Icy patches.",
+        "2": "Strong crosswinds expected. Reduce speed on bridges.",
+        "3": "Narrow coastal road. Caution in darkness.",
+        "4": "Scenic route. Slippery near sea spray zones.",
+        "5": "Bridge exposed to strong gusts. May close in extreme weather."
+      },
+      "nordkapp": {
+        "1": "Good conditions. Long exposed stretches.",
+        "2": "Strong winds expected. Check before traveling. May close without notice.",
+        "3": "Open. Watch for reindeer herds.",
+        "4": "Tunnel open. 6.9 km with 9% gradient.",
+        "5": "Winter conditions. Exposed to wind and drifting snow."
+      }
+    },
     "roadsPrefix": "Roads",
     "disclaimer": "All data provided for informational purposes. Always follow local authorities' advice."
   },

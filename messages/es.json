@@ -607,6 +607,40 @@
       "avalanche": "Alerta de avalancha",
       "avalancheDesc": "NVE / Varsom"
     },
+    "roads": {
+      "national": {
+        "1": "Carretera abierta. Condiciones invernales, conduzca con cuidado.",
+        "2": "Conducción en convoy por fuertes nevadas. Tiempo de espera aprox. 1-2 horas.",
+        "3": "Condiciones resbaladizas. Visibilidad reducida por ventisca.",
+        "4": "Carretera abierta. Algunas placas de hielo, conduzca con precaución.",
+        "5": "Cerrada por temporada invernal (noviembre - mayo).",
+        "6": "Se esperan vientos fuertes. Consulte antes de viajar.",
+        "7": "Cerrada por temporada invernal.",
+        "8": "Carretera abierta. Buen mantenimiento invernal."
+      },
+      "tromso": {
+        "1": "Buenas condiciones. Algunas placas de hielo en túneles.",
+        "2": "Carretera abierta. Visibilidad reducida con chubascos de nieve.",
+        "3": "Ruta popular para auroras boreales. Hielo después del anochecer, sin alumbrado público.",
+        "4": "Alerta de avalancha en secciones expuestas. Consulte varsom.no antes de viajar.",
+        "5": "Carretera abierta. Ferry cada hora. Consulte horarios.",
+        "6": "Carretera estrecha, precaución con tráfico en sentido contrario. Popular para auroras boreales."
+      },
+      "lofoten": {
+        "1": "Abierta. Secciones estrechas con apartaderos. Placas de hielo.",
+        "2": "Se esperan fuertes vientos laterales. Reduzca velocidad en puentes.",
+        "3": "Carretera costera estrecha. Precaución en oscuridad.",
+        "4": "Ruta panorámica. Resbaladizo cerca de zonas de salpicaduras.",
+        "5": "Puente expuesto a fuertes ráfagas. Puede cerrar en clima extremo."
+      },
+      "nordkapp": {
+        "1": "Buenas condiciones. Largos tramos expuestos.",
+        "2": "Se esperan vientos fuertes. Consulte antes de viajar. Puede cerrar sin aviso.",
+        "3": "Abierta. Atención con manadas de renos.",
+        "4": "Túnel abierto. 6,9 km con 9 % de pendiente.",
+        "5": "Condiciones invernales. Expuesta a viento y ventisca."
+      }
+    },
     "roadsPrefix": "Carreteras",
     "disclaimer": "Todos los datos se proporcionan con fines informativos. Sigue siempre los consejos de las autoridades locales."
   },
