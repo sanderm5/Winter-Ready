@@ -2,9 +2,10 @@ import { NextRequest, NextResponse } from "next/server";
 import { fetchWeather } from "@/lib/yr-api";
 import { rateLimit } from "@/lib/rate-limit";
 import { logError } from "@/lib/logger";
+import { validateCoordinates, getClientIp } from "@/lib/validation";
 
 export async function GET(request: NextRequest) {
-  const ip = request.headers.get("x-forwarded-for") || "unknown";
+  const ip = getClientIp(request);
   const { allowed } = rateLimit(ip);
   if (!allowed) {
     return NextResponse.json(
@@ -14,8 +15,11 @@ export async function GET(request: NextRequest) {
   }
 
   const searchParams = request.nextUrl.searchParams;
-  const lat = parseFloat(searchParams.get("lat") || "59.9139");
-  const lon = parseFloat(searchParams.get("lon") || "10.7522");
+  const { lat, lon, error } = validateCoordinates(
+    searchParams.get("lat"),
+    searchParams.get("lon")
+  );
+  if (error) return error;
 
   try {
     const weather = await fetchWeather(lat, lon);

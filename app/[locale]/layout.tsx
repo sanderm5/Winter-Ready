@@ -6,6 +6,7 @@ import { notFound } from "next/navigation";
 import { locales, type Locale } from "@/i18n/request";
 import ServiceWorkerRegistration from "@/components/ServiceWorkerRegistration";
 import EmergencyFAB from "@/components/emergency/EmergencyFAB";
+import MotionProvider from "@/components/MotionProvider";
 import "../globals.css";
 
 const bricolage = Bricolage_Grotesque({
@@ -57,11 +58,13 @@ export default async function LocaleLayout({
       <body className={bricolage.className}>
         <ServiceWorkerRegistration />
         <NextIntlClientProvider locale={locale} messages={messages}>
-          {children}
-          <footer className="py-4 text-center text-xs text-white/30">
-            en løsning av Efffekt AS
-          </footer>
-          <EmergencyFAB />
+          <MotionProvider>
+            {children}
+            <footer className="py-4 text-center text-xs text-white/30">
+              en løsning av Efffekt AS
+            </footer>
+            <EmergencyFAB />
+          </MotionProvider>
         </NextIntlClientProvider>
       </body>
     </html>

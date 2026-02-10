@@ -2,8 +2,19 @@ import { NextRequest, NextResponse } from "next/server";
 import { renderToBuffer } from "@react-pdf/renderer";
 import { CertificateDocument } from "@/lib/certificate-generator";
 import { CertificateData } from "@/lib/certificate-types";
+import { rateLimit } from "@/lib/rate-limit";
+import { getClientIp } from "@/lib/validation";
 
 export async function POST(request: NextRequest) {
+  const ip = getClientIp(request);
+  const { allowed } = rateLimit(`cert-${ip}`, 10, 60_000);
+  if (!allowed) {
+    return NextResponse.json(
+      { error: "Rate limit exceeded" },
+      { status: 429, headers: { "Retry-After": "60" } }
+    );
+  }
+
   try {
     const data: CertificateData = await request.json();
 
@@ -14,6 +25,11 @@ export async function POST(request: NextRequest) {
         { status: 400 }
       );
     }
+
+    // Sanitize string inputs
+    data.driverName = data.driverName.trim().slice(0, 100);
+    data.companySlug = data.companySlug.trim().slice(0, 50);
+    data.certificateId = data.certificateId.trim().slice(0, 50);
 
     // Generate PDF
     const pdfBuffer = await renderToBuffer(

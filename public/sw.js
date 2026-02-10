@@ -193,6 +193,12 @@ self.addEventListener('notificationclick', (event) => {
   event.notification.close();
 
   const url = event.notification.data.url;
+
+  // Only allow same-origin or relative URLs to prevent open redirect
+  if (!url || (!url.startsWith('/') && !url.startsWith(self.location.origin))) {
+    return;
+  }
+
   event.waitUntil(
     clients.matchAll({ type: 'window' }).then((clientList) => {
       // Focus existing window if available

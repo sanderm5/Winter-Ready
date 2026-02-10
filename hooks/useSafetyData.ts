@@ -15,6 +15,7 @@ export interface SafetyData {
   ocean: OceanData | null;
   roads: RoadData | null;
   loading: boolean;
+  refreshing: boolean;
   showAurora: boolean;
   showOcean: boolean;
   overallSafety: OverallSafety;
@@ -50,7 +51,7 @@ const fetcher = (url: string) =>
   });
 
 const SWR_OPTIONS = {
-  dedupingInterval: 60_000,
+  dedupingInterval: 5_000,
   errorRetryCount: 3,
 };
 
@@ -62,26 +63,26 @@ export function useSafetyData(destination: Destination): SafetyData {
 
   const region = getRegionForDestination(destination.name);
 
-  const { data: weather, mutate: mutateWeather } = useSWR<WeatherData>(
+  const { data: weather, mutate: mutateWeather, isValidating: vWeather } = useSWR<WeatherData>(
     `/api/weather?lat=${destination.lat}&lon=${destination.lon}`,
     fetcher,
     { ...SWR_OPTIONS, refreshInterval: 15 * 60_000 }
   );
 
-  const { data: roads, mutate: mutateRoads } = useSWR<RoadData>(
+  const { data: roads, mutate: mutateRoads, isValidating: vRoads } = useSWR<RoadData>(
     `/api/roads?region=${region}`,
     fetcher,
     { ...SWR_OPTIONS, refreshInterval: 5 * 60_000 }
   );
 
   const estimatedCloudCover = weather?.precipitation != null && weather.precipitation > 0 ? 80 : 30;
-  const { data: aurora, mutate: mutateAurora } = useSWR<AuroraForecast>(
+  const { data: aurora, mutate: mutateAurora, isValidating: vAurora } = useSWR<AuroraForecast>(
     showAurora ? `/api/aurora?cloudCover=${estimatedCloudCover}&lat=${destination.lat}` : null,
     fetcher,
     { ...SWR_OPTIONS, refreshInterval: 15 * 60_000 }
   );
 
-  const { data: ocean, mutate: mutateOcean } = useSWR<OceanData>(
+  const { data: ocean, mutate: mutateOcean, isValidating: vOcean } = useSWR<OceanData>(
     showOcean
       ? `/api/ocean?lat=${destination.lat}&lon=${destination.lon}`
       : null,
@@ -89,13 +90,14 @@ export function useSafetyData(destination: Destination): SafetyData {
     { ...SWR_OPTIONS, refreshInterval: 30 * 60_000 }
   );
 
-  const { data: avalanche, mutate: mutateAvalanche } = useSWR<AvalancheData>(
+  const { data: avalanche, mutate: mutateAvalanche, isValidating: vAvalanche } = useSWR<AvalancheData>(
     `/api/avalanche?lat=${destination.lat}&lon=${destination.lon}`,
     fetcher,
     { ...SWR_OPTIONS, refreshInterval: 30 * 60_000 }
   );
 
   const loading = !weather && !roads;
+  const refreshing = vWeather || vRoads || vAurora || vOcean || vAvalanche;
 
   const overallSafety = computeOverallSafety(
     weather ?? null,
@@ -104,11 +106,11 @@ export function useSafetyData(destination: Destination): SafetyData {
   );
 
   const refetch = () => {
-    mutateWeather();
-    mutateRoads();
-    mutateAurora();
-    mutateOcean();
-    mutateAvalanche();
+    mutateWeather(undefined, { revalidate: true });
+    mutateRoads(undefined, { revalidate: true });
+    mutateAurora(undefined, { revalidate: true });
+    mutateOcean(undefined, { revalidate: true });
+    mutateAvalanche(undefined, { revalidate: true });
   };
 
   return {
@@ -118,6 +120,7 @@ export function useSafetyData(destination: Destination): SafetyData {
     ocean: ocean ?? null,
     roads: roads ?? null,
     loading,
+    refreshing,
     showAurora,
     showOcean,
     overallSafety,

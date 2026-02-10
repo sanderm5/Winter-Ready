@@ -2,9 +2,10 @@ import { NextRequest, NextResponse } from "next/server";
 import { fetchAvalancheWarnings } from "@/lib/varsom-api";
 import { rateLimit } from "@/lib/rate-limit";
 import { logError } from "@/lib/logger";
+import { validateCoordinates, getClientIp } from "@/lib/validation";
 
 export async function GET(request: NextRequest) {
-  const ip = request.headers.get("x-forwarded-for") || "unknown";
+  const ip = getClientIp(request);
   const { allowed } = rateLimit(ip);
   if (!allowed) {
     return NextResponse.json(
@@ -14,8 +15,12 @@ export async function GET(request: NextRequest) {
   }
 
   const searchParams = request.nextUrl.searchParams;
-  const lat = parseFloat(searchParams.get("lat") || "69.6496");
-  const lon = parseFloat(searchParams.get("lon") || "18.956");
+  const { lat, lon, error } = validateCoordinates(
+    searchParams.get("lat"),
+    searchParams.get("lon"),
+    { lat: 69.6496, lon: 18.956 }
+  );
+  if (error) return error;
   const lang = searchParams.get("lang") || "en";
   const langkey = lang === "no" ? 1 : 2;
 

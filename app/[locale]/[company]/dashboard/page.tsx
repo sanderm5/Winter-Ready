@@ -6,6 +6,8 @@ import { useTranslations } from "next-intl";
 import { destinations, Destination } from "@/lib/yr-api";
 import { getStatusColor, getStatusIcon } from "@/lib/svv-api";
 import { getCompanyBranding } from "@/lib/company-config";
+import { motion } from "framer-motion";
+import { fadeInUp, staggerContainer } from "@/lib/motion-variants";
 import AuroraForecastCard from "@/components/AuroraForecast";
 import LanguageSwitcher from "@/components/LanguageSwitcher";
 import { useSafetyData, OverallSafety } from "@/hooks/useSafetyData";
@@ -111,6 +113,7 @@ export default function DashboardPage() {
     ocean,
     roads,
     loading,
+    refreshing,
     showAurora,
     showOcean,
     overallSafety,
@@ -194,9 +197,14 @@ export default function DashboardPage() {
             <SkeletonRoads />
           </div>
         ) : (
-          <div className="space-y-6">
+          <motion.div
+            className="space-y-6"
+            variants={staggerContainer}
+            initial="hidden"
+            animate="visible"
+          >
             {/* Overall Safety Banner */}
-            <div className={`${style.color}/10 border ${style.border} rounded-2xl p-5`}>
+            <motion.div variants={fadeInUp} className={`${style.color}/10 border ${style.border} rounded-2xl p-5`}>
               <div className="flex items-center gap-4">
                 <div className={`w-11 h-11 rounded-xl ${style.color}/20 ${style.text} flex items-center justify-center flex-shrink-0`}>
                   {safetyIcons[overallSafety]}
@@ -208,9 +216,10 @@ export default function DashboardPage() {
                 <div className="hidden sm:flex flex-col items-end gap-1 text-xs text-glacier/50 flex-shrink-0">
                   <button
                     onClick={refetch}
-                    className="hover:text-glacier transition-colors flex items-center gap-1"
+                    disabled={refreshing}
+                    className="hover:text-glacier transition-colors flex items-center gap-1 disabled:opacity-50"
                   >
-                    <svg className="w-3 h-3" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <svg className={`w-3 h-3 ${refreshing ? "animate-spin" : ""}`} fill="none" stroke="currentColor" viewBox="0 0 24 24">
                       <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M4 4v5h.582m15.356 2A8.001 8.001 0 004.582 9m0 0H9m11 11v-5h-.581m0 0a8.003 8.003 0 01-15.357-2m15.357 2H15" />
                     </svg>
                     {t("refresh")}
@@ -220,10 +229,10 @@ export default function DashboardPage() {
                   </span>
                 </div>
               </div>
-            </div>
+            </motion.div>
 
             {/* Row 1: Weather + Aurora/DrivingTips */}
-            <div className="grid md:grid-cols-2 gap-6">
+            <motion.div variants={fadeInUp} className="grid md:grid-cols-2 gap-6">
               {/* Weather Card */}
               <Card>
                 <CardHeader
@@ -303,10 +312,10 @@ export default function DashboardPage() {
                   </div>
                 </Card>
               )}
-            </div>
+            </motion.div>
 
             {/* Row 2: Avalanche + Ocean/Emergency — always 2 cols */}
-            <div className="grid md:grid-cols-2 gap-6">
+            <motion.div variants={fadeInUp} className="grid md:grid-cols-2 gap-6">
               {/* Avalanche Card */}
               <Card>
                 <CardHeader
@@ -451,10 +460,10 @@ export default function DashboardPage() {
                   </div>
                 </Card>
               )}
-            </div>
+            </motion.div>
 
             {/* Road Conditions — full width */}
-            <div>
+            <motion.div variants={fadeInUp}>
               <h2 className="text-lg font-bold text-frost mb-4 flex items-center gap-2 px-1">
                 <svg className="w-5 h-5 text-glacier" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                   <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 20l-5.447-2.724A1 1 0 013 16.382V5.618a1 1 0 011.447-.894L9 7m0 13l6-3m-6 3V7m6 10l5.447 2.724A1 1 0 0021 18.382V7.618a1 1 0 00-.553-.894L15 4m0 13V4m0 0L9 7" />
@@ -483,32 +492,34 @@ export default function DashboardPage() {
               <p className="text-[10px] text-glacier/30 mt-2 text-right pr-2">
                 Statens vegvesen — {roads?.lastUpdated ? new Date(roads.lastUpdated).toLocaleTimeString([], { hour: "2-digit", minute: "2-digit" }) : "..."}
               </p>
-            </div>
+            </motion.div>
 
             {/* Footer */}
-            <footer className="pt-6 pb-2">
-              <div className="flex flex-wrap justify-center gap-x-6 gap-y-2 text-xs">
-                <a href="https://www.yr.no" target="_blank" rel="noopener noreferrer" className="text-glacier/40 hover:text-glacier transition-colors">
-                  Yr.no
-                </a>
-                <a href="https://varsom.no" target="_blank" rel="noopener noreferrer" className="text-glacier/40 hover:text-glacier transition-colors">
-                  Varsom.no
-                </a>
-                <a href="https://www.vegvesen.no/trafikk" target="_blank" rel="noopener noreferrer" className="text-glacier/40 hover:text-glacier transition-colors">
-                  Vegvesen.no
-                </a>
-                <a href="https://www.swpc.noaa.gov/products/planetary-k-index" target="_blank" rel="noopener noreferrer" className="text-glacier/40 hover:text-glacier transition-colors">
-                  NOAA Aurora
-                </a>
-                <a href="https://api.met.no" target="_blank" rel="noopener noreferrer" className="text-glacier/40 hover:text-glacier transition-colors">
-                  MET Ocean
-                </a>
-              </div>
-              <p className="text-glacier/30 text-[11px] mt-3 text-center">
-                {t("disclaimer")}
-              </p>
-            </footer>
-          </div>
+            <motion.div variants={fadeInUp}>
+              <footer className="pt-6 pb-2">
+                <div className="flex flex-wrap justify-center gap-x-6 gap-y-2 text-xs">
+                  <a href="https://www.yr.no" target="_blank" rel="noopener noreferrer" className="text-glacier/40 hover:text-glacier transition-colors">
+                    Yr.no
+                  </a>
+                  <a href="https://varsom.no" target="_blank" rel="noopener noreferrer" className="text-glacier/40 hover:text-glacier transition-colors">
+                    Varsom.no
+                  </a>
+                  <a href="https://www.vegvesen.no/trafikk" target="_blank" rel="noopener noreferrer" className="text-glacier/40 hover:text-glacier transition-colors">
+                    Vegvesen.no
+                  </a>
+                  <a href="https://www.swpc.noaa.gov/products/planetary-k-index" target="_blank" rel="noopener noreferrer" className="text-glacier/40 hover:text-glacier transition-colors">
+                    NOAA Aurora
+                  </a>
+                  <a href="https://api.met.no" target="_blank" rel="noopener noreferrer" className="text-glacier/40 hover:text-glacier transition-colors">
+                    MET Ocean
+                  </a>
+                </div>
+                <p className="text-glacier/30 text-[11px] mt-3 text-center">
+                  {t("disclaimer")}
+                </p>
+              </footer>
+            </motion.div>
+          </motion.div>
         )}
       </div>
     </main>

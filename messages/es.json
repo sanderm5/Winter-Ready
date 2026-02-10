@@ -577,6 +577,25 @@
       "current": "Corriente",
       "unavailable": "Datos oceánicos no disponibles para esta ubicación."
     },
+    "aurora": {
+      "title": "Auroras boreales",
+      "probability": "Probabilidad",
+      "cloudCover": "Nubosidad",
+      "bestViewing": "Mejor hora",
+      "rating": {
+        "poor": "BAJA",
+        "moderate": "MODERADA",
+        "good": "BUENA",
+        "excellent": "EXCELENTE"
+      },
+      "description": {
+        "cloudy": "La nubosidad probablemente bloqueará la vista. Considere actividades en interiores esta noche.",
+        "excellent": "¡Excelentes condiciones para auroras boreales! Diríjase a un lugar oscuro lejos de las luces de la ciudad.",
+        "good": "Buena probabilidad de ver auroras esta noche. Encuentre un lugar con horizonte norte despejado.",
+        "moderate": "Se espera actividad moderada. Las auroras pueden ser visibles durante breves claros.",
+        "poor": "Se espera baja actividad auroral. Vigile el cielo pero no cuente con ello."
+      }
+    },
     "emergency": {
       "title": "Números de emergencia",
       "emergency": "Emergencia",

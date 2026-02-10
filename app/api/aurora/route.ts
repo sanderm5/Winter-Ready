@@ -2,9 +2,10 @@ import { NextRequest, NextResponse } from "next/server";
 import { fetchAuroraForecast } from "@/lib/aurora-api";
 import { rateLimit } from "@/lib/rate-limit";
 import { logError } from "@/lib/logger";
+import { validateCoordinates, getClientIp } from "@/lib/validation";
 
 export async function GET(request: NextRequest) {
-  const ip = request.headers.get("x-forwarded-for") || "unknown";
+  const ip = getClientIp(request);
   const { allowed } = rateLimit(ip);
   if (!allowed) {
     return NextResponse.json(
@@ -14,8 +15,19 @@ export async function GET(request: NextRequest) {
   }
 
   const searchParams = request.nextUrl.searchParams;
+  const { lat, error } = validateCoordinates(
+    searchParams.get("lat"),
+    searchParams.get("lon") || "18.956",
+    { lat: 69.65, lon: 18.956 }
+  );
+  if (error) return error;
   const cloudCover = parseFloat(searchParams.get("cloudCover") || "50");
-  const lat = parseFloat(searchParams.get("lat") || "69.65");
+  if (Number.isNaN(cloudCover) || cloudCover < 0 || cloudCover > 100) {
+    return NextResponse.json(
+      { error: "Invalid cloudCover: must be 0-100" },
+      { status: 400 }
+    );
+  }
 
   try {
     const aurora = await fetchAuroraForecast(cloudCover, lat);

@@ -1,12 +1,13 @@
 "use client";
 
+import { useTranslations } from "next-intl";
 import { AuroraForecast as AuroraForecastType } from "@/lib/aurora-api";
 
-const ratingConfig = {
-  poor: { label: "LOW", color: "text-glacier/70", bg: "bg-glacier/20", ring: "ring-glacier/30" },
-  moderate: { label: "MODERATE", color: "text-aurora-teal", bg: "bg-aurora-teal/20", ring: "ring-aurora-teal/30" },
-  good: { label: "GOOD", color: "text-aurora-green", bg: "bg-aurora-green/20", ring: "ring-aurora-green/30" },
-  excellent: { label: "EXCELLENT", color: "text-green-400", bg: "bg-green-400/20", ring: "ring-green-400/30" },
+const ratingStyles = {
+  poor: { color: "text-glacier/70", bg: "bg-glacier/20", ring: "ring-glacier/30" },
+  moderate: { color: "text-aurora-teal", bg: "bg-aurora-teal/20", ring: "ring-aurora-teal/30" },
+  good: { color: "text-aurora-green", bg: "bg-aurora-green/20", ring: "ring-aurora-green/30" },
+  excellent: { color: "text-green-400", bg: "bg-green-400/20", ring: "ring-green-400/30" },
 };
 
 function KpGauge({ kp }: { readonly kp: number }) {
@@ -40,6 +41,14 @@ function KpGauge({ kp }: { readonly kp: number }) {
   );
 }
 
+function getDescriptionKey(
+  rating: AuroraForecastType["overallRating"],
+  cloudCover: number
+): string {
+  if (cloudCover > 80) return "description.cloudy";
+  return `description.${rating}`;
+}
+
 export default function AuroraForecastCard({
   aurora,
   loading = false,
@@ -47,6 +56,8 @@ export default function AuroraForecastCard({
   readonly aurora: AuroraForecastType | null;
   readonly loading?: boolean;
 }) {
+  const t = useTranslations("dashboard.aurora");
+
   if (loading) {
     return (
       <div className="bg-polar-night-light/80 backdrop-blur-sm border border-glacier/20 rounded-2xl shadow-lg p-6">
@@ -61,7 +72,7 @@ export default function AuroraForecastCard({
 
   if (!aurora) return null;
 
-  const config = ratingConfig[aurora.overallRating];
+  const style = ratingStyles[aurora.overallRating];
 
   return (
     <div className="bg-gradient-to-br from-polar-night-light/80 via-polar-night-light/60 to-[#1a1a2e]/80 backdrop-blur-sm border border-northern-lights/30 rounded-2xl shadow-lg p-6 relative overflow-hidden">
@@ -73,10 +84,10 @@ export default function AuroraForecastCard({
           <svg className="w-5 h-5 text-aurora-green" fill="none" stroke="currentColor" viewBox="0 0 24 24">
             <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 3v4M3 5h4M6 17v4m-2-2h4m5-16l2.286 6.857L21 12l-5.714 2.143L13 21l-2.286-6.857L5 12l5.714-2.143L13 3z" />
           </svg>
-          Northern Lights
+          {t("title")}
         </h2>
-        <span className={`px-3 py-1 rounded-full text-xs font-bold ring-1 ${config.color} ${config.bg} ${config.ring}`}>
-          {config.label}
+        <span className={`px-3 py-1 rounded-full text-xs font-bold ring-1 ${style.color} ${style.bg} ${style.ring}`}>
+          {t(`rating.${aurora.overallRating}`)}
         </span>
       </div>
 
@@ -85,23 +96,23 @@ export default function AuroraForecastCard({
       <div className="mt-4 grid grid-cols-2 gap-3">
         <div className="text-center p-2 bg-polar-night/40 rounded-lg">
           <div className="text-lg font-semibold text-frost">{aurora.probability}%</div>
-          <div className="text-[11px] text-glacier/70">Probability</div>
+          <div className="text-[11px] text-glacier/70">{t("probability")}</div>
         </div>
         <div className="text-center p-2 bg-polar-night/40 rounded-lg">
           <div className="text-lg font-semibold text-frost">{aurora.cloudCover}%</div>
-          <div className="text-[11px] text-glacier/70">Cloud Cover</div>
+          <div className="text-[11px] text-glacier/70">{t("cloudCover")}</div>
         </div>
       </div>
 
       {aurora.bestTime && (
         <div className="mt-3 text-center p-2 bg-polar-night/40 rounded-lg">
-          <div className="text-sm font-medium text-glacier">Best viewing</div>
+          <div className="text-sm font-medium text-glacier">{t("bestViewing")}</div>
           <div className="text-frost font-semibold">{aurora.bestTime}</div>
         </div>
       )}
 
       <p className="mt-3 text-xs text-glacier/70 text-center leading-relaxed">
-        {aurora.description}
+        {t(getDescriptionKey(aurora.overallRating, aurora.cloudCover))}
       </p>
     </div>
   );

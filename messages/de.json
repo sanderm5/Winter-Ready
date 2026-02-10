@@ -577,6 +577,25 @@
       "current": "Strömung",
       "unavailable": "Ozeandaten für diesen Standort nicht verfügbar."
     },
+    "aurora": {
+      "title": "Nordlichter",
+      "probability": "Wahrscheinlichkeit",
+      "cloudCover": "Bewölkung",
+      "bestViewing": "Beste Sichtzeit",
+      "rating": {
+        "poor": "GERING",
+        "moderate": "MÄSSIG",
+        "good": "GUT",
+        "excellent": "AUSGEZEICHNET"
+      },
+      "description": {
+        "cloudy": "Starke Bewölkung wird die Sicht wahrscheinlich blockieren. Erwägen Sie Indoor-Aktivitäten heute Abend.",
+        "excellent": "Ausgezeichnete Bedingungen für Nordlichter! Suchen Sie einen dunklen Ort abseits der Stadtlichter auf.",
+        "good": "Gute Chance, heute Abend Nordlichter zu sehen. Finden Sie einen Ort mit klarem Blick nach Norden.",
+        "moderate": "Mäßige Aktivität erwartet. Aurora kann bei kurzen Aufklarungen sichtbar sein.",
+        "poor": "Geringe Nordlichtaktivität erwartet. Behalten Sie den Himmel im Auge, aber rechnen Sie nicht damit."
+      }
+    },
     "emergency": {
       "title": "Notrufnummern",
       "emergency": "Notfall",

@@ -577,6 +577,25 @@
       "current": "Current",
       "unavailable": "Ocean data unavailable for this location."
     },
+    "aurora": {
+      "title": "Northern Lights",
+      "probability": "Probability",
+      "cloudCover": "Cloud Cover",
+      "bestViewing": "Best viewing",
+      "rating": {
+        "poor": "LOW",
+        "moderate": "MODERATE",
+        "good": "GOOD",
+        "excellent": "EXCELLENT"
+      },
+      "description": {
+        "cloudy": "Heavy cloud cover will likely block the view. Consider indoor activities tonight.",
+        "excellent": "Excellent conditions for Northern Lights! Head to a dark spot away from city lights.",
+        "good": "Good chance of seeing the aurora tonight. Find a location with clear northern horizon.",
+        "moderate": "Moderate activity expected. Aurora may be visible during brief clearings.",
+        "poor": "Low aurora activity expected. Keep an eye on the sky but don't count on it."
+      }
+    },
     "emergency": {
       "title": "Emergency Numbers",
       "emergency": "Emergency",

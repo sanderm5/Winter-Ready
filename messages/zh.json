@@ -577,6 +577,25 @@
       "current": "洋流",
       "unavailable": "该地点无海洋数据。"
     },
+    "aurora": {
+      "title": "北极光",
+      "probability": "概率",
+      "cloudCover": "云量",
+      "bestViewing": "最佳观赏时间",
+      "rating": {
+        "poor": "低",
+        "moderate": "中等",
+        "good": "良好",
+        "excellent": "极佳"
+      },
+      "description": {
+        "cloudy": "厚云层可能会遮挡视线。建议今晚进行室内活动。",
+        "excellent": "极佳的北极光观赏条件！前往远离城市灯光的黑暗地点。",
+        "good": "今晚有很好的机会看到极光。找一个北方地平线开阔的地方。",
+        "moderate": "预计中等活动。云层间隙可能可见极光。",
+        "poor": "预计极光活动较低。注意天空但不要抱太大期望。"
+      }
+    },
     "emergency": {
       "title": "紧急电话",
       "emergency": "紧急情况",

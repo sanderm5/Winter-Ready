@@ -8,6 +8,8 @@ import { getCompanyBranding } from "@/lib/company-config";
 import { CertificateData } from "@/lib/certificate-types";
 import { courseModules } from "@/lib/course-content";
 import { destinations, Destination } from "@/lib/yr-api";
+import { motion, AnimatePresence } from "framer-motion";
+import { fadeInUp, slideRight, scaleIn, staggerContainer, cardHover, cardTap } from "@/lib/motion-variants";
 import ModuleIcon from "@/components/ModuleIcon";
 import ResponsiveImage from "@/components/ResponsiveImage";
 import WinterBackground from "@/components/WinterBackground";
@@ -284,186 +286,220 @@ export default function CoursePage() {
 
       {/* Content */}
       <div className="max-w-2xl mx-auto px-4 py-12 relative z-10">
-        {/* Destination Picker — tourism only, step 0 */}
-        {needsDestination ? (
-          <div className="bg-white rounded-2xl shadow-lg p-8">
-            <div className="text-center mb-6">
-              <div className="w-12 h-12 bg-winter-blue/10 rounded-xl flex items-center justify-center mx-auto mb-4 text-winter-blue">
-                <svg className="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z" />
-                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M15 11a3 3 0 11-6 0 3 3 0 016 0z" />
-                </svg>
-              </div>
-              <h2 className="text-2xl font-bold text-gray-900 mb-2">
-                {t("destinationSelect.title")}
-              </h2>
-              <p className="text-gray-500">
-                {t("destinationSelect.subtitle")}
-              </p>
-            </div>
-            <div className="grid grid-cols-2 gap-3">
-              {destinations.map((dest) => {
-                const descKey = dest.name.toLowerCase().replace(/ø/g, "o").replace(/å/g, "a");
-                return (
-                  <button
-                    key={dest.name}
-                    onClick={() => handleSelectDestination(dest)}
-                    className="text-left p-4 border-2 border-gray-200 rounded-xl hover:border-winter-blue hover:bg-ice-blue/30 transition group"
-                  >
-                    <span className="font-semibold text-gray-900 group-hover:text-winter-blue flex items-center gap-2">
-                      <svg className="w-4 h-4 text-glacier" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z" />
-                        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M15 11a3 3 0 11-6 0 3 3 0 016 0z" />
-                      </svg>
-                      {getLocalizedDestination(dest.name)}
-                    </span>
-                    <span className="block text-sm text-gray-500 mt-1">
-                      {t(`destinationSelect.descriptions.${descKey}` as Parameters<typeof t>[0])}
-                    </span>
-                  </button>
-                );
-              })}
-            </div>
-          </div>
-        ) : !allCompleted && currentModule && currentContent ? (
-          <div className="bg-white rounded-2xl shadow-lg p-8">
-            <div className="w-12 h-12 bg-winter-blue/10 rounded-xl flex items-center justify-center mb-4 text-winter-blue">
-              <ModuleIcon type={currentModule.iconType} />
-            </div>
-            <div className="text-sm text-winter-blue font-medium mb-2">
-              {currentModule.title} ({currentContentIndex + 1}/
-              {currentModule.content.length})
-            </div>
-            <h2 className="text-2xl font-bold text-gray-900 mb-4">
-              {currentContent.heading}
-            </h2>
-            <p className="text-gray-600 mb-6 leading-relaxed">
-              {currentContent.text}
-            </p>
-
-            {currentContent.image && (
-              <div className="mb-6">
-                <ResponsiveImage
-                  src={currentContent.image}
-                  alt={currentContent.imageAlt || currentContent.heading}
-                  aspectRatio="16:9"
-                  priority={true}
-                />
-              </div>
-            )}
-
-            {currentContent.tips && (
-              <div className="bg-ice-blue/50 rounded-xl p-4 mb-6">
-                <div className="font-semibold text-winter-blue mb-2">
-                  {t("keyPoints")}
-                </div>
-                <ul className="space-y-2">
-                  {currentContent.tips.map((tip, i) => (
-                    <li key={i} className="flex items-start gap-2 text-gray-700">
-                      <span className="text-safe-green font-bold">+</span>
-                      {tip}
-                    </li>
-                  ))}
-                </ul>
-              </div>
-            )}
-
-            <button
-              onClick={handleNext}
-              className="w-full bg-winter-blue text-white py-4 rounded-xl font-semibold text-lg hover:bg-winter-blue/90 transition"
+        <AnimatePresence mode="wait">
+          {/* Destination Picker — tourism only, step 0 */}
+          {needsDestination ? (
+            <motion.div
+              key="destination"
+              variants={fadeInUp}
+              initial="hidden"
+              animate="visible"
+              exit="exit"
+              className="bg-white rounded-2xl shadow-lg p-8"
             >
-              {isLastContent
-                ? isLastModule
-                  ? t("completeCourse")
-                  : t("nextModule")
-                : tCommon("continue")}
-            </button>
-          </div>
-        ) : (
-          <div>
-            {selectedDestination && (
-              <SafetySummaryDashboard
-                destination={selectedDestination}
-                completedModules={Array.from(completedModules)}
-                riskLevel={result.riskLevel}
-              />
-            )}
-
-            {/* Certificate Section */}
-            <div className="text-center" id="certificate">
-              <div className="w-16 h-16 bg-safe-green rounded-full flex items-center justify-center mx-auto mb-4">
-                <svg
-                  className="w-8 h-8 text-white"
-                  fill="none"
-                  stroke="currentColor"
-                  viewBox="0 0 24 24"
-                >
-                  <path
-                    strokeLinecap="round"
-                    strokeLinejoin="round"
-                    strokeWidth={2}
-                    d="M5 13l4 4L19 7"
-                  />
-                </svg>
+              <div className="text-center mb-6">
+                <div className="w-12 h-12 bg-winter-blue/10 rounded-xl flex items-center justify-center mx-auto mb-4 text-winter-blue">
+                  <svg className="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z" />
+                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M15 11a3 3 0 11-6 0 3 3 0 016 0z" />
+                  </svg>
+                </div>
+                <h2 className="text-2xl font-bold text-gray-900 mb-2">
+                  {t("destinationSelect.title")}
+                </h2>
+                <p className="text-gray-500">
+                  {t("destinationSelect.subtitle")}
+                </p>
               </div>
-              <h2 className="text-3xl font-bold text-white mb-4">
-                {t("completion.title")}
+              <motion.div
+                className="grid grid-cols-2 gap-3"
+                variants={staggerContainer}
+                initial="hidden"
+                animate="visible"
+              >
+                {destinations.map((dest) => {
+                  const descKey = dest.name.toLowerCase().replace(/ø/g, "o").replace(/å/g, "a");
+                  return (
+                    <motion.button
+                      key={dest.name}
+                      onClick={() => handleSelectDestination(dest)}
+                      variants={fadeInUp}
+                      whileHover={cardHover}
+                      whileTap={cardTap}
+                      className="text-left p-4 border-2 border-gray-200 rounded-xl hover:border-winter-blue hover:bg-ice-blue/30 transition-colors group"
+                    >
+                      <span className="font-semibold text-gray-900 group-hover:text-winter-blue flex items-center gap-2">
+                        <svg className="w-4 h-4 text-glacier" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                          <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z" />
+                          <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M15 11a3 3 0 11-6 0 3 3 0 016 0z" />
+                        </svg>
+                        {getLocalizedDestination(dest.name)}
+                      </span>
+                      <span className="block text-sm text-gray-500 mt-1">
+                        {t(`destinationSelect.descriptions.${descKey}` as Parameters<typeof t>[0])}
+                      </span>
+                    </motion.button>
+                  );
+                })}
+              </motion.div>
+            </motion.div>
+          ) : !allCompleted && currentModule && currentContent ? (
+            <motion.div
+              key={`module-${currentModuleIndex}-${currentContentIndex}`}
+              variants={slideRight}
+              initial="hidden"
+              animate="visible"
+              exit="exit"
+              className="bg-white rounded-2xl shadow-lg p-8"
+            >
+              <div className="w-12 h-12 bg-winter-blue/10 rounded-xl flex items-center justify-center mb-4 text-winter-blue">
+                <ModuleIcon type={currentModule.iconType} />
+              </div>
+              <div className="text-sm text-winter-blue font-medium mb-2">
+                {currentModule.title} ({currentContentIndex + 1}/
+                {currentModule.content.length})
+              </div>
+              <h2 className="text-2xl font-bold text-gray-900 mb-4">
+                {currentContent.heading}
               </h2>
-              <p className="text-frost mb-8">{t("completion.subtitle")}</p>
-              <div className="bg-white rounded-2xl shadow-lg p-6 mb-8">
-                <div className="text-sm text-gray-500 mb-2">
-                  {t("completion.certificate")}
-                </div>
-                <div className="text-xl font-semibold text-winter-blue mb-4">
-                  {t("completion.courseName")}
-                </div>
+              <p className="text-gray-600 mb-6 leading-relaxed">
+                {currentContent.text}
+              </p>
 
-                <input
-                  type="text"
-                  placeholder={t("completion.namePlaceholder")}
-                  className="w-full p-3 border-2 border-gray-200 rounded-xl mb-4 focus:border-winter-blue focus:outline-none"
-                  value={driverName}
-                  onChange={(e) => setDriverName(e.target.value)}
+              {currentContent.image && (
+                <div className="mb-6">
+                  <ResponsiveImage
+                    src={currentContent.image}
+                    alt={currentContent.imageAlt || currentContent.heading}
+                    aspectRatio="16:9"
+                    priority={true}
+                  />
+                </div>
+              )}
+
+              {currentContent.tips && (
+                <div className="bg-ice-blue/50 rounded-xl p-4 mb-6">
+                  <div className="font-semibold text-winter-blue mb-2">
+                    {t("keyPoints")}
+                  </div>
+                  <ul className="space-y-2">
+                    {currentContent.tips.map((tip, i) => (
+                      <li key={i} className="flex items-start gap-2 text-gray-700">
+                        <span className="text-safe-green font-bold">+</span>
+                        {tip}
+                      </li>
+                    ))}
+                  </ul>
+                </div>
+              )}
+
+              <button
+                onClick={handleNext}
+                className="w-full bg-winter-blue text-white py-4 rounded-xl font-semibold text-lg hover:bg-winter-blue/90 transition"
+              >
+                {isLastContent
+                  ? isLastModule
+                    ? t("completeCourse")
+                    : t("nextModule")
+                  : tCommon("continue")}
+              </button>
+            </motion.div>
+          ) : (
+            <motion.div
+              key="completion"
+              variants={fadeInUp}
+              initial="hidden"
+              animate="visible"
+            >
+              {selectedDestination && (
+                <SafetySummaryDashboard
+                  destination={selectedDestination}
+                  completedModules={Array.from(completedModules)}
+                  riskLevel={result.riskLevel}
                 />
+              )}
 
-                <div className="text-left text-sm text-gray-600 mb-4 space-y-1">
-                  <p>
-                    <span className="font-medium">{t("completion.modules")}:</span>{" "}
-                    {modules.map((m) => m.title).join(", ")}
-                  </p>
-                  <p>
-                    <span className="font-medium">{t("completion.riskLevel")}:</span>{" "}
-                    {t(`riskLevel.${result.riskLevel}`)}
-                  </p>
-                  <p>
-                    <span className="font-medium">{t("completion.date")}:</span>{" "}
-                    {new Date().toLocaleDateString(locale, {
-                      day: "numeric",
-                      month: "long",
-                      year: "numeric",
-                    })}
-                  </p>
-                </div>
-
-                <button
-                  onClick={handleDownloadCertificate}
-                  disabled={!driverName.trim() || isGenerating}
-                  className="w-full bg-safe-green text-white py-3 rounded-xl font-semibold hover:bg-safe-green/90 transition disabled:opacity-50 disabled:cursor-not-allowed"
+              {/* Certificate Section */}
+              <div className="text-center" id="certificate">
+                <motion.div
+                  variants={scaleIn}
+                  initial="hidden"
+                  animate="visible"
+                  className="w-16 h-16 bg-safe-green rounded-full flex items-center justify-center mx-auto mb-4"
                 >
-                  {isGenerating
-                    ? t("completion.generating")
-                    : t("completion.downloadCertificate")}
+                  <svg
+                    className="w-8 h-8 text-white"
+                    fill="none"
+                    stroke="currentColor"
+                    viewBox="0 0 24 24"
+                  >
+                    <path
+                      strokeLinecap="round"
+                      strokeLinejoin="round"
+                      strokeWidth={2}
+                      d="M5 13l4 4L19 7"
+                    />
+                  </svg>
+                </motion.div>
+                <h2 className="text-3xl font-bold text-white mb-4">
+                  {t("completion.title")}
+                </h2>
+                <p className="text-frost mb-8">{t("completion.subtitle")}</p>
+                <div className="bg-white rounded-2xl shadow-lg p-6 mb-8">
+                  <div className="text-sm text-gray-500 mb-2">
+                    {t("completion.certificate")}
+                  </div>
+                  <div className="text-xl font-semibold text-winter-blue mb-4">
+                    {t("completion.courseName")}
+                  </div>
+
+                  <input
+                    type="text"
+                    placeholder={t("completion.namePlaceholder")}
+                    className="w-full p-3 border-2 border-gray-200 rounded-xl mb-4 focus:border-winter-blue focus:outline-none"
+                    value={driverName}
+                    onChange={(e) => setDriverName(e.target.value)}
+                  />
+
+                  <div className="text-left text-sm text-gray-600 mb-4 space-y-1">
+                    <p>
+                      <span className="font-medium">{t("completion.modules")}:</span>{" "}
+                      {modules.map((m) => m.title).join(", ")}
+                    </p>
+                    <p>
+                      <span className="font-medium">{t("completion.riskLevel")}:</span>{" "}
+                      {t(`riskLevel.${result.riskLevel}`)}
+                    </p>
+                    <p>
+                      <span className="font-medium">{t("completion.date")}:</span>{" "}
+                      {new Date().toLocaleDateString(locale, {
+                        day: "numeric",
+                        month: "long",
+                        year: "numeric",
+                      })}
+                    </p>
+                  </div>
+
+                  <button
+                    onClick={handleDownloadCertificate}
+                    disabled={!driverName.trim() || isGenerating}
+                    className="w-full bg-safe-green text-white py-3 rounded-xl font-semibold hover:bg-safe-green/90 transition disabled:opacity-50 disabled:cursor-not-allowed"
+                  >
+                    {isGenerating
+                      ? t("completion.generating")
+                      : t("completion.downloadCertificate")}
+                  </button>
+                </div>
+                <button
+                  onClick={handleFinish}
+                  className="bg-winter-blue text-white px-10 py-4 rounded-xl font-semibold text-lg hover:bg-winter-blue/90 transition"
+                >
+                  {t("completion.viewDashboard")}
                 </button>
               </div>
-              <button
-                onClick={handleFinish}
-                className="bg-winter-blue text-white px-10 py-4 rounded-xl font-semibold text-lg hover:bg-winter-blue/90 transition"
-              >
-                {t("completion.viewDashboard")}
-              </button>
-            </div>
-          </div>
-        )}
+            </motion.div>
+          )}
+        </AnimatePresence>
       </div>
     </main>
   );

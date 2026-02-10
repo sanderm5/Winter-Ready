@@ -577,6 +577,25 @@
       "current": "Strøm",
       "unavailable": "Havdata utilgjengelig for denne lokasjonen."
     },
+    "aurora": {
+      "title": "Nordlys",
+      "probability": "Sannsynlighet",
+      "cloudCover": "Skydekke",
+      "bestViewing": "Beste tid",
+      "rating": {
+        "poor": "LAV",
+        "moderate": "MODERAT",
+        "good": "GOD",
+        "excellent": "UTMERKET"
+      },
+      "description": {
+        "cloudy": "Tett skydekke vil trolig blokkere sikten. Vurder innendørsaktiviteter i kveld.",
+        "excellent": "Utmerkede forhold for nordlys! Dra til et mørkt sted vekk fra bylys.",
+        "good": "God sjanse for å se nordlys i kveld. Finn et sted med klar sikt mot nord.",
+        "moderate": "Moderat aktivitet forventet. Nordlys kan være synlig i opphold mellom skyene.",
+        "poor": "Lav nordlysaktivitet forventet. Hold et øye med himmelen, men ikke regn med det."
+      }
+    },
     "emergency": {
       "title": "Nødnumre",
       "emergency": "Nødsentralen",

@@ -33,7 +33,7 @@ export default function LanguageSwitcher() {
           }`}
           onClick={() => {
             localStorage.setItem("preferredLocale", loc);
-            document.cookie = `NEXT_LOCALE=${loc};path=/;max-age=31536000`;
+            document.cookie = `NEXT_LOCALE=${loc};path=/;max-age=31536000;SameSite=Lax;Secure`;
           }}
         >
           {localeFlags[loc]}

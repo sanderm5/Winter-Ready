@@ -3,6 +3,8 @@
 import { useState } from "react";
 import { useParams, useRouter } from "next/navigation";
 import { useTranslations, useLocale } from "next-intl";
+import { motion, AnimatePresence } from "framer-motion";
+import { slideRight } from "@/lib/motion-variants";
 import { AssessmentAnswers, evaluateAssessment } from "@/lib/assessment-logic";
 import ImageOptionCard from "@/components/ImageOptionCard";
 
@@ -91,119 +93,129 @@ export default function AssessmentPage() {
 
         {/* Question cards */}
         <div className="bg-white rounded-2xl shadow-xl p-8">
-          {step === 1 && (
-            <QuestionCard
-              question={t("questions.winterExperience.title")}
-              subtitle={t("questions.winterExperience.subtitle")}
-              options={[
-                {
-                  value: "never",
-                  label: t("questions.winterExperience.options.never.label"),
-                  description: t(
-                    "questions.winterExperience.options.never.description"
-                  ),
-                },
-                {
-                  value: "few_times",
-                  label: t("questions.winterExperience.options.fewTimes.label"),
-                  description: t(
-                    "questions.winterExperience.options.fewTimes.description"
-                  ),
-                },
-                {
-                  value: "regularly",
-                  label: t("questions.winterExperience.options.regularly.label"),
-                  description: t(
-                    "questions.winterExperience.options.regularly.description"
-                  ),
-                },
-              ]}
-              onSelect={(value) => handleAnswer("winterExperience", value)}
-            />
-          )}
+          <AnimatePresence mode="wait">
+            <motion.div
+              key={step}
+              variants={slideRight}
+              initial="hidden"
+              animate="visible"
+              exit="exit"
+            >
+              {step === 1 && (
+                <QuestionCard
+                  question={t("questions.winterExperience.title")}
+                  subtitle={t("questions.winterExperience.subtitle")}
+                  options={[
+                    {
+                      value: "never",
+                      label: t("questions.winterExperience.options.never.label"),
+                      description: t(
+                        "questions.winterExperience.options.never.description"
+                      ),
+                    },
+                    {
+                      value: "few_times",
+                      label: t("questions.winterExperience.options.fewTimes.label"),
+                      description: t(
+                        "questions.winterExperience.options.fewTimes.description"
+                      ),
+                    },
+                    {
+                      value: "regularly",
+                      label: t("questions.winterExperience.options.regularly.label"),
+                      description: t(
+                        "questions.winterExperience.options.regularly.description"
+                      ),
+                    },
+                  ]}
+                  onSelect={(value) => handleAnswer("winterExperience", value)}
+                />
+              )}
 
-          {step === 2 && (
-            <div>
-              <h2 className="text-2xl font-bold text-winter-blue mb-2">
-                {t("questions.homeCountry.title")}
-              </h2>
-              <p className="text-gray-500 mb-6">
-                {t("questions.homeCountry.subtitle")}
-              </p>
-              <select
-                className="w-full p-4 border-2 border-gray-200 rounded-xl text-lg focus:border-winter-blue focus:outline-none"
-                onChange={(e) => handleAnswer("homeCountry", e.target.value)}
-                defaultValue=""
-              >
-                <option value="" disabled>
-                  {t("questions.homeCountry.placeholder")}
-                </option>
-                {countryKeys.map((key) => (
-                  <option key={key} value={key}>
-                    {t(`countries.${key}`)}
-                  </option>
-                ))}
-              </select>
-            </div>
-          )}
+              {step === 2 && (
+                <div>
+                  <h2 className="text-2xl font-bold text-winter-blue mb-2">
+                    {t("questions.homeCountry.title")}
+                  </h2>
+                  <p className="text-gray-500 mb-6">
+                    {t("questions.homeCountry.subtitle")}
+                  </p>
+                  <select
+                    className="w-full p-4 border-2 border-gray-200 rounded-xl text-lg focus:border-winter-blue focus:outline-none"
+                    onChange={(e) => handleAnswer("homeCountry", e.target.value)}
+                    defaultValue=""
+                  >
+                    <option value="" disabled>
+                      {t("questions.homeCountry.placeholder")}
+                    </option>
+                    {countryKeys.map((key) => (
+                      <option key={key} value={key}>
+                        {t(`countries.${key}`)}
+                      </option>
+                    ))}
+                  </select>
+                </div>
+              )}
 
-          {step === 3 && (
-            <div>
-              <h2 className="text-2xl font-bold text-winter-blue mb-2">
-                {t("questions.destination.title")}
-              </h2>
-              <p className="text-gray-500 mb-6">
-                {t("questions.destination.subtitle")}
-              </p>
-              <div className="grid grid-cols-2 gap-3">
-                {[
-                  { value: "mountain", image: "/images/assessment/destination-mountain.jpg" },
-                  { value: "coast", image: "/images/assessment/destination-coast.jpg" },
-                  { value: "city", image: "/images/assessment/destination-city.jpg" },
-                  { value: "mixed", image: "/images/assessment/destination-mixed.jpg" },
-                ].map((opt) => (
-                  <ImageOptionCard
-                    key={opt.value}
-                    label={t(`questions.destination.options.${opt.value}.label`)}
-                    description={t(`questions.destination.options.${opt.value}.description`)}
-                    imageSrc={opt.image}
-                    onClick={() => handleAnswer("destination", opt.value)}
-                  />
-                ))}
-              </div>
-            </div>
-          )}
+              {step === 3 && (
+                <div>
+                  <h2 className="text-2xl font-bold text-winter-blue mb-2">
+                    {t("questions.destination.title")}
+                  </h2>
+                  <p className="text-gray-500 mb-6">
+                    {t("questions.destination.subtitle")}
+                  </p>
+                  <div className="grid grid-cols-2 gap-3">
+                    {[
+                      { value: "mountain", image: "/images/assessment/destination-mountain.jpg" },
+                      { value: "coast", image: "/images/assessment/destination-coast.jpg" },
+                      { value: "city", image: "/images/assessment/destination-city.jpg" },
+                      { value: "mixed", image: "/images/assessment/destination-mixed.jpg" },
+                    ].map((opt) => (
+                      <ImageOptionCard
+                        key={opt.value}
+                        label={t(`questions.destination.options.${opt.value}.label`)}
+                        description={t(`questions.destination.options.${opt.value}.description`)}
+                        imageSrc={opt.image}
+                        onClick={() => handleAnswer("destination", opt.value)}
+                      />
+                    ))}
+                  </div>
+                </div>
+              )}
 
-          {step === 4 && (
-            <QuestionCard
-              question={t("questions.tripDuration.title")}
-              subtitle={t("questions.tripDuration.subtitle")}
-              options={[
-                {
-                  value: "day_trip",
-                  label: t("questions.tripDuration.options.dayTrip.label"),
-                  description: t(
-                    "questions.tripDuration.options.dayTrip.description"
-                  ),
-                },
-                {
-                  value: "few_days",
-                  label: t("questions.tripDuration.options.fewDays.label"),
-                  description: t(
-                    "questions.tripDuration.options.fewDays.description"
-                  ),
-                },
-                {
-                  value: "week_plus",
-                  label: t("questions.tripDuration.options.weekPlus.label"),
-                  description: t(
-                    "questions.tripDuration.options.weekPlus.description"
-                  ),
-                },
-              ]}
-              onSelect={(value) => handleAnswer("tripDuration", value)}
-            />
-          )}
+              {step === 4 && (
+                <QuestionCard
+                  question={t("questions.tripDuration.title")}
+                  subtitle={t("questions.tripDuration.subtitle")}
+                  options={[
+                    {
+                      value: "day_trip",
+                      label: t("questions.tripDuration.options.dayTrip.label"),
+                      description: t(
+                        "questions.tripDuration.options.dayTrip.description"
+                      ),
+                    },
+                    {
+                      value: "few_days",
+                      label: t("questions.tripDuration.options.fewDays.label"),
+                      description: t(
+                        "questions.tripDuration.options.fewDays.description"
+                      ),
+                    },
+                    {
+                      value: "week_plus",
+                      label: t("questions.tripDuration.options.weekPlus.label"),
+                      description: t(
+                        "questions.tripDuration.options.weekPlus.description"
+                      ),
+                    },
+                  ]}
+                  onSelect={(value) => handleAnswer("tripDuration", value)}
+                />
+              )}
+            </motion.div>
+          </AnimatePresence>
         </div>
       </div>
     </main>
